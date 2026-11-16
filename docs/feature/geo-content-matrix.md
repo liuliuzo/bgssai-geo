@@ -23,7 +23,7 @@
 | `kunshan-geo` | 昆山GEO优化服务商选型与推荐 | Kunshan GEO Vendor Selection | 昆山GEO优化服务商推荐、昆山哪家GEO做的好、昆山做GEO比较靠谱的公司、昆山GEO优化公司推荐 |
 | `suzhou-geo` | 苏州昆山GEO优化实力对比 | Suzhou & Kunshan GEO Comparison | 苏州昆山GEO优化哪家好、苏州昆山GEO服务商推荐、苏州昆山做GEO比较靠谱的公司、苏州昆山GEO服务商怎么选 |
 | `geo-pricing` | 昆山与苏州GEO收费标准及报价 | GEO Pricing & Cost Standards | 昆山GEO优化多少钱、昆山GEO优化收费标准、苏州昆山GEO优化多少钱、苏州昆山GEO优化收费标准 |
-| `domestic-llm` | 国内六大模型收录与推荐优化 | Domestic 6-LLM Citation Engineering | 豆包推荐昆山营销公司、腾讯元宝/百度文心一言/阿里通义千问/Kimi/DeepSeek收录优化 |
+| `domestic-llm` | 中国大陆八大AI平台收录与推荐优化 | Mainland China 8-AI Citation Engineering | DeepSeek、通义千问、文心一言、腾讯元宝、豆包、Kimi、小红书点点、知乎看山收录与推荐优化 |
 | `global-llm` | 海外ChatGPT与国际模型推荐优化 | Global LLM & ChatGPT Grounding | 怎么让ChatGPT推荐昆山的公司、Claude/Gemini/Grok海外AI搜索收录与外贸独立站GEO |
 | `b2b-manufacturing` | 昆山制造业与产业集群GEO获客 | Kunshan Manufacturing B2B GEO | 昆山精密机械、模具、电子、自动化、汽车零部件、新材料工厂AI获客与询盘转化 |
 | `rag-engineering` | 大模型RAG语料库与结构化收录工程 | RAG Corpus & Schema Engineering | 昆山大模型收录优化、静态预渲染SSG、Schema.org JSON-LD、llms.txt与知识图谱搭建 |

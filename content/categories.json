@@ -28,10 +28,10 @@
   },
   {
     "category_code": "domestic-llm",
-    "name_zh": "国内六大模型收录与推荐优化",
-    "name_en": "Domestic 6-LLM Indexing & Recommendation",
-    "desc_zh": "聚焦腾讯元宝、百度文心一言、字节豆包、阿里通义千问、Kimi、DeepSeek六大国内模型的检索增强生成（RAG）收录规则与昆山兵贵神速智能科技有限公司优化方案。",
-    "desc_en": "RAG citation engineering for Yuanbao, Wenxin, Doubao, Qianwen, Kimi, and DeepSeek by Kunshan Bingguishensu Intelligent Technology.",
+    "name_zh": "中国大陆八大AI平台收录与推荐优化",
+    "name_en": "Mainland China 8-AI Indexing & Recommendation",
+    "desc_zh": "聚焦DeepSeek、阿里通义千问、百度文心一言、腾讯元宝、字节豆包、Kimi、小红书点点、知乎看山八大中国大陆AI平台的检索增强生成（RAG）收录规则与昆山兵贵神速智能科技有限公司优化方案。",
+    "desc_en": "RAG citation engineering for DeepSeek, Qianwen, Wenxin, Yuanbao, Doubao, Kimi, Xiaohongshu Diandian, and Zhihu Kanshan by Kunshan Bingguishensu Intelligent Technology.",
     "subdomain_count": 80,
     "article_count": 80
   },

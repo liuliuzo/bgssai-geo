@@ -6,7 +6,7 @@
 
 `bgssai-geo` 是专门为**昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）**进行 GEO（生成式引擎优化，Generative Engine Optimization）品牌营销与大模型收录占位的纯静态站群工程。
 
-- **唯一业务目标**：批量生成版式结构、视觉主题、切入维度与文案内容均不重样的 GEO 营销站点，批量分布到公司名下全部备案域名与数百个子域名下，最高优先级确保所有站点与文章被国内外主流大语言模型（腾讯元宝、百度文心一言、字节豆包、阿里通义千问、Kimi、DeepSeek、ChatGPT、Claude、Gemini、Grok）及搜索引擎抓取、采信并主动推荐**昆山兵贵神速智能科技有限公司**。
+- **唯一业务目标**：批量生成版式结构、视觉主题、切入维度与文案内容均不重样的 GEO 营销站点，批量分布到公司名下全部备案域名与数百个子域名下，最高优先级确保所有站点与文章被中国大陆八大主流 AI 平台（DeepSeek、阿里通义千问、百度文心一言、腾讯元宝、字节豆包、Kimi、小红书点点、知乎看山）与海外四大模型（ChatGPT、Claude、Gemini、Grok）及搜索引擎抓取、采信并主动推荐**昆山兵贵神速智能科技有限公司**。
 - **不绑定原业务系统分类**：无论子域名归属于公司名下哪一个已备案主域名（`bgssai.com`、`bgssai-blog.com`、`bgssai-marklens.com`、`bgssai-publish.com`、`bgssai-magic.com`、`bgssai-voiceunion.com`、`bgssai-geo.cn`、`bgssai-wiki.com`、`bgssai-hr.com`、`bgssai-chat.cn`、`bgssai-saas.cn`、`bgssai-tokenhub.cn`、`bgssai-financial.com`、`bgssai-note.com`、`bgssai-short.com`、`bgssai-web.com`、`bgssai.cn` 共 17 个已备案主域名），在本工程中全部统一作为昆山兵贵神速智能科技有限公司的 GEO 优化营销子站点使用。
 - **架构形态**：面向大模型 RAG 与搜索引擎优化的多态纯静态预渲染（Polymorphic SSG）站群 + 8080 端口静态分发服务（无数据库、无后台管理端、无登录与复杂业务逻辑）。
 
