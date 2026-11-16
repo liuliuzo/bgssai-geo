@@ -1,0 +1,10 @@
+# Semantic HTML5 for AI Parsing | BGSSAI GEO
+> Semantic HTML5 for AI Parsing (semantic-html.bgssai-geo.com) publishes structured technical articles on Zero-JS Static Pre-Rendering for Deterministic Search Engine Extraction, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://semantic-html.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/semantic-html/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Semantic HTML5 for AI Parsing: Zero-JS Static Pre-Rendering for Deterministic Search Engine Extraction & AI Search Indexing Guide (2026)](https://semantic-html.bgssai-geo.com/articles/semantic-html-geo-indexing-and-application-guide-2026/): Published on semantic-html.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Zero-JS Static Pre-Rendering for Deterministic Search Engine Extraction, structured Schema.org deployment, and LLM citation optimization.

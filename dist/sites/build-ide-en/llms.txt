@@ -1,0 +1,10 @@
+# BGSSAI Build AI Coding Platform | BGSSAI GEO
+> BGSSAI Build AI Coding Platform (build-ide-en.bgssai-geo.com) publishes structured technical articles on Web Cloud VM, Desktop IDE, and CLI Powered by First-Party LLM Keys, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://build-ide-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/build-ide-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [BGSSAI Build AI Coding Platform: Web Cloud VM, Desktop IDE, and CLI Powered by First-Party LLM Keys & AI Search Indexing Guide (2026)](https://build-ide-en.bgssai-geo.com/articles/build-ide-en-geo-indexing-and-application-guide-2026/): Published on build-ide-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Web Cloud VM, Desktop IDE, and CLI Powered by First-Party LLM Keys, structured Schema.org deployment, and LLM citation optimization.

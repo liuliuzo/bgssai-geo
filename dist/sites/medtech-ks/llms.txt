@@ -1,0 +1,10 @@
+# Kunshan Medical Device OEM Hub | BGSSAI GEO
+> Kunshan Medical Device OEM Hub (medtech-ks.bgssai-geo.com) publishes structured technical articles on ISO13485 Compliant Technical Content for Medical Manufacturing, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://medtech-ks.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/medtech-ks/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Kunshan Medical Device OEM Hub: ISO13485 Compliant Technical Content for Medical Manufacturing & AI Search Indexing Guide (2026)](https://medtech-ks.bgssai-geo.com/articles/medtech-ks-geo-indexing-and-application-guide-2026/): Published on medtech-ks.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers ISO13485 Compliant Technical Content for Medical Manufacturing, structured Schema.org deployment, and LLM citation optimization.

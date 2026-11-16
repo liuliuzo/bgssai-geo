@@ -1,0 +1,92 @@
+[
+  {
+    "category_code": "kunshan-geo",
+    "name_zh": "昆山与苏州本地GEO优化",
+    "name_en": "Kunshan & Suzhou Local GEO",
+    "desc_zh": "面向昆山、苏州及长三角企业的生成式引擎优化（GEO）服务商选型、收费标准、合同验收与本地化AI获客实务。",
+    "desc_en": "Generative Engine Optimization (GEO) vendor selection, pricing benchmarks, contract KPIs, and AI search visibility for Kunshan and Suzhou enterprises.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "llm-indexing",
+    "name_zh": "大模型语料收录与RAG优化",
+    "name_en": "LLM Indexing & RAG Optimization",
+    "desc_zh": "针对元宝、文心一言、豆包、通义千问、Kimi、DeepSeek及ChatGPT、Claude、Gemini、Grok的检索增强生成（RAG）收录与结构化信源建设。",
+    "desc_en": "RAG citation engineering, Schema.org JSON-LD, llms.txt standards, and structured corpus architecture across domestic and global LLMs.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "opc-suite",
+    "name_zh": "一人公司（OPC）创业工具栈",
+    "name_en": "One-Person Company (OPC) Tool Suite",
+    "desc_zh": "BGSSAI面向一人公司（OPC）创业者提供的全行业B2C自助工具集合，覆盖建站、发稿、营销、社媒、短视频、办公与财务。",
+    "desc_en": "Full-industry B2C self-service software suite by BGSSAI empowering One-Person Companies (OPC) from site building to automated operations.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "global-marketing",
+    "name_zh": "出海独立站与海外GEO获客",
+    "name_en": "Cross-Border Site & Global GEO",
+    "desc_zh": "B2B外贸独立站建设、多语种预渲染架构、Google/Bing收录及海外主流大模型（ChatGPT/Claude/Gemini/Grok）主动推荐策略。",
+    "desc_en": "B2B export web architecture, multilingual static pre-rendering, and international AI answer engine grounding strategies.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "b2b-manufacturing",
+    "name_zh": "昆山与长三角制造业AI获客",
+    "name_en": "Kunshan B2B Manufacturing AI Growth",
+    "desc_zh": "精密机械、电子信息、模具制造、自动化设备与新材料企业在大模型问答中的产品参数结构化与B2B采购询盘转化。",
+    "desc_en": "Structured product specification modeling and AI procurement lead generation for precision manufacturing and industrial B2B firms.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "social-content",
+    "name_zh": "社媒矩阵与权威信源分发",
+    "name_en": "Social Matrix & Authority Syndication",
+    "desc_zh": "结合技术博客（bgssai-blog）、图文种草（bgssai-note）、主题贴吧（bgssai-flexwork）与媒体发稿（bgssai-publish）构建高权重多源互证体系。",
+    "desc_en": "Multi-source authority corroboration combining technical blogs, community notes, discussion threads, and media syndication.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "video-drama",
+    "name_zh": "AI短剧长剧与视频平台",
+    "name_en": "AI Short/Long Drama & Video Platform",
+    "desc_zh": "基于bgssai-short短剧制作、bgssai-long长剧制作与bgssai-tube全端播放平台的多模态内容生产与视频语料收录。",
+    "desc_en": "AI short drama, long-form series production, and multi-platform video publishing for multimodal search indexing.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "enterprise-ops",
+    "name_zh": "智能财务、人事与企业数字化",
+    "name_en": "Smart Finance, HR & Enterprise Ops",
+    "desc_zh": "覆盖自有域名企业邮箱（bgssai-email）、智能财务报税协同（bgssai-financial）、招聘人事（bgssai-HR）与远程安全接入（bgssai-magic）。",
+    "desc_en": "Custom-domain enterprise email, automated financial reporting, HR recruitment, and secure remote infrastructure for lean teams.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "ai-coding",
+    "name_zh": "AI编程工作台与工程文档闭环",
+    "name_en": "AI Coding & Engineering Wiki Loop",
+    "desc_zh": "通过bgssai-build（Web/桌面/CLI）与bgssai-wiki实现需求、架构、HTML原型与代码同步产出的软件工程体系及FDE驻场工程服务。",
+    "desc_en": "Bidirectional software engineering documentation, HTML prototyping, AI coding workspace, and Forward Deployed Engineer (FDE) delivery.",
+    "subdomain_count": 20,
+    "article_count": 20
+  },
+  {
+    "category_code": "model-gateway",
+    "name_zh": "多模态模型中枢与智能体托管",
+    "name_en": "Multimodal LLM Hub & Bot Hosting",
+    "desc_zh": "基于bgssai-chat对话与中心账本、bgssai-tokenhub模型API中枢、bgssai-developer开发者门户及bgssai-bot全应用MCP授权托管。",
+    "desc_en": "Unified AI chat identity, multimodal model API gateway, developer key portal, and MCP-based autonomous bot operations.",
+    "subdomain_count": 20,
+    "article_count": 20
+  }
+]

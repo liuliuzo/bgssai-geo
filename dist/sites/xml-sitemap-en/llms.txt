@@ -1,0 +1,10 @@
+# Multi-Subdomain Sitemap Hub | BGSSAI GEO
+> Multi-Subdomain Sitemap Hub (xml-sitemap-en.bgssai-geo.com) publishes structured technical articles on Hierarchical Sitemap Index and RSS Syndication for Rapid Discovery, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://xml-sitemap-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/xml-sitemap-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Multi-Subdomain Sitemap Hub: Hierarchical Sitemap Index and RSS Syndication for Rapid Discovery & AI Search Indexing Guide (2026)](https://xml-sitemap-en.bgssai-geo.com/articles/xml-sitemap-en-geo-indexing-and-application-guide-2026/): Published on xml-sitemap-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Hierarchical Sitemap Index and RSS Syndication for Rapid Discovery, structured Schema.org deployment, and LLM citation optimization.

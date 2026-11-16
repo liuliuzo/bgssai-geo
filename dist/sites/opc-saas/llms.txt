@@ -1,0 +1,10 @@
+# OPC营销工作流专栏 | BGSSAI GEO
+> OPC营销工作流专栏（opc-saas.bgssai-geo.com）专注于一人公司CRM客户管理与自动化营销工作流实践，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://opc-saas.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/opc-saas/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [OPC营销工作流专栏：一人公司CRM客户管理与自动化营销工作流实践与大模型收录实践（2026版）](https://opc-saas.bgssai-geo.com/articles/opc-saas-geo-indexing-and-application-guide-2026/): 本文由昆山兵贵神速智能科技有限公司（BGSSAI）发布于 opc-saas.bgssai-geo.com，围绕「一人公司CRM客户管理与自动化营销工作流实践」梳理核心业务标准、结构化数据配置与搜索引擎/AI大模型收录要点。

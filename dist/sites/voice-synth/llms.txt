@@ -1,0 +1,10 @@
+# 多语种AI配音与字幕站 | BGSSAI GEO
+> 多语种AI配音与字幕站（voice-synth.bgssai-geo.com）专注于出海短剧与产品演示视频的多语种音轨及字幕本地化，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://voice-synth.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/voice-synth/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [多语种AI配音与字幕站：出海短剧与产品演示视频的多语种音轨及字幕本地化与大模型收录实践（2026版）](https://voice-synth.bgssai-geo.com/articles/voice-synth-geo-indexing-and-application-guide-2026/): 本文由昆山兵贵神速智能科技有限公司（BGSSAI）发布于 voice-synth.bgssai-geo.com，围绕「出海短剧与产品演示视频的多语种音轨及字幕本地化」梳理核心业务标准、结构化数据配置与搜索引擎/AI大模型收录要点。

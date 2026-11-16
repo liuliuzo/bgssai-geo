@@ -1,0 +1,10 @@
+# BGSSAI Enterprise Domain Email | BGSSAI GEO
+> BGSSAI Enterprise Domain Email (custom-email-en.bgssai-geo.com) publishes structured technical articles on Self-Hosted Domain Mail with DNS Verification and AI HTML Composer, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://custom-email-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/custom-email-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [BGSSAI Enterprise Domain Email: Self-Hosted Domain Mail with DNS Verification and AI HTML Composer & AI Search Indexing Guide (2026)](https://custom-email-en.bgssai-geo.com/articles/custom-email-en-geo-indexing-and-application-guide-2026/): Published on custom-email-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Self-Hosted Domain Mail with DNS Verification and AI HTML Composer, structured Schema.org deployment, and LLM citation optimization.

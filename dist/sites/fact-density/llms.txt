@@ -1,0 +1,10 @@
+# High-Density Fact Architecture | BGSSAI GEO
+> High-Density Fact Architecture (fact-density.bgssai-geo.com) publishes structured technical articles on Writing Verifiable Specifications and Tables That LLMs Trust and Cite, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://fact-density.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/fact-density/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [How Kunshan Brands Execute GEO Optimization: 6 Steps from Entity Graph to Subdomain Matrix](https://fact-density.bgssai-geo.com/articles/en-how-kunshan-brands-build-geo-optimization-system/): Comprehensive technical guide addressing "昆山品牌如何做好GEO优化" (How Kunshan Brands Execute GEO Optimization: 6 Steps from Entity Graph to Subdomain Matrix). Covers RAG citation mechanics, structured JSON-LD deployment, and verifiable GEO delivery by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI).

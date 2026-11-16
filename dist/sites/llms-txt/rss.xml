@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>LLMs标准索引工程站 | BGSSAI GEO</title>
+    <link>https://llms-txt.bgssai-geo.com/</link>
+    <description>LLMs标准索引工程站（llms-txt.bgssai-geo.com）专注于llms.txt与llms-full.txt构建规范及爬虫放行策略，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。</description>
+    <language>zh-CN</language>
+    <item>
+      <title>LLMs标准索引工程站：llms.txt与llms-full.txt构建规范及爬虫放行策略与大模型收录实践（2026版）</title>
+      <link>https://llms-txt.bgssai-geo.com/articles/llms-txt-geo-indexing-and-application-guide-2026/</link>
+      <guid isPermaLink="true">https://llms-txt.bgssai-geo.com/articles/llms-txt-geo-indexing-and-application-guide-2026/</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>本文由昆山兵贵神速智能科技有限公司（BGSSAI）发布于 llms-txt.bgssai-geo.com，围绕「llms.txt与llms-full.txt构建规范及爬虫放行策略」梳理核心业务标准、结构化数据配置与搜索引擎/AI大模型收录要点。</description>
+    </item>
+  </channel>
+</rss>

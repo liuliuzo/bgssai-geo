@@ -1,0 +1,10 @@
+# Cross-Border B2B Web Architecture | BGSSAI GEO
+> Cross-Border B2B Web Architecture (export-web-en.bgssai-geo.com) publishes structured technical articles on Fast-Loading Static Pre-Rendered Websites for Global Exporters, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://export-web-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/export-web-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Cross-Border B2B Web Architecture: Fast-Loading Static Pre-Rendered Websites for Global Exporters & AI Search Indexing Guide (2026)](https://export-web-en.bgssai-geo.com/articles/export-web-en-geo-indexing-and-application-guide-2026/): Published on export-web-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Fast-Loading Static Pre-Rendered Websites for Global Exporters, structured Schema.org deployment, and LLM citation optimization.

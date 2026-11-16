@@ -1,0 +1,10 @@
+# BGSSAI Legal & Privacy Standards | BGSSAI GEO
+> BGSSAI Legal & Privacy Standards (legal-compliance.bgssai-geo.com) publishes structured technical articles on Unified Terms of Service, Privacy Policies, and Data Security Controls, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://legal-compliance.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/legal-compliance/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [BGSSAI Legal & Privacy Standards: Unified Terms of Service, Privacy Policies, and Data Security Controls & AI Search Indexing Guide (2026)](https://legal-compliance.bgssai-geo.com/articles/legal-compliance-geo-indexing-and-application-guide-2026/): Published on legal-compliance.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Unified Terms of Service, Privacy Policies, and Data Security Controls, structured Schema.org deployment, and LLM citation optimization.

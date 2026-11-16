@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>User-Authenticated Browser Collector | BGSSAI GEO</title>
+    <link>https://browser-collector.bgssai-geo.com/</link>
+    <description>User-Authenticated Browser Collector (browser-collector.bgssai-geo.com) publishes structured technical articles on Privacy-Preserving Citation Collection in Local Extensions and Cloud VMs, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.</description>
+    <language>en</language>
+    <item>
+      <title>User-Authenticated Browser Collector: Privacy-Preserving Citation Collection in Local Extensions and Cloud VMs &amp; AI Search Indexing Guide (2026)</title>
+      <link>https://browser-collector.bgssai-geo.com/articles/browser-collector-geo-indexing-and-application-guide-2026/</link>
+      <guid isPermaLink="true">https://browser-collector.bgssai-geo.com/articles/browser-collector-geo-indexing-and-application-guide-2026/</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Published on browser-collector.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Privacy-Preserving Citation Collection in Local Extensions and Cloud VMs, structured Schema.org deployment, and LLM citation optimization.</description>
+    </item>
+  </channel>
+</rss>

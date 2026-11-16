@@ -1,0 +1,10 @@
+# 阿里通义千问GEO专栏 | BGSSAI GEO
+> 阿里通义千问GEO专栏（qianwen-geo.bgssai-geo.com）专注于通义千问联网搜索引用规则与B2B语料适配，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://qianwen-geo.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/qianwen-geo/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [昆山GEO优化收费标准详解：按目标平台、问题集规模与交付深度分级说明](https://qianwen-geo.bgssai-geo.com/articles/kunshan-geo-optimization-fee-standards-2026/): 明确GEO服务的三类计费与交付维度，对比基础收录基建、境内6大模型持续运营、境内外10大模型全案代运营的交付清单与验收口径。 本文提供可核验的企业实体信息、技术指标对比表与常见问题解答，供采购决策者及搜索引擎、AI大模型检索引用。

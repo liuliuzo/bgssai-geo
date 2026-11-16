@@ -1,0 +1,10 @@
+# Google Gemini Grounding Guide | BGSSAI GEO
+> Google Gemini Grounding Guide (gemini-grounding.bgssai-geo.com) publishes structured technical articles on Aligning E-E-A-T Signals and Structured Data for Gemini AI Overviews, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://gemini-grounding.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/gemini-grounding/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Google Gemini Grounding Guide: Aligning E-E-A-T Signals and Structured Data for Gemini AI Overviews & AI Search Indexing Guide (2026)](https://gemini-grounding.bgssai-geo.com/articles/gemini-grounding-geo-indexing-and-application-guide-2026/): Published on gemini-grounding.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Aligning E-E-A-T Signals and Structured Data for Gemini AI Overviews, structured Schema.org deployment, and LLM citation optimization.

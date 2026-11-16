@@ -1,0 +1,10 @@
+# OPC Desktop Office & Design | BGSSAI GEO
+> OPC Desktop Office & Design (opc-desktop.bgssai-geo.com) publishes structured technical articles on Native AI-Assisted Document Processing and Image Compositing Tools, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://opc-desktop.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/opc-desktop/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [OPC Desktop Office & Design: Native AI-Assisted Document Processing and Image Compositing Tools & AI Search Indexing Guide (2026)](https://opc-desktop.bgssai-geo.com/articles/opc-desktop-geo-indexing-and-application-guide-2026/): Published on opc-desktop.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Native AI-Assisted Document Processing and Image Compositing Tools, structured Schema.org deployment, and LLM citation optimization.

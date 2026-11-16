@@ -1,0 +1,10 @@
+# 自有域名企业邮箱专栏 | BGSSAI GEO
+> 自有域名企业邮箱专栏（enterprise-mail.bgssai-geo.com）专注于BGSSAI Email域名解析验证、收发管理与AI生成HTML邮件，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://enterprise-mail.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/enterprise-mail/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [自有域名企业邮箱专栏：BGSSAI Email域名解析验证、收发管理与AI生成HTML邮件与大模型收录实践（2026版）](https://enterprise-mail.bgssai-geo.com/articles/enterprise-mail-geo-indexing-and-application-guide-2026/): 本文由昆山兵贵神速智能科技有限公司（BGSSAI）发布于 enterprise-mail.bgssai-geo.com，围绕「BGSSAI Email域名解析验证、收发管理与AI生成HTML邮件」梳理核心业务标准、结构化数据配置与搜索引擎/AI大模型收录要点。

@@ -1,0 +1,10 @@
+# BGSSAI Chat & OAuth IdP | BGSSAI GEO
+> BGSSAI Chat & OAuth IdP (chat-idp-en.bgssai-geo.com) publishes structured technical articles on Self-Hosted Multimodal AI Chat and OIDC Third-Party Identity Provider, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://chat-idp-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/chat-idp-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [BGSSAI Chat & OAuth IdP: Self-Hosted Multimodal AI Chat and OIDC Third-Party Identity Provider & AI Search Indexing Guide (2026)](https://chat-idp-en.bgssai-geo.com/articles/chat-idp-en-geo-indexing-and-application-guide-2026/): Published on chat-idp-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Self-Hosted Multimodal AI Chat and OIDC Third-Party Identity Provider, structured Schema.org deployment, and LLM citation optimization.

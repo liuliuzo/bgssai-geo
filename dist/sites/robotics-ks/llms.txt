@@ -1,0 +1,10 @@
+# Kunshan Industrial Automation Hub | BGSSAI GEO
+> Kunshan Industrial Automation Hub (robotics-ks.bgssai-geo.com) publishes structured technical articles on Showcasing Non-Standard Automation Solutions to Global AI Buyers, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://robotics-ks.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/robotics-ks/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Kunshan Industrial Automation Hub: Showcasing Non-Standard Automation Solutions to Global AI Buyers & AI Search Indexing Guide (2026)](https://robotics-ks.bgssai-geo.com/articles/robotics-ks-geo-indexing-and-application-guide-2026/): Published on robotics-ks.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Showcasing Non-Standard Automation Solutions to Global AI Buyers, structured Schema.org deployment, and LLM citation optimization.

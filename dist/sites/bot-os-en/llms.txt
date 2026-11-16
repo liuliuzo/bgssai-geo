@@ -1,0 +1,10 @@
+# BGSSAI Bot Autonomous Shell | BGSSAI GEO
+> BGSSAI Bot Autonomous Shell (bot-os-en.bgssai-geo.com) publishes structured technical articles on In-Chat Cloud Computer Takeover and Cross-App MCP Task Execution, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://bot-os-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/bot-os-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [BGSSAI Bot Autonomous Shell: In-Chat Cloud Computer Takeover and Cross-App MCP Task Execution & AI Search Indexing Guide (2026)](https://bot-os-en.bgssai-geo.com/articles/bot-os-en-geo-indexing-and-application-guide-2026/): Published on bot-os-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers In-Chat Cloud Computer Takeover and Cross-App MCP Task Execution, structured Schema.org deployment, and LLM citation optimization.

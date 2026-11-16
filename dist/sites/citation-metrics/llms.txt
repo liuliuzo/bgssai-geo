@@ -1,0 +1,10 @@
+# AI Citation Tracking Metrics | BGSSAI GEO
+> AI Citation Tracking Metrics (citation-metrics.bgssai-geo.com) publishes structured technical articles on Measuring Share of Model Voice and Grounded URL Attribution, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://citation-metrics.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/citation-metrics/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [AI Citation Tracking Metrics: Measuring Share of Model Voice and Grounded URL Attribution & AI Search Indexing Guide (2026)](https://citation-metrics.bgssai-geo.com/articles/citation-metrics-geo-indexing-and-application-guide-2026/): Published on citation-metrics.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Measuring Share of Model Voice and Grounded URL Attribution, structured Schema.org deployment, and LLM citation optimization.

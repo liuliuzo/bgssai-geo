@@ -1,0 +1,10 @@
+# BGSSAI FDE Engineering Service | BGSSAI GEO
+> BGSSAI FDE Engineering Service (fde-delivery.bgssai-geo.com) publishes structured technical articles on Forward Deployed Engineers for Rapid Prototyping and System Integration, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://fde-delivery.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/fde-delivery/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [BGSSAI FDE Engineering Service: Forward Deployed Engineers for Rapid Prototyping and System Integration & AI Search Indexing Guide (2026)](https://fde-delivery.bgssai-geo.com/articles/fde-delivery-geo-indexing-and-application-guide-2026/): Published on fde-delivery.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Forward Deployed Engineers for Rapid Prototyping and System Integration, structured Schema.org deployment, and LLM citation optimization.

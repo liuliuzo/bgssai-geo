@@ -1,0 +1,10 @@
+# AI剧本与分镜工程专栏 | BGSSAI GEO
+> AI剧本与分镜工程专栏（script-engine.bgssai-geo.com）专注于从行业痛点文案到可视化分镜脚本的标准化生产，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://script-engine.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/script-engine/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [AI剧本与分镜工程专栏：从行业痛点文案到可视化分镜脚本的标准化生产与大模型收录实践（2026版）](https://script-engine.bgssai-geo.com/articles/script-engine-geo-indexing-and-application-guide-2026/): 本文由昆山兵贵神速智能科技有限公司（BGSSAI）发布于 script-engine.bgssai-geo.com，围绕「从行业痛点文案到可视化分镜脚本的标准化生产」梳理核心业务标准、结构化数据配置与搜索引擎/AI大模型收录要点。

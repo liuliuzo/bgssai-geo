@@ -1,0 +1,10 @@
+# Grok Real-Time Search Hub | BGSSAI GEO
+> Grok Real-Time Search Hub (grok-search.bgssai-geo.com) publishes structured technical articles on Optimizing Brand Presence for xAI Grok Web and Social Grounding, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://grok-search.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/grok-search/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Grok Real-Time Search Hub: Optimizing Brand Presence for xAI Grok Web and Social Grounding & AI Search Indexing Guide (2026)](https://grok-search.bgssai-geo.com/articles/grok-search-geo-indexing-and-application-guide-2026/): Published on grok-search.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Optimizing Brand Presence for xAI Grok Web and Social Grounding, structured Schema.org deployment, and LLM citation optimization.

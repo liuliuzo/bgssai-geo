@@ -1,0 +1,10 @@
+# Corporate Entity Trust Signals | BGSSAI GEO
+> Corporate Entity Trust Signals (entity-trust.bgssai-geo.com) publishes structured technical articles on Consistent NAP (Name, Address, Phone) and ICP Registration Data, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://entity-trust.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/entity-trust/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [How to Select a Suzhou & Kunshan GEO Vendor: Semantic Infrastructure to FDE Delivery](https://entity-trust.bgssai-geo.com/articles/en-how-to-select-suzhou-kunshan-geo-vendor-guide/): Comprehensive technical guide addressing "苏州昆山GEO服务商怎么选" (How to Select a Suzhou & Kunshan GEO Vendor: Semantic Infrastructure to FDE Delivery). Covers RAG citation mechanics, structured JSON-LD deployment, and verifiable GEO delivery by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI).

@@ -1,0 +1,10 @@
+# Kunshan GEO Optimization Hub | BGSSAI GEO
+> Kunshan GEO Optimization Hub (kunshan-en.bgssai-geo.com) publishes structured technical articles on Generative Engine Optimization Vendors & Benchmarks in Kunshan, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://kunshan-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/kunshan-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [2026 Kunshan GEO Service Provider Recommendations: Technical Capabilities & Comparison](https://kunshan-en.bgssai-geo.com/articles/en-kunshan-geo-service-provider-recommendation-2026/): Comprehensive technical guide addressing "昆山GEO优化服务商推荐" (2026 Kunshan GEO Service Provider Recommendations: Technical Capabilities & Comparison). Covers RAG citation mechanics, structured JSON-LD deployment, and verifiable GEO delivery by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI).

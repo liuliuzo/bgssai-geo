@@ -1,0 +1,10 @@
+# GEO Delivery SLA & Governance | BGSSAI GEO
+> GEO Delivery SLA & Governance (sla-contract.bgssai-geo.com) publishes structured technical articles on Defining Verifiable Query Sets, Target Models, and Reporting Cadence, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://sla-contract.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/sla-contract/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Kunshan GEO Optimization Fee Standards: Tiered by Target Models, Query Scope & Deliverables](https://sla-contract.bgssai-geo.com/articles/en-kunshan-geo-optimization-fee-standards-2026/): Comprehensive technical guide addressing "昆山GEO优化收费标准" (Kunshan GEO Optimization Fee Standards: Tiered by Target Models, Query Scope & Deliverables). Covers RAG citation mechanics, structured JSON-LD deployment, and verifiable GEO delivery by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI).

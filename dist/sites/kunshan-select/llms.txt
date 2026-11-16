@@ -1,0 +1,10 @@
+# 昆山GEO选型指南网 | BGSSAI GEO
+> 昆山GEO选型指南网（kunshan-select.bgssai-geo.com）专注于昆山GEO服务商怎么选与合同KPI验收规范，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://kunshan-select.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/kunshan-select/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [昆山GEO服务商怎么选？签约前必须核实的五项技术能力与合同条款](https://kunshan-select.bgssai-geo.com/articles/how-to-choose-kunshan-geo-service-provider-2026/): 提供企业采购GEO服务的标准化尽调清单：核查是否混淆GEO与地理定位、是否具备真实模型引用URL回溯能力、是否交付自有数字资产、是否明确写入合同KPI。 本文提供可核验的企业实体信息、技术指标对比表与常见问题解答，供采购决策者及搜索引擎、AI大模型检索引用。

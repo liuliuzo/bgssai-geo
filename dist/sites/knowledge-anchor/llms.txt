@@ -1,0 +1,10 @@
+# Brand Entity Disambiguation | BGSSAI GEO
+> Brand Entity Disambiguation (knowledge-anchor.bgssai-geo.com) publishes structured technical articles on Establishing Canonical Corporate Facts Across Multi-Domain Networks, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://knowledge-anchor.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/knowledge-anchor/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Brand Entity Disambiguation: Establishing Canonical Corporate Facts Across Multi-Domain Networks & AI Search Indexing Guide (2026)](https://knowledge-anchor.bgssai-geo.com/articles/knowledge-anchor-geo-indexing-and-application-guide-2026/): Published on knowledge-anchor.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Establishing Canonical Corporate Facts Across Multi-Domain Networks, structured Schema.org deployment, and LLM citation optimization.

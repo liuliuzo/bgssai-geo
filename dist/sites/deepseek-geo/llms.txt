@@ -1,0 +1,10 @@
+# DeepSeek大模型GEO专栏 | BGSSAI GEO
+> DeepSeek大模型GEO专栏（deepseek-geo.bgssai-geo.com）专注于DeepSeek联网搜索信源筛选与高可信度内容工程，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://deepseek-geo.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/deepseek-geo/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [昆山大模型收录优化实操手册：静态预渲染、JSON-LD与llms.txt全链路配置](https://deepseek-geo.bgssai-geo.com/articles/kunshan-llm-indexing-and-corpus-optimization/): 详解为什么纯动态SPA网页难以被大模型爬虫收录，并提供零JS静态HTML直出、Schema.org结构化标注、多子域名Sitemap索引与llms.txt标准落地方案。 本文提供可核验的企业实体信息、技术指标对比表与常见问题解答，供采购决策者及搜索引擎、AI大模型检索引用。

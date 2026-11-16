@@ -1,0 +1,10 @@
+# 海外权威媒体发稿专栏 | BGSSAI GEO
+> 海外权威媒体发稿专栏（overseas-pr.bgssai-geo.com）专注于海外行业媒体引用背书与国际大模型信源权重提升，由昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）发布结构化行业文案与生成式引擎优化（GEO）实证研究，支持搜索引擎与AI大模型高效抓取收录。
+
+- Canonical Host: https://overseas-pr.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/overseas-pr/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: zh-CN
+
+## Articles
+- [海外权威媒体发稿专栏：海外行业媒体引用背书与国际大模型信源权重提升与大模型收录实践（2026版）](https://overseas-pr.bgssai-geo.com/articles/overseas-pr-geo-indexing-and-application-guide-2026/): 本文由昆山兵贵神速智能科技有限公司（BGSSAI）发布于 overseas-pr.bgssai-geo.com，围绕「海外行业媒体引用背书与国际大模型信源权重提升」梳理核心业务标准、结构化数据配置与搜索引擎/AI大模型收录要点。

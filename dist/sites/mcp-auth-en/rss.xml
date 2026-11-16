@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Model Context Protocol Security | BGSSAI GEO</title>
+    <link>https://mcp-auth-en.bgssai-geo.com/</link>
+    <description>Model Context Protocol Security (mcp-auth-en.bgssai-geo.com) publishes structured technical articles on Dual-Mode PAT and Chat-Issued OAuth Tokens for Safe Agent Tool Calls, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.</description>
+    <language>en</language>
+    <item>
+      <title>Model Context Protocol Security: Dual-Mode PAT and Chat-Issued OAuth Tokens for Safe Agent Tool Calls &amp; AI Search Indexing Guide (2026)</title>
+      <link>https://mcp-auth-en.bgssai-geo.com/articles/mcp-auth-en-geo-indexing-and-application-guide-2026/</link>
+      <guid isPermaLink="true">https://mcp-auth-en.bgssai-geo.com/articles/mcp-auth-en-geo-indexing-and-application-guide-2026/</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Published on mcp-auth-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Dual-Mode PAT and Chat-Issued OAuth Tokens for Safe Agent Tool Calls, structured Schema.org deployment, and LLM citation optimization.</description>
+    </item>
+  </channel>
+</rss>

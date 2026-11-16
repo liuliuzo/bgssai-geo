@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bgssai-geo 页面跳转真值（PAGE-FLOW）</title>
+  <link rel="stylesheet" href="../assets/proto.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="./home.html">BGSSAI GEO</a>
+      <nav class="nav-links">
+        <a href="./index.html">原型清单</a>
+        <a class="active" href="./PAGE-FLOW.html">PAGE-FLOW</a>
+        <a href="./home.html">总站首页</a>
+        <a href="./subdomains.html">子域名矩阵</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>页面跳转矩阵（PAGE-FLOW）</h1>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>原型文件</th>
+          <th>前端路由</th>
+          <th>主要入口</th>
+          <th>可跳转目标</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="./home.html">home.html</a></td>
+          <td><code>/</code></td>
+          <td>全局顶栏品牌标识、导航首页链接</td>
+          <td><code>/subdomains</code>、<code>/categories/:category</code>、<code>/sites/:subdomain</code>、<code>/articles/:slug</code>、<code>/search</code></td>
+        </tr>
+        <tr>
+          <td><a href="./subdomains.html">subdomains.html</a></td>
+          <td><code class="n-route">/subdomains</code></td>
+          <td>全局顶栏「子域名矩阵」、总站首页全部子域名入口</td>
+          <td><code>/</code>、<code>/sites/:subdomain</code>、<code>/categories/:category</code>、<code>/search</code></td>
+        </tr>
+        <tr>
+          <td><a href="./site-home.html">site-home.html</a></td>
+          <td><code class="n-route">/sites/:subdomain</code></td>
+          <td>子域名 Host 直达、总站首页子域名卡片、子域名目录页表格项</td>
+          <td><code>/</code>、<code>/subdomains</code>、<code>/sites/:subdomain/articles/:slug</code>、<code>/categories/:category</code></td>
+        </tr>
+        <tr>
+          <td><a href="./site-article.html">site-article.html</a></td>
+          <td><code class="n-route">/sites/:subdomain/articles/:slug</code></td>
+          <td>子域名站点文章列表项、关联文章链接</td>
+          <td><code>/sites/:subdomain</code>、<code>/articles/:slug</code>、<code>/categories/:category</code>、<code>/subdomains</code></td>
+        </tr>
+        <tr>
+          <td><a href="./article-detail.html">article-detail.html</a></td>
+          <td><code class="n-route">/articles/:slug</code></td>
+          <td>总站首页最新文章列表、分类归档文章列表、站内检索结果</td>
+          <td><code>/</code>、<code>/sites/:subdomain</code>、<code>/sites/:subdomain/articles/:slug</code>、<code>/categories/:category</code></td>
+        </tr>
+        <tr>
+          <td><a href="./category-archive.html">category-archive.html</a></td>
+          <td><code class="n-route">/categories/:category</code></td>
+          <td>总站首页分类卡片、面包屑分类链接、文章详情分类标签</td>
+          <td><code>/</code>、<code>/subdomains</code>、<code>/sites/:subdomain</code>、<code>/articles/:slug</code></td>
+        </tr>
+        <tr>
+          <td><a href="./search.html">search.html</a></td>
+          <td><code class="n-route">/search</code></td>
+          <td>全局顶栏「文章检索」、总站检索栏提交</td>
+          <td><code>/</code>、<code>/sites/:subdomain</code>、<code>/sites/:subdomain/articles/:slug</code>、<code>/articles/:slug</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="site-footer">
+    © 2026 昆山兵贵神速智能科技有限公司 · <a href="https://www.bgssai.com/terms-of-service/" target="_blank" rel="noopener noreferrer">用户协议</a> · <a href="https://www.bgssai.com/privacy-policy/" target="_blank" rel="noopener noreferrer">隐私政策</a> · <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2024070062号-7</a>
+  </footer>
+</body>
+</html>

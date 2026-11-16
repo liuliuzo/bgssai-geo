@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>LLM RAG Indexing Engineering | BGSSAI GEO</title>
+    <link>https://rag-indexing.bgssai-geo.com/</link>
+    <description>LLM RAG Indexing Engineering (rag-indexing.bgssai-geo.com) publishes structured technical articles on Structuring Web Content for Retrieval-Augmented Generation Pipelines, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.</description>
+    <language>en</language>
+    <item>
+      <title>Kunshan LLM Indexing Optimization Manual: Static Pre-Rendering, JSON-LD &amp; llms.txt</title>
+      <link>https://rag-indexing.bgssai-geo.com/articles/en-kunshan-llm-indexing-and-corpus-optimization/</link>
+      <guid isPermaLink="true">https://rag-indexing.bgssai-geo.com/articles/en-kunshan-llm-indexing-and-corpus-optimization/</guid>
+      <pubDate>Tue, 10 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Comprehensive technical guide addressing &quot;昆山大模型收录优化&quot; (Kunshan LLM Indexing Optimization Manual: Static Pre-Rendering, JSON-LD &amp; llms.txt). Covers RAG citation mechanics, structured JSON-LD deployment, and verifiable GEO delivery by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+# Enterprise FAQ Schema Library | BGSSAI GEO
+> Enterprise FAQ Schema Library (faq-schema-en.bgssai-geo.com) publishes structured technical articles on Pre-Built Question-Answer Blocks for High-Intent Buyer Queries, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://faq-schema-en.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/faq-schema-en/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Enterprise FAQ Schema Library: Pre-Built Question-Answer Blocks for High-Intent Buyer Queries & AI Search Indexing Guide (2026)](https://faq-schema-en.bgssai-geo.com/articles/faq-schema-en-geo-indexing-and-application-guide-2026/): Published on faq-schema-en.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Pre-Built Question-Answer Blocks for High-Intent Buyer Queries, structured Schema.org deployment, and LLM citation optimization.

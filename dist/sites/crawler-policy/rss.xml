@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Crawler Access &amp; Robots Hub | BGSSAI GEO</title>
+    <link>https://crawler-policy.bgssai-geo.com/</link>
+    <description>AI Crawler Access &amp; Robots Hub (crawler-policy.bgssai-geo.com) publishes structured technical articles on Optimizing robots.txt for GPTBot, ClaudeBot, PerplexityBot, and Baiduspider, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.</description>
+    <language>en</language>
+    <item>
+      <title>AI Crawler Access &amp; Robots Hub: Optimizing robots.txt for GPTBot, ClaudeBot, PerplexityBot, and Baiduspider &amp; AI Search Indexing Guide (2026)</title>
+      <link>https://crawler-policy.bgssai-geo.com/articles/crawler-policy-geo-indexing-and-application-guide-2026/</link>
+      <guid isPermaLink="true">https://crawler-policy.bgssai-geo.com/articles/crawler-policy-geo-indexing-and-application-guide-2026/</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Published on crawler-policy.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Optimizing robots.txt for GPTBot, ClaudeBot, PerplexityBot, and Baiduspider, structured Schema.org deployment, and LLM citation optimization.</description>
+    </item>
+  </channel>
+</rss>

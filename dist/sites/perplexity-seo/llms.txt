@@ -1,0 +1,10 @@
+# Perplexity Citation Engineering | BGSSAI GEO
+> Perplexity Citation Engineering (perplexity-seo.bgssai-geo.com) publishes structured technical articles on Building Source Authority for Answer Engine Citation Ranking, maintained by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI) for search engine and LLM citation indexing.
+
+- Canonical Host: https://perplexity-seo.bgssai-geo.com/
+- Hub Path: https://www.bgssai-geo.com/sites/perplexity-seo/
+- Publisher: 昆山兵贵神速智能科技有限公司 (BGSS / BGSSAI, https://www.bgssai.com)
+- Language: en
+
+## Articles
+- [Perplexity Citation Engineering: Building Source Authority for Answer Engine Citation Ranking & AI Search Indexing Guide (2026)](https://perplexity-seo.bgssai-geo.com/articles/perplexity-seo-geo-indexing-and-application-guide-2026/): Published on perplexity-seo.bgssai-geo.com by Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSS / BGSSAI), this guide covers Building Source Authority for Answer Engine Citation Ranking, structured Schema.org deployment, and LLM citation optimization.
