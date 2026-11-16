@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://mfg-growth.bgssaigeo.com/sitemap.xml
+Sitemap: https://mfg-growth.bgssai-saas.com/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/mfg-growth/sitemap.xml

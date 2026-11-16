@@ -1083,7 +1083,7 @@ function renderSubdomainPolymorphicHomePage({ subdomain, category, subdomains, a
           </div>`
         : `${archetypeSpecialBlock}
           <div class="section-heading">
-            <h2>${isEn ? `In-Depth GEO Reports for ${subdomain.region_short}` : `面向「${subdomain.primary_query}」的 3 篇深度实证文章`}</h2>
+            <h2>${isEn ? `In-Depth GEO Reports for ${subdomain.region_short} (${subArticles.length} Articles)` : `面向「${subdomain.primary_query}」的 ${subArticles.length} 篇专属不重样深度文章`}</h2>
           </div>
           <div class="${mainGridClass}">
             ${articlesCardsHtml}
@@ -1275,7 +1275,7 @@ function renderHubHomePage({ lang, categories, subdomains, articles }) {
 
     <div class="section-heading">
       <h2>${isEn ? 'Latest LLM-Optimized Marketing Articles' : '最新发布的 LLM 收录优先营销文章'}</h2>
-      <a href="/search/">${isEn ? 'View All 600 Articles' : '查看全部 600 篇文章'}</a>
+      <a href="/search/">${isEn ? `View All ${articles.length} Articles` : `查看全部 ${articles.length} 篇文章`}</a>
     </div>
     <div class="data-table-wrap">
       <table class="data-table">
@@ -1909,63 +1909,66 @@ function main() {
     );
     writeFileEnsured(path.join(subDir, 'llms.txt'), buildSubdomainLlmsTxt(subdomain, subArticles));
 
-    const flagshipArticle = subArticles[0];
-    if (flagshipArticle) {
-      const canonicalUrl = `https://${subdomain.full_domain}/articles/${flagshipArticle.slug}/`;
-      const altArticle = flagshipArticle.alternate_slug ? artMap.get(flagshipArticle.alternate_slug) : null;
+    for (const subArt of subArticles) {
+      const canonicalUrl = `https://${subdomain.full_domain}/articles/${subArt.slug}/`;
+      const altArticle = subArt.alternate_slug ? artMap.get(subArt.alternate_slug) : null;
       const altSub = altArticle ? subMap.get(altArticle.subdomain_key) : null;
       const zhUrl =
-        flagshipArticle.lang === 'zh-CN'
+        subArt.lang === 'zh-CN'
           ? canonicalUrl
           : altArticle && altSub
             ? `https://${altSub.full_domain}/articles/${altArticle.slug}/`
             : undefined;
       const enUrl =
-        flagshipArticle.lang === 'en'
+        subArt.lang === 'en'
           ? canonicalUrl
           : altArticle && altSub
             ? `https://${altSub.full_domain}/articles/${altArticle.slug}/`
             : undefined;
 
       const breadcrumbHtml = `<nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="${flagshipArticle.lang === 'en' ? '/en/' : '/'}">${flagshipArticle.lang === 'en' ? 'BGSSAI GEO Hub' : '总站首页'}</a>
+      <a href="${subArt.lang === 'en' ? '/en/' : '/'}">${subArt.lang === 'en' ? 'BGSSAI GEO Hub' : '总站首页'}</a>
       <span>/</span>
-      <a href="/categories/${escapeHtml(category.category_code)}/">${escapeHtml(flagshipArticle.lang === 'en' ? category.name_en : category.name_zh)}</a>
+      <a href="/categories/${escapeHtml(category.category_code)}/">${escapeHtml(subArt.lang === 'en' ? category.name_en : category.name_zh)}</a>
       <span>/</span>
       <a href="/sites/${escapeHtml(subdomain.subdomain_key)}/">${escapeHtml(subdomain.full_domain)}</a>
       <span>/</span>
-      <span>${escapeHtml(flagshipArticle.title)}</span>
+      <span>${escapeHtml(subArt.title)}</span>
     </nav>`;
 
       const pageHtml = renderHtmlDocument({
-        lang: flagshipArticle.lang,
-        title: `${flagshipArticle.title} - ${subdomain.site_name}`,
-        description: flagshipArticle.tldr_conclusion || flagshipArticle.summary,
-        keywords: flagshipArticle.keywords,
+        lang: subArt.lang,
+        title: `${subArt.title} - ${subdomain.site_name}`,
+        description: subArt.tldr_conclusion || subArt.summary,
+        keywords: subArt.keywords,
         canonicalUrl,
         zhAlternateUrl: zhUrl,
         enAlternateUrl: enUrl,
-        mdAlternateUrl: `/articles/${flagshipArticle.slug}/index.md`,
+        mdAlternateUrl: `/articles/${subArt.slug}/index.md`,
         ogType: 'article',
-        publishedTime: flagshipArticle.published_at,
-        modifiedTime: flagshipArticle.updated_at,
+        publishedTime: subArt.published_at,
+        modifiedTime: subArt.updated_at,
         themeCode: subdomain.theme_code,
         archetypeCode: subdomain.layout_archetype,
         icpNumber: subdomain.icp_number,
-        jsonLdList: buildArticleJsonLd(flagshipArticle, subdomain, category, canonicalUrl),
+        jsonLdList: buildArticleJsonLd(subArt, subdomain, category, canonicalUrl),
         headerHtml: renderHeader({
-          lang: flagshipArticle.lang,
+          lang: subArt.lang,
           activeNav: 'subdomains',
           brandTitle: `${subdomain.full_domain} · 兵贵神速`,
           brandHref: `/sites/${subdomain.subdomain_key}/`,
-          zhHref: altArticle && flagshipArticle.lang === 'en' ? `/articles/${altArticle.slug}/` : `/articles/${flagshipArticle.slug}/`,
-          enHref: altArticle && flagshipArticle.lang === 'zh-CN' ? `/articles/${altArticle.slug}/` : `/articles/${flagshipArticle.slug}/`,
+          zhHref: altArticle && subArt.lang === 'en' ? `/articles/${altArticle.slug}/` : `/articles/${subArt.slug}/`,
+          enHref: altArticle && subArt.lang === 'zh-CN' ? `/articles/${altArticle.slug}/` : `/articles/${subArt.slug}/`,
           customNavLabels: subdomain.nav_labels
         }),
-        bodyHtml: breadcrumbHtml + renderArticleBodyContent(flagshipArticle, subdomain, category, allArticles, subdomains)
+        bodyHtml: breadcrumbHtml + renderArticleBodyContent(subArt, subdomain, category, allArticles, subdomains)
       });
 
-      writeFileEnsured(path.join(subDir, 'articles', flagshipArticle.slug, 'index.html'), pageHtml);
+      writeFileEnsured(path.join(subDir, 'articles', subArt.slug, 'index.html'), pageHtml);
+      writeFileEnsured(
+        path.join(subDir, 'articles', subArt.slug, 'index.md'),
+        buildArticleMarkdown(subArt, subdomain, category)
+      );
     }
   }
 

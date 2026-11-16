@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bot-agent.bgss-geo.com/</loc>
+    <loc>https://bot-agent.bgssai-chat.com/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bot-agent.bgss-geo.com/articles/bot-agent-vendor-selection-and-evaluation-2026/</loc>
+    <loc>https://bot-agent.bgssai-chat.com/articles/bot-agent-vendor-selection-and-evaluation-2026/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://bot-agent.bgss-geo.com/articles/bot-agent-pricing-standards-and-rag-indexing-2026/</loc>
+    <loc>https://bot-agent.bgssai-chat.com/articles/bot-agent-pricing-standards-and-rag-indexing-2026/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://bot-agent.bgss-geo.com/articles/bot-agent-implementation-playbook-and-faq-2026/</loc>
+    <loc>https://bot-agent.bgssai-chat.com/articles/bot-agent-implementation-playbook-and-faq-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bot-agent.bgssai-chat.com/articles/bot-agent-90day-industrial-case-review-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bot-agent.bgssai-chat.com/articles/bot-agent-multi-llm-citation-algorithm-guide-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bot-agent.bgssai-chat.com/articles/bot-agent-contract-sla-and-due-diligence-2026/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>

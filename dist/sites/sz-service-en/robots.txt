@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://sz-service-en.bgssaigeo.com/sitemap.xml
+Sitemap: https://sz-service-en.bgssai-saas.com/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/sz-service-en/sitemap.xml
