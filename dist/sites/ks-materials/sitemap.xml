@@ -7,9 +7,21 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ks-materials.bgssai-geo.com/articles/ks-materials-geo-indexing-and-application-guide-2026/</loc>
+    <loc>https://ks-materials.bgssai-geo.com/articles/ks-materials-vendor-selection-and-evaluation-2026/</loc>
     <lastmod>2026-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://ks-materials.bgssai-geo.com/articles/ks-materials-pricing-standards-and-rag-indexing-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://ks-materials.bgssai-geo.com/articles/ks-materials-implementation-playbook-and-faq-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
 </urlset>

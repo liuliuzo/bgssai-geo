@@ -16,6 +16,7 @@ const CACHE_TTL_MS = 2000;
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
+  '.md': 'text/markdown; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.js': 'application/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
@@ -121,14 +122,11 @@ function extractSubdomainFromHost(hostHeader) {
   if (!host || host === 'localhost' || host === '127.0.0.1' || host.startsWith('www.')) {
     return null;
   }
-  const suffixes = ['.bgssai-geo.com', '.bgss-geo.com', '.bgssai-geo.cn', '.bgssaigeo.com', '.localhost'];
-  for (const suffix of suffixes) {
-    if (host.endsWith(suffix)) {
-      const sub = host.slice(0, host.length - suffix.length);
-      if (/^[a-z0-9-]{1,63}$/.test(sub) && knownSubdomains.has(sub)) {
-        return sub;
-      }
-    }
+  const firstDot = host.indexOf('.');
+  if (firstDot <= 0) return null;
+  const sub = host.slice(0, firstDot);
+  if (/^[a-z0-9-]{1,63}$/.test(sub) && knownSubdomains.has(sub)) {
+    return sub;
   }
   return null;
 }
@@ -148,8 +146,13 @@ function resolveStaticFile(subdomainKey, urlPath) {
     return null;
   }
 
-  // Shared assets always resolve from root dist
-  if (cleanPath.startsWith('/assets/') || cleanPath.startsWith('/sites/') || cleanPath.startsWith('/categories/') || cleanPath.startsWith('/subdomains') || cleanPath.startsWith('/search')) {
+  if (
+    cleanPath.startsWith('/assets/') ||
+    cleanPath.startsWith('/sites/') ||
+    cleanPath.startsWith('/categories/') ||
+    cleanPath.startsWith('/subdomains') ||
+    cleanPath.startsWith('/search')
+  ) {
     const candidate = path.resolve(DIST_DIR, '.' + cleanPath);
     if (!candidate.startsWith(DIST_DIR)) return null;
     if (fs.existsSync(candidate) && fs.statSync(candidate).isDirectory()) {
@@ -161,7 +164,6 @@ function resolveStaticFile(subdomainKey, urlPath) {
     }
   }
 
-  // If accessed via a recognized subdomain Host, map /, /articles/<slug>, /sitemap.xml, /rss.xml, /robots.txt, /llms.txt to dist/sites/<subdomainKey>/
   if (subdomainKey) {
     const subRoot = path.join(DIST_DIR, 'sites', subdomainKey);
     const subCandidate = path.resolve(subRoot, '.' + cleanPath);
@@ -176,7 +178,6 @@ function resolveStaticFile(subdomainKey, urlPath) {
     }
   }
 
-  // Fallback to root dist
   const rootCandidate = path.resolve(DIST_DIR, '.' + cleanPath);
   if (!rootCandidate.startsWith(DIST_DIR)) return null;
   if (fs.existsSync(rootCandidate) && fs.statSync(rootCandidate).isDirectory()) {
@@ -201,7 +202,6 @@ export function createGeoServer() {
     const reqUrl = new URL(req.url || '/', `http://${req.headers.host || 'localhost'}`);
     const pathname = reqUrl.pathname;
 
-    // 1. Unified Health Check Endpoints (BGSSAI Standards §13)
     if (pathname === '/bgssai/health/liveness') {
       sendJson(res, 200, {
         code: 200,
@@ -284,8 +284,7 @@ export function createGeoServer() {
       return;
     }
 
-    // 2. Resolve subdomain via Host header
-    const subdomainKey = extractSubdomainFromHost(req.headers.host);
+    const subdomainKey = extractSubdomainFromHost(req.headers['x-forwarded-host'] || req.headers.host);
     const filePath = resolveStaticFile(subdomainKey, pathname);
 
     if (!filePath) {

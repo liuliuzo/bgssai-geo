@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://suzhou-price.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/suzhou-price/sitemap.xml
+Sitemap: https://suzhou-price.bgssai-blog.com/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/suzhou-price/sitemap.xml

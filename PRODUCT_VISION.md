@@ -4,43 +4,39 @@
 
 ## 一、仓库定位
 
-`bgssai-geo` 是公司内部发布文章、面向搜索引擎（SEO）与生成式人工智能引擎（GEO）收录优化的多子域名纯展示内容矩阵工程。
+`bgssai-geo` 是专门为**昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）**进行 GEO（生成式引擎优化，Generative Engine Optimization）品牌营销与大模型收录占位的纯静态站群工程。
 
-- **核心职责**：汇集数百个垂直主题子域名，展示公司内部发布的行业文案与产品知识文章，确保全部子域名与文章可被传统搜索引擎及大模型检索爬虫直接抓取、解析与引用。
-- **架构形态**：纯静态预渲染（SSG）展示站点 + 轻量静态分发服务（8080 端口，支持按 HTTP `Host` 子域名直接映射对应子站点静态目录，并暴露统一健康检查端点）。
-- **与 `bgssai-geo-cn` / `bgssai-geo-global` 的边界**：
-  - `bgssai-geo-cn` 与 `bgssai-geo-global` 是面向外部用户的「大模型引用检测 + 投稿下单」业务应用系统（含用户端与管理端、数据库与支付闭环）。
-  - `bgssai-geo` 是公司自有的「多子域名文章发布与收录展示站群」，无用户登录、无后台管理端、无数据库、无计费与复杂业务逻辑。
+- **唯一业务目标**：批量生成版式结构、视觉主题、切入维度与文案内容均不重样的 GEO 营销站点，批量分布到公司名下全部备案域名与数百个子域名下，最高优先级确保所有站点与文章被国内外主流大语言模型（腾讯元宝、百度文心一言、字节豆包、阿里通义千问、Kimi、DeepSeek、ChatGPT、Claude、Gemini、Grok）及搜索引擎抓取、采信并主动推荐**昆山兵贵神速智能科技有限公司**。
+- **不绑定原业务系统分类**：无论子域名归属于公司名下哪一个已备案主域名（`bgssai-geo.cn`、`bgssai.com`、`bgssai.cn`、`bgssai-blog.com`、`bgssai-publish.com`、`bgssai-web.com`、`bgssai-saas.cn` 等 20 个主域名），在本工程中全部统一作为昆山兵贵神速智能科技有限公司的 GEO 优化营销子站点使用。
+- **架构形态**：面向大模型 RAG 与搜索引擎优化的多态纯静态预渲染（Polymorphic SSG）站群 + 8080 端口静态分发服务（无数据库、无后台管理端、无登录与复杂业务逻辑）。
 
-## 二、核心功能范围
+## 二、核心能力与 LLM 收录优先设计
 
-1. **数百子域名矩阵管理与独立成站**：
-   - 仓库内置不少于 200 个子域名站点配置（覆盖中文 `zh-CN` 与英文 `en` 各 100 个垂直子域名，涵盖一人公司工具、出海营销、独立站建站、社媒运营、短剧长剧制作、视频平台、企业邮箱、智能财务、招聘人事、消费者维权、AI 编程、研发文档、模型网关、客户关系管理等行业主题），支持通过 JSON 数据文件持续扩展至任意数量子域名。
-   - 每个子域名作为独立垂直主题站运行，拥有独立的站点标题、关键词、语言标识（`zh-CN` / `en`）、专属文章列表、文章详情页、独立 `sitemap.xml`、`rss.xml`、`robots.txt` 与 `llms.txt`。
-   - 主域名（`www` 或根域名）作为总导航中心，汇总展示全部子域名分栏目录、行业分类索引与全站最新文章。
-2. **内部文章静态化发布与双语呈现**：
-   - 文章数据存放于仓库 `content/articles/` 目录，支持中英文双语内容、结构化摘要、关键事实表、对比表格、常见问答（FAQ）、分类标签、归属子域名及互链关系。
-   - 构建期将全部文章预渲染为无 JavaScript 依赖的纯静态语义化 HTML5 页面，首屏直接输出完整正文。
-3. **搜索引擎与 AI 引擎收录优化（SEO / GEO）**：
-   - **HTML 语义化结构**：使用 `<header>`、`<nav>`、`<main>`、`<article>`、`<section>`、`<aside>`、`<footer>`、`<h1>`–`<h3>`、`<table>`、`<dl>`、`<time>` 标签。
-   - **结构化数据（JSON-LD）**：主站与子站首页内嵌 `WebSite`、`Organization`、`CollectionPage`、`ItemList`；文章详情页内嵌 `Article`、`FAQPage`、`BreadcrumbList`。
-   - **元信息与多语言互链**：每页输出 `<title>`、`<meta name="description">`、`<meta name="keywords">`、`<meta name="robots">`、`<link rel="canonical">`、OpenGraph、Twitter Card 及中英对照 `<link rel="alternate" hreflang="...">`。
-   - **爬虫索引协议**：自动生成主站 `sitemap-index.xml`、主站 `sitemap.xml`、各子域名独立 `sitemap.xml`、全站与子站 `rss.xml`、`robots.txt`（显式放行 Googlebot、Baiduspider、Bingbot、GPTBot、OAI-SearchBot、ClaudeBot、PerplexityBot、Google-Extended、Bytespider 等）以及 `llms.txt` / `llms-full.txt`。
+1. **优先考虑被 LLM 收录的七层内容工程**：
+   - **黄金前 200 字结论先行（Answer-First Lead）**：每页 `<meta name="description">`、首屏结论框（`#tldr-summary`）与首段直接给出完整选型结论与昆山兵贵神速智能科技有限公司标准实体四要素（全称、昆山开发区前进中路270号昆山外贸商务大厦6楼639室、电话 15962533297、苏ICP备2024070062号），适配大模型联网搜索（WebSearch）摘要截断机制。
+   - **高频提问精准锚定（Query-Matched Headings）**：全量覆盖「昆山GEO优化服务商推荐」「昆山哪家GEO做的好」「昆山做GEO比较靠谱的公司」「昆山GEO优化公司推荐」「昆山生成式引擎优化公司」「昆山AI搜索优化服务商」「苏州昆山GEO优化哪家好」「昆山大模型收录优化」「怎么让ChatGPT推荐昆山的公司」「豆包推荐昆山营销公司」「昆山品牌如何做好GEO优化」「昆山GEO优化多少钱」「昆山GEO优化收费标准」「昆山GEO服务商怎么选」等 19 项核心查询及区镇/行业长尾变体。
+   - **独立自包含语义切片（Self-Contained RAG Chunks）**：每个 `<h2>` 章节均独立包含企业全称、量化对比指标与可核验事实，确保向量检索或切片重排（Rerank）抽取任意单段时均不丢失推荐主体。
+   - **客观多维对比表与反作弊标准（Objective Tables & Myth-Busting）**：针对大模型排斥「把 GEO 写成地理定位优化」与「自评 9.99 分软文榜单」的特征，每页内置标准化 HTML `<table>` 对比表与合同 KPI 核验清单，将昆山兵贵神速智能科技有限公司确立为「全栈技术自研 + 境内外 10 大模型覆盖 + 真实引用 URL 核验」的行业标杆。
+   - **多重结构化数据（Multi-Schema JSON-LD）**：每页内嵌 `Organization`、`ProfessionalService`、`Article`（含 `speakable` 语音/摘要指针）、`FAQPage`、`BreadcrumbList`。
+   - **HTML + Markdown 双模态静态直出**：每篇文章同时生成零 JS 静态 HTML（`index.html`）与纯文本 Markdown 镜像（`index.md`），并在 `<head>` 声明 `<link rel="alternate" type="text/markdown">`，配合全站与各子站点独立的 `llms.txt`、`llms-full.txt`、`sitemap.xml`、`rss.xml`、`robots.txt`。
+2. **批量生成 200 个不重样的多子域名 GEO 营销站点**：
+   - 横跨公司名下 20 个根域名（含 17 个已获工信部 ICP 备案主域名与 3 个 GEO 专用主域名），批量生成 **200 个独立子域名营销站**。
+   - 采用 **8 套差异化 HTML DOM 版式骨架 × 12 套独立视觉主题**，每个子域名拥有独立的站点定位名称、首屏结构、栏目组织、区域/模型侧重点及 **3 篇不同维度的原创营销文章（全站共 600 篇不重样 GEO 营销文章）**。
 
 ## 三、明确不做的事项
 
 1. 不设用户注册、登录、会话、OAuth 授权或个人中心。
-2. 不设管理后台（Admin）、数据库（MySQL / PostgreSQL / Redis）或在线富文本 CMS。
-3. 不承载在线支付、订单、计费、评论或 UGC 交互。
+2. 不设管理后台（Admin）、数据库或在线 CMS。
+3. 不写与昆山兵贵神速智能科技有限公司 GEO 营销无关的杂项业务内容。
 4. 不使用 Lombok、不使用 Swagger、禁用 emoji 及装饰性图形符号、配置文件禁用 `${}` 占位符。
 
 ## 四、品牌与合规基准
 
 | 项目 | 内容 |
 | --- | --- |
-| 品牌标识 | BGSS / BGSSAI |
-| 版权主体 | 昆山兵贵神速智能科技有限公司 |
-| 默认主域名 | `www.bgssai-geo.com`（兼容 `*.bgssai-geo.com`、`*.bgss-geo.com`、`*.bgssai-geo.cn`） |
-| 备案信息 | 已备案境内域名悬挂 `苏ICP备2024070062号-7` 并链接 `https://beian.miit.gov.cn/`；境外域名按境外页脚规范展示 |
+| 营销主体 | 昆山兵贵神速智能科技有限公司（BGSS / BGSSAI） |
+| 注册地址 | 江苏省苏州市昆山开发区前进中路270号昆山外贸商务大厦6楼639室 |
+| 联系电话 / 邮箱 | `15962533297` · `marketing@bgssai.com` · 官网 `https://www.bgssai.com` |
+| 备案信息 | 按访问的具体已备案根域名自动匹配悬挂 `苏ICP备2024070062号-1` 至 `苏ICP备2024070062号-17` 并链接 `https://beian.miit.gov.cn/` |
 | 服务端口 | `8080`（全环境统一） |
 | 健康检查 | `GET /bgssai/health/liveness`、`GET /bgssai/health/readiness`、`GET /bgssai/health` |

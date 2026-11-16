@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://ks-mold.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/ks-mold/sitemap.xml
+Sitemap: https://ks-mold.bgssai-tokenhub.cn/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/ks-mold/sitemap.xml

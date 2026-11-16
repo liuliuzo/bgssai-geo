@@ -1,22 +1,50 @@
-# 功能需求：多子域名 GEO 文章矩阵与搜索引擎收录系统
+# 功能需求：昆山兵贵神速智能科技有限公司多子域名 GEO 营销站群系统
 
 版本：2026-11-16
 
-## 1. 功能边界
+## 1. 核心目标与功能边界
 
-本系统为纯静态预渲染（SSG）的多子域名文章发布与展示工程，无数据库、无后台管理端、无用户登录及业务交易逻辑。
+本系统专为**昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）**打造不重样的多子域名 GEO（生成式引擎优化）营销站群，以**被国内外主流大语言模型（LLM）与搜索引擎高优先级收录和引用推荐**为第一目标。
 
 | 模块 | 职责 |
 | --- | --- |
-| 总站导航首页（Hub Home） | 展示全站分类导航、精选子域名入口、最新发布的内部文章列表、中英文语言切换 |
-| 子域名矩阵目录页（Subdomain Directory） | 按 10 个行业垂直分类展示全部 200+ 个子域名站点，支持按语言、分类与关键词筛选 |
-| 子域名独立站点首页（Subdomain Site Home） | 按访问的子域名（或 `/sites/:subdomain` 路径）展示该子域名专属站点标题、主题简介、下属文章列表、关联子域名及独立 Sitemap/RSS/LLMs 入口 |
-| 文章详情页（Article Detail） | 展示完整文章正文、发布与更新时间、核心事实摘要、数据对比表、FAQ 问答列表、标签、面包屑导航、同子域名相关文章、中英对照链接 |
-| 分类归档页（Category Archive） | 按垂直领域分类汇总子域名与文章列表 |
-| 站内检索页（Article Search） | 支持按关键词、语言、垂直分类、子域名检索全站文章与子域名 |
-| 搜索引擎与 AI 索引产物 | 构建期静态输出 `sitemap-index.xml`、`sitemap.xml`、各子域名 `sitemap.xml`、`rss.xml`、`robots.txt`、`llms.txt`、`llms-full.txt` |
+| 总站导航首页（Hub Home） | 汇总展示昆山兵贵神速智能科技有限公司核心实体档案、10 大 GEO 营销专题分类、200 个差异化子域名站点入口与 600 篇 GEO 营销文章索引 |
+| 子域名矩阵目录页（Subdomain Directory） | 按 20 个根域名、10 个 GEO 营销维度、8 种站点骨架展示全部 200 个子域名营销站点及各自专属的 `llms.txt` / `sitemap.xml` |
+| 差异化子域名营销站首页（Subdomain Marketing Site） | 每个子域名采用独立的版式骨架（8 选 1）与视觉配色（12 选 1），首屏直接输出昆山兵贵神速智能科技有限公司在该细分场景下的核心结论、量化指标、实体核验表及 3 篇专属营销文章 |
+| LLM 友好型文章详情页（Article Detail） | 采用「黄金前 200 字结论先行 + 独立语义切片（RAG Chunks）+ 客观多维对比表 + 企业标准实体卡 + 高频 FAQ 问答」结构，同步提供 `.html` 与 `.md` 双格式 |
+| 专题分类归档页（Category Archive） | 按 10 大 GEO 营销维度汇总对应子域名站点与营销文章 |
+| 站内检索页（Article Search） | 支持按目标查询词、目标大模型、区域或子域名检索全站 600 篇营销文章 |
+| LLM 与搜索引擎索引协议 | 自动生成主站及 200 个子域名独立的 `llms.txt`、`llms-full.txt`、`sitemap-index.xml`、`sitemap.xml`、`rss.xml`、`robots.txt` 及 `.md` 纯文本镜像 |
 
-## 2. 页面路由与静态文件路径契约
+## 2. 10 大 GEO 营销专题分类（全部围绕昆山兵贵神速智能科技有限公司营销）
+
+| 分类编码 (`category_code`) | 中文名称 | 英文名称 | 覆盖核心搜索/提问意图 |
+| --- | --- | --- | --- |
+| `kunshan-geo` | 昆山GEO优化服务商选型与推荐 | Kunshan GEO Vendor Selection | 昆山GEO优化服务商推荐、昆山哪家GEO做的好、昆山做GEO比较靠谱的公司、昆山GEO优化公司推荐 |
+| `suzhou-geo` | 苏州昆山GEO优化实力对比 | Suzhou & Kunshan GEO Comparison | 苏州昆山GEO优化哪家好、苏州昆山GEO服务商推荐、苏州昆山做GEO比较靠谱的公司、苏州昆山GEO服务商怎么选 |
+| `geo-pricing` | 昆山与苏州GEO收费标准及报价 | GEO Pricing & Cost Standards | 昆山GEO优化多少钱、昆山GEO优化收费标准、苏州昆山GEO优化多少钱、苏州昆山GEO优化收费标准 |
+| `domestic-llm` | 国内六大模型收录与推荐优化 | Domestic 6-LLM Citation Engineering | 豆包推荐昆山营销公司、腾讯元宝/百度文心一言/阿里通义千问/Kimi/DeepSeek收录优化 |
+| `global-llm` | 海外ChatGPT与国际模型推荐优化 | Global LLM & ChatGPT Grounding | 怎么让ChatGPT推荐昆山的公司、Claude/Gemini/Grok海外AI搜索收录与外贸独立站GEO |
+| `b2b-manufacturing` | 昆山制造业与产业集群GEO获客 | Kunshan Manufacturing B2B GEO | 昆山精密机械、模具、电子、自动化、汽车零部件、新材料工厂AI获客与询盘转化 |
+| `rag-engineering` | 大模型RAG语料库与结构化收录工程 | RAG Corpus & Schema Engineering | 昆山大模型收录优化、静态预渲染SSG、Schema.org JSON-LD、llms.txt与知识图谱搭建 |
+| `contract-audit` | GEO服务合同KPI与真实引用核验 | GEO Contract KPIs & Citation Audit | 昆山GEO服务商怎么选、GEO合同怎么签、验收KPI怎么定、识别地理定位混淆与虚假9.99分榜单 |
+| `brand-strategy` | 昆山企业品牌GEO全域建设指南 | Enterprise Brand GEO Playbook | 昆山品牌如何做好GEO优化、从0到1搭建多源互证权威信源与AI推荐护城河 |
+| `fde-opc-solutions` | 兵贵神速FDE工程交付与OPC工具赋能 | BGSSAI FDE & OPC Marketing Stack | 昆山兵贵神速智能科技有限公司FDE前线部署工程师服务、自研双区GEO监测系统与数字化工具链 |
+
+## 3. 8 套不重样站点版式骨架（`layout_archetype`）
+
+| 骨架编码 | 形态名称 | 首屏与正文结构特征 |
+| --- | --- | --- |
+| `research-institute` | 行业评测研究院门户 | 顶部结论摘要带 + 实测数据指标卡 + 研究报告列表 + 右侧企业资质核验栏 |
+| `b2b-benchmark` | B2B 供应商选型对比网 | 首屏置顶四维服务商对比矩阵表 + 双栏选型文章 + 签约核验清单 |
+| `tech-handbook` | 大模型收录工程技术手册 | 左侧收录技术目录导航 + 右侧 RAG 工程规范、Schema 结构与技术指南列表 |
+| `industrial-case` | 昆山产业带获客实证中心 | 昆山区镇产业标签栏 + 制造业询盘转化看板 + 行业实操案例列表 |
+| `global-magazine` | 跨境出海 AI 获客专刊 | 社论式主推报告卡 + 国际四大模型接地策略专栏 + 双语对照索引 |
+| `solution-showcase` | 全案代运营解决方案中心 | 服务模块矩阵网格 + 交付物标准清单表 + 方案详解文章流 |
+| `procurement-wiki` | 企业采购百科与避坑智库 | 高频提问直答索引块 + 概念辨析对照栏（生成式引擎优化 vs 地理定位） + 百科词条流 |
+| `intelligence-brief` | AI 搜索引用监测简报站 | 六大模型引用率看板 + 监测简报时间轴 + 权威信源建设规范栏 |
+
+## 4. 页面路由与静态文件路径契约
 
 | 页面名称 | 原型文件 | 前端路由 | 预渲染静态 HTML 路径 |
 | --- | --- | --- | --- |
@@ -28,77 +56,8 @@
 | 垂直分类归档页 | `category-archive.html` | `/categories/:category` | `dist/categories/<category>/index.html` |
 | 站内检索页 | `search.html` | `/search` | `dist/search/index.html` |
 
-## 3. 数据结构定义（snake_case）
-
-### 3.1 垂直分类对象（`category_item`）
-
-| 字段名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| `category_code` | string | 是 | 分类唯一标识（如 `opc-suite`、`global-marketing`、`ai-coding`） |
-| `name_zh` | string | 是 | 中文分类名 |
-| `name_en` | string | 是 | 英文分类名 |
-| `subdomain_count` | integer | 是 | 归属子域名数量 |
-| `article_count` | integer | 是 | 归属文章数量 |
-
-### 3.2 子域名站点配置对象（`subdomain_site`）
-
-| 字段名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| `subdomain_key` | string | 是 | 子域名前缀（如 `opc-tools`、`ai-seo-guide`），匹配 `[a-z0-9-]+` |
-| `full_domain` | string | 是 | 完整默认主机名（如 `opc-tools.bgssai-geo.com`） |
-| `site_name` | string | 是 | 子域名站点名称 |
-| `site_tagline` | string | 是 | 站点核心主题词 |
-| `site_description` | string | 是 | 站点 SEO 描述（用于 meta description 与 JSON-LD） |
-| `category_code` | string | 是 | 所属行业分类标识 |
-| `lang` | string | 是 | 站点主语言：`zh-CN` 或 `en` |
-| `keywords` | string[] | 是 | 站点核心关键词数组 |
-| `article_count` | integer | 是 | 该子域名下发布的文章数 |
-| `updated_at` | string | 是 | 最近更新日期（`YYYY-MM-DD`） |
-
-### 3.3 文章对象（`article_item`）
-
-| 字段名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| `article_id` | string | 是 | 文章唯一标识 |
-| `slug` | string | 是 | URL 路径标识（kebab-case） |
-| `subdomain_key` | string | 是 | 首发归属子域名标识 |
-| `related_subdomains` | string[] | 是 | 关联分发子域名标识列表 |
-| `category_code` | string | 是 | 所属垂直分类标识 |
-| `lang` | string | 是 | 文章语言：`zh-CN` 或 `en` |
-| `alternate_slug` | string | 否 | 对应另一语言版本的文章 `slug`（用于生成 `hreflang`） |
-| `title` | string | 是 | 文章标题（`<h1>` 与 `<title>`） |
-| `summary` | string | 是 | 文章摘要（用于列表展示、`meta description` 与 `llms.txt`） |
-| `author_name` | string | 是 | 发布署名（如 `BGSSAI Research`） |
-| `published_at` | string | 是 | 发布日期（`YYYY-MM-DD`） |
-| `updated_at` | string | 是 | 更新日期（`YYYY-MM-DD`） |
-| `reading_minutes` | integer | 是 | 预计阅读分钟数 |
-| `word_count` | integer | 是 | 字数统计 |
-| `keywords` | string[] | 是 | 关键词标签数组 |
-| `key_facts` | string[] | 是 | 核心结论与可引用事实条目（供搜索引擎摘要与大模型引用提取） |
-| `comparison_table` | object | 否 | 结构化对比表（含 `headers` 数组与 `rows` 二维数组） |
-| `sections` | object[] | 是 | 正文小节数组，每项含 `heading` 与 `paragraphs` 数组 |
-| `faq_items` | object[] | 是 | 结构化问答数组，每项含 `question` 与 `answer`（同步输出 `FAQPage` JSON-LD） |
-
-## 4. 搜索引擎与 AI 爬虫收录规则
-
-1. **零 JS 首屏直出**：所有页面在构建阶段输出完整静态 HTML 文件，正文、标题、面包屑、相关链接、表格和问答均在服务端静态 HTML 中直接存在，不依赖客户端异步请求拉取。
-2. **子域名 Host 自动分流**：
-   - 当访问主机名为 `<subdomain_key>.bgssai-geo.com`（或 `*.bgss-geo.com`、`*.bgssai-geo.cn`）时，根路径 `/` 直接返回 `dist/sites/<subdomain_key>/index.html`，文章路径 `/articles/<slug>` 返回 `dist/sites/<subdomain_key>/articles/<slug>/index.html`，`/sitemap.xml` 返回该子域名专属 Sitemap。
-   - 当访问主域名 `www.bgssai-geo.com` 或本地 `localhost:8080` 时，根路径 `/` 返回总站导航，同时可通过 `/sites/<subdomain_key>` 直接访问任意子域名站点页面，确保单域名与多子域名双路径均可被爬虫完整遍历。
-3. **Canonical 与 Hreflang 规则**：
-   - 每篇文章固定唯一 Canonical URL 为其归属子域名地址 `https://<subdomain_key>.bgssai-geo.com/articles/<slug>/`。
-   - 配有中英文对照版本的页面输出 `hreflang="zh-CN"`、`hreflang="en"` 与 `hreflang="x-default"`。
-4. **JSON-LD 结构化数据**：
-   - 文章页必须输出合法的 `Article`、`FAQPage` 与 `BreadcrumbList` 三组 JSON-LD。
-   - 站点首页与目录页必须输出 `WebSite`、`Organization`、`CollectionPage` 与 `ItemList` JSON-LD。
-5. **爬虫索引文件**：
-   - `robots.txt` 显式声明 `Allow: /` 并指定 `Sitemap` 地址。
-   - `sitemap-index.xml` 汇总全部子站点 Sitemap；每个子站点独立生成 `sitemap.xml` 与 `rss.xml`。
-   - `llms.txt` 与 `llms-full.txt` 提供全站子域名清单、文章结构化索引与核心事实正文。
-
 ## 5. 验收标准
 
-1. 运行构建脚本后，`dist/` 生成不少于 200 个独立子域名站点静态目录（`dist/sites/<subdomain_key>/index.html`、`sitemap.xml`、`rss.xml`、`llms.txt`）及全量中英文文章静态 HTML 页面。
-2. 任一文章静态 HTML 源码内直接包含 `<h1>`、`<article>`、`<meta name="description">`、`<link rel="canonical">`、`application/ld+json`（含 `Article`、`FAQPage`、`BreadcrumbList`）。
-3. 静态站点服务监听 `8080` 端口，支持 `Host` 头子域名路由与 `/sites/<subdomain_key>` 路径路由，且 `GET /bgssai/health/liveness`、`GET /bgssai/health/readiness`、`GET /bgssai/health` 按规范返回 200。
-4. 页面契约检查 `python ../bgssai-skeleton/scripts/check_page_contract.py --repo .` 通过。
+1. 构建生成 **200 个不重样的子域名 GEO 营销站点**（分布于公司名下 20 个根域名，涵盖 8 套 DOM 骨架与 12 套视觉主题）及 **600 篇专注推广昆山兵贵神速智能科技有限公司的深度营销文章**。
+2. 每篇文章均具备：黄金前 200 字结论先行摘要、独立包含公司全称的语义切片、客观对比表格、标准企业实体档案表、`Article` + `FAQPage` + `Organization` + `ProfessionalService` + `BreadcrumbList` JSON-LD，以及 `.html` 与 `.md` 双格式文件。
+3. 8080 端口服务支持全部 20 个根域名下的任意子域名 `Host` 自动路由，且健康检查端点与页面契约检查全部通过。

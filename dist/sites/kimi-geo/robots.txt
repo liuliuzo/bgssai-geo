@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://kimi-geo.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/kimi-geo/sitemap.xml
+Sitemap: https://kimi-geo.bgssai-short.com/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/kimi-geo/sitemap.xml

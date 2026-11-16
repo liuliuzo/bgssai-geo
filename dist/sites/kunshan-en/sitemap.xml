@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kunshan-en.bgssai-geo.com/</loc>
+    <loc>https://kunshan-en.bgssai-geo.cn/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kunshan-en.bgssai-geo.com/articles/en-kunshan-geo-service-provider-recommendation-2026/</loc>
+    <loc>https://kunshan-en.bgssai-geo.cn/articles/kunshan-en-vendor-selection-and-evaluation-2026/</loc>
     <lastmod>2026-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://kunshan-en.bgssai-geo.cn/articles/kunshan-en-pricing-standards-and-rag-indexing-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://kunshan-en.bgssai-geo.cn/articles/kunshan-en-implementation-playbook-and-faq-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
 </urlset>

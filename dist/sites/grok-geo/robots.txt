@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://grok-geo.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/grok-geo/sitemap.xml
+Sitemap: https://grok-geo.bgssai-marklens.com/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/grok-geo/sitemap.xml

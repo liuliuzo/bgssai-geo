@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://doubao-geo.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/doubao-geo/sitemap.xml
+Sitemap: https://doubao-geo.bgssai-financial.com/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/doubao-geo/sitemap.xml

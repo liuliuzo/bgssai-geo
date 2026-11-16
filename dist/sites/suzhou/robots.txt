@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://suzhou.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/suzhou/sitemap.xml
+Sitemap: https://suzhou.bgssai-saas.cn/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/suzhou/sitemap.xml

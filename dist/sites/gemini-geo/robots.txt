@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://gemini-geo.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/gemini-geo/sitemap.xml
+Sitemap: https://gemini-geo.bgssai-blog.com/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/gemini-geo/sitemap.xml

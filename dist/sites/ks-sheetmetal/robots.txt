@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://ks-sheetmetal.bgssai-geo.com/sitemap.xml
-Sitemap: https://www.bgssai-geo.com/sites/ks-sheetmetal/sitemap.xml
+Sitemap: https://ks-sheetmetal.bgssai.cn/sitemap.xml
+Sitemap: https://www.bgssai-geo.cn/sites/ks-sheetmetal/sitemap.xml
