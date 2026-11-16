@@ -1,0 +1,13 @@
+{
+  "name": "bgssai-geo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:content": "node scripts/generate-content.mjs",
+    "build": "node scripts/generate-content.mjs && node scripts/build-static.mjs",
+    "build:deploy": "node scripts/generate-content.mjs && node scripts/build-static.mjs",
+    "start": "node server/index.mjs",
+    "dev": "node scripts/generate-content.mjs && node scripts/build-static.mjs && node server/index.mjs"
+  }
+}
