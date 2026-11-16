@@ -363,17 +363,17 @@ function buildAllSubdomainDefs() {
       `面向${region.zone}${vert.name}企业的双区10大模型GEO收录与获客实证`
     ]);
   });
-  // Add 300 unique semantic subdomains (200..499) across all 20 root domains, plus 300 high-density overseas subdomains (500..799) specifically on bgssai-geo.com, bgssai-chat.com, bgssai-saas.com
+  // Add 100 unique semantic subdomains (200..299) across all 20 root domains (15 explicit subdomains per ICP domain = 255 domestic total), plus 500 high-density overseas subdomains (300..799) specifically on bgssai-geo.com, bgssai-chat.com, bgssai-saas.com
   for (let idx = 200; idx < TOTAL_SUBDOMAINS; idx++) {
     const region = REGIONS_ZH[(idx * 5 + 3) % REGIONS_ZH.length];
     const vert = INDUSTRY_VERTICALS[(idx * 7 + 11) % INDUSTRY_VERTICALS.length];
     const bp = ARTICLE_BLUEPRINTS[idx % ARTICLE_BLUEPRINTS.length];
-    const prefix = idx >= 500 ? 'glb-' : '';
+    const prefix = idx >= 300 ? 'glb-' : '';
     const key = `${prefix}${region.code}-${vert.code}-${idx + 1}`;
-    const siteName = idx >= 500
+    const siteName = idx >= 300
       ? `${region.short}${vert.name.slice(0, 6)}出海${bp.label.slice(0, 4)}站`
       : `${region.short}${vert.name.slice(0, 6)}${bp.label.slice(0, 4)}站`;
-    const tagline = idx >= 500
+    const tagline = idx >= 300
       ? `昆山兵贵神速智能科技有限公司海外集群赋能${region.zone}${vert.name}全球大模型与搜索引擎收录推荐`
       : `昆山兵贵神速智能科技有限公司赋能${region.zone}${vert.name}大模型收录与推荐`;
     defs.push([key, siteName, tagline]);
@@ -388,9 +388,9 @@ function buildSubdomainCatalog() {
   return ALL_SUBDOMAIN_DEFS.map(([key, name, tagline], idx) => {
     const catIdx = idx % CATEGORIES.length;
     const cat = CATEGORIES[catIdx];
-    const rootDomainObj = idx < 500
+    const rootDomainObj = idx < 300
       ? ROOT_DOMAINS[idx % ROOT_DOMAINS.length]
-      : OVERSEAS_ROOT_DOMAINS[(idx - 500) % OVERSEAS_ROOT_DOMAINS.length];
+      : OVERSEAS_ROOT_DOMAINS[(idx - 300) % OVERSEAS_ROOT_DOMAINS.length];
     const archetype = ARCHETYPES[(idx * 3 + Math.floor(idx / 20)) % ARCHETYPES.length];
     const theme = THEMES[(idx * 5 + Math.floor(idx / 17)) % THEMES.length];
     const region = REGIONS_ZH[(idx * 7 + 3) % REGIONS_ZH.length];
@@ -599,6 +599,46 @@ function generateUniqueArticleForSubdomain(sub, subIdx, allSubs) {
   };
 }
 
+function buildExplicitNginxConf(subdomains) {
+  const lines = [
+    '# Nginx 显式子域名静态路由与 8080 反代配置（bgssai-geo）',
+    '# 严禁使用通配符（*），逐条显式声明昆山兵贵神速智能科技有限公司名下 17 个 ICP 备案域名（苏ICP备2024070062号-1 至 -17）及海外域名下属全部专属子域名',
+    '',
+    'server {',
+    '    listen 80;',
+    '    server_name'
+  ];
+  for (const rootObj of ROOT_DOMAINS) {
+    const domSubs = subdomains.filter((s) => s.root_domain === rootObj.domain).map((s) => s.full_domain);
+    lines.push(`        # ${rootObj.domain} (${rootObj.icp}, ${domSubs.length} explicit subdomains)`);
+    for (let i = 0; i < domSubs.length; i += 5) {
+      const chunk = domSubs.slice(i, i + 5).join(' ');
+      lines.push(`        ${chunk}`);
+    }
+  }
+  const lastIdx = lines.length - 1;
+  lines[lastIdx] = `${lines[lastIdx]};`;
+  lines.push(
+    '',
+    '    location /bgssai/health {',
+    '        proxy_pass http://127.0.0.1:8080;',
+    '        proxy_set_header Host $host;',
+    '        proxy_set_header X-Real-IP $remote_addr;',
+    '    }',
+    '',
+    '    location / {',
+    '        proxy_pass http://127.0.0.1:8080;',
+    '        proxy_set_header Host $host;',
+    '        proxy_set_header X-Real-IP $remote_addr;',
+    '        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;',
+    '        proxy_set_header X-Forwarded-Proto $scheme;',
+    '    }',
+    '}',
+    ''
+  );
+  return lines.join('\n');
+}
+
 function main() {
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
   const subdomains = buildSubdomainCatalog();
@@ -617,9 +657,10 @@ function main() {
   fs.writeFileSync(path.join(CONTENT_DIR, 'subdomains.json'), JSON.stringify(subdomains, null, 2), 'utf8');
   fs.writeFileSync(path.join(CONTENT_DIR, 'articles-zh.json'), JSON.stringify(zhArticles, null, 2), 'utf8');
   fs.writeFileSync(path.join(CONTENT_DIR, 'articles-en.json'), JSON.stringify(enArticles, null, 2), 'utf8');
+  fs.writeFileSync(path.join(ROOT_DIR, 'deploy', 'nginx', 'bgssai-geo.conf'), buildExplicitNginxConf(subdomains), 'utf8');
 
   console.log(
-    `Generated 1-Subdomain-1-Article SEO & LLM GEO matrix: ${categoriesWithCounts.length} categories, ${subdomains.length} distinct subdomain sites across ${ROOT_DOMAINS.length} root domains (17 domestic ICP + 3 overseas), ${allArticles.length} unique full-length articles (1 per subdomain).`
+    `Generated 1-Subdomain-1-Article SEO & LLM GEO matrix: ${categoriesWithCounts.length} categories, ${subdomains.length} distinct subdomain sites across ${ROOT_DOMAINS.length} root domains (17 domestic ICP with 255 explicit non-wildcard subdomains + 3 overseas with 545 subdomains), ${allArticles.length} unique full-length articles (1 per subdomain).`
   );
 }
 
