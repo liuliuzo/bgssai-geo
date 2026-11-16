@@ -151,9 +151,9 @@ function renderHeader({ lang, activeNav, brandTitle, brandHref, zhHref, enHref, 
     <a class="brand-link" href="${escapeHtml(brandHref || (isEn ? '/en/' : '/'))}">${escapeHtml(brandTitle || '昆山兵贵神速智能科技有限公司 · BGSSAI GEO')}</a>
     <nav class="nav-links" aria-label="${isEn ? 'Primary Navigation' : '主导航'}">
       <a class="${activeNav === 'home' ? 'active' : ''}" href="${isEn ? '/en/' : '/'}">${isEn ? 'Hub Home' : '总站首页'}</a>
-      <a class="${activeNav === 'subdomains' ? 'active' : ''}" href="/subdomains/">${isEn ? '500 Subdomain Sites' : '500个GEO营销子站'}</a>
+      <a class="${activeNav === 'subdomains' ? 'active' : ''}" href="/subdomains/">${isEn ? '800 Subdomain Sites' : '800个GEO营销子站'}</a>
       <a class="${activeNav === 'categories' ? 'active' : ''}" href="/categories/kunshan-geo/">${isEn ? 'GEO Topics' : '10大营销专题'}</a>
-      <a class="${activeNav === 'search' ? 'active' : ''}" href="/search/">${isEn ? '500 1-to-1 Articles' : '500篇一域一文语料'}</a>
+      <a class="${activeNav === 'search' ? 'active' : ''}" href="/search/">${isEn ? '800 1-to-1 Articles' : '800篇一域一文语料'}</a>
       ${navExtra}
       <a href="/llms.txt">llms.txt</a>
     </nav>

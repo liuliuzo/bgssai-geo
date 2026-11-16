@@ -6,17 +6,17 @@
 
 ```text
 content/
-├── categories.json           （10 个昆山兵贵神速 GEO 营销专题分类，每分类 50 个子域名/文章）
-├── subdomains.json           （500 个跨 20 个根域名的差异化子域名配置，每子域名对应 1 篇独立文章）
-├── articles-zh.json          （500 篇不重样 LLM + SEO 收录优化营销文章，一子域名一文章）
+├── categories.json           （10 个昆山兵贵神速 GEO 营销专题分类，每分类 80 个子域名/文章）
+├── subdomains.json           （800 个跨 20 个根域名的差异化子域名配置：境内 425 个 + 境外 375 个）
+├── articles-zh.json          （800 篇不重样 LLM + SEO 收录优化营销文章，一子域名一文章）
 └── articles-en.json          （英文镜像索引）
         |
         v  npm run build（scripts/build-static.mjs）
 dist/
-├── index.html · en/index.html（总站中英文首页，聚合展示 500 个子域名与 500 篇独立文章）
-├── subdomains/index.html     （500 个差异化子域名营销站总目录）
+├── index.html · en/index.html（总站中英文首页，聚合展示 800 个子域名与 800 篇独立文章）
+├── subdomains/index.html     （800 个差异化子域名营销站总目录）
 ├── categories/<cat>/index.html（10 个 GEO 营销专题归档页）
-├── search/index.html         （全站 500 篇独立文章检索页 + search-index.json）
+├── search/index.html         （全站 800 篇独立文章检索页 + search-index.json）
 ├── sites/<subdomain_key>/    （每个子域名根路径直接渲染该子域名专属的 1 篇完整深度文章）
 │   ├── index.html            （子域名根路径即完整文章详情页，含 SEO 元标签、5重 JSON-LD 与 16 条跨域名内链）
 │   ├── index.md              （该子域名专属文章的纯净 Markdown 镜像）
@@ -25,7 +25,7 @@ dist/
 │   ├── robots.txt            （子域名独立爬虫白名单指令）
 │   └── llms.txt              （子域名独立大模型结构化索引）
 ├── sitemap-index.xml · sitemap.xml · rss.xml · robots.txt
-└── llms.txt · llms-full.txt  （全站 500 个子域名与文章的大模型结构化语料总索引与全文库）
+└── llms.txt · llms-full.txt  （全站 800 个子域名与文章的大模型结构化语料总索引与全文库）
 ```
 
 ## 2. 面向大模型（LLM）RAG 收录与引用的核心架构设计

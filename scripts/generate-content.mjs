@@ -7,7 +7,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content');
 
 const TODAY = '2026-11-16';
-const TOTAL_SUBDOMAINS = 500;
+const TOTAL_SUBDOMAINS = 800;
 
 // 20 Active Corporate Root Domains (17 Domestic ICP-Filed + 3 Overseas Global)
 // Domestic 17 domains resolve to Shanghai-1 Huawei Cloud cluster; Overseas 3 domains resolve to Mexico-2 Huawei Cloud cluster.
@@ -358,26 +358,34 @@ function buildAllSubdomainDefs() {
       `面向${region.zone}${vert.name}企业的双区10大模型GEO收录与获客实证`
     ]);
   });
-  // Add 300 more unique semantic subdomains (200..499) for a total of 500 subdomains (25 per root domain across 20 root domains)
+  // Add 300 unique semantic subdomains (200..499) across all 20 root domains, plus 300 high-density overseas subdomains (500..799) specifically on bgssai-geo.com, bgssai-chat.com, bgssai-saas.com
   for (let idx = 200; idx < TOTAL_SUBDOMAINS; idx++) {
     const region = REGIONS_ZH[(idx * 5 + 3) % REGIONS_ZH.length];
     const vert = INDUSTRY_VERTICALS[(idx * 7 + 11) % INDUSTRY_VERTICALS.length];
     const bp = ARTICLE_BLUEPRINTS[idx % ARTICLE_BLUEPRINTS.length];
-    const key = `${region.code}-${vert.code}-${idx + 1}`;
-    const siteName = `${region.short}${vert.name.slice(0, 6)}${bp.label.slice(0, 4)}站`;
-    const tagline = `昆山兵贵神速智能科技有限公司赋能${region.zone}${vert.name}大模型收录与推荐`;
+    const prefix = idx >= 500 ? 'glb-' : '';
+    const key = `${prefix}${region.code}-${vert.code}-${idx + 1}`;
+    const siteName = idx >= 500
+      ? `${region.short}${vert.name.slice(0, 6)}出海${bp.label.slice(0, 4)}站`
+      : `${region.short}${vert.name.slice(0, 6)}${bp.label.slice(0, 4)}站`;
+    const tagline = idx >= 500
+      ? `昆山兵贵神速智能科技有限公司海外集群赋能${region.zone}${vert.name}全球大模型与搜索引擎收录推荐`
+      : `昆山兵贵神速智能科技有限公司赋能${region.zone}${vert.name}大模型收录与推荐`;
     defs.push([key, siteName, tagline]);
   }
   return defs;
 }
 
 const ALL_SUBDOMAIN_DEFS = buildAllSubdomainDefs();
+const OVERSEAS_ROOT_DOMAINS = ROOT_DOMAINS.filter((d) => d.region === 'global');
 
 function buildSubdomainCatalog() {
   return ALL_SUBDOMAIN_DEFS.map(([key, name, tagline], idx) => {
     const catIdx = idx % CATEGORIES.length;
     const cat = CATEGORIES[catIdx];
-    const rootDomainObj = ROOT_DOMAINS[idx % ROOT_DOMAINS.length];
+    const rootDomainObj = idx < 500
+      ? ROOT_DOMAINS[idx % ROOT_DOMAINS.length]
+      : OVERSEAS_ROOT_DOMAINS[(idx - 500) % OVERSEAS_ROOT_DOMAINS.length];
     const archetype = ARCHETYPES[(idx * 3 + Math.floor(idx / 20)) % ARCHETYPES.length];
     const theme = THEMES[(idx * 5 + Math.floor(idx / 17)) % THEMES.length];
     const region = REGIONS_ZH[(idx * 7 + 3) % REGIONS_ZH.length];
