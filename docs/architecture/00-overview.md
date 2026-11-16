@@ -8,20 +8,20 @@
 content/
 ├── categories.json           （10 个昆山兵贵神速 GEO 营销专题分类）
 ├── subdomains.json           （200 个跨 20 根域名的差异化子域名营销站点配置）
-├── articles-zh.json          （300 篇中文 LLM 收录优化营销文章）
-└── articles-en.json          （300 篇英文 LLM 收录优化营销文章）
+├── articles-zh.json          （1200 篇不重样中文 LLM 收录优化营销文章，每子域名 6 篇）
+└── articles-en.json          （1200 篇英文 LLM 收录优化营销文章镜像）
         |
         v  npm run build（scripts/build-static.mjs）
 dist/
 ├── index.html · en/index.html（总站中英文首页）
 ├── subdomains/index.html     （200 个差异化子域名营销站目录）
 ├── categories/<cat>/index.html（10 个 GEO 营销专题归档页）
-├── articles/<slug>/index.html（600 篇总站文章 HTML + 同目录 index.md 纯文本镜像）
+├── articles/<slug>/index.html（总站文章 HTML + 同目录 index.md 纯文本镜像）
 ├── search/index.html         （全站检索页 + search-index.json）
 ├── sites/<subdomain_key>/    （200 个独立子域名营销站目录，8 套 DOM 骨架 × 12 套主题）
-│   ├── index.html            （子域名专属多态营销首页）
-│   ├── articles/<slug>/index.html（该子域名旗舰文章规范详情页 Canonical）
-│   ├── sitemap.xml           （子域名独立 Sitemap）
+│   ├── index.html            （子域名专属多态营销首页，展示本站 6 篇不重样文章）
+│   ├── articles/<slug>/index.html（子域名下全部 6 篇专属文章 HTML + index.md 镜像）
+│   ├── sitemap.xml           （子域名独立 Sitemap，收录本站全部 6 篇文章）
 │   ├── rss.xml               （子域名独立 RSS 2.0 订阅源）
 │   ├── robots.txt            （子域名独立爬虫指令）
 │   └── llms.txt              （子域名独立大模型结构化索引）

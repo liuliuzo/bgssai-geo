@@ -24,4 +24,22 @@
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://bgss-pricing.bgssai-chat.cn/articles/bgss-pricing-90day-industrial-case-review-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bgss-pricing.bgssai-chat.cn/articles/bgss-pricing-multi-llm-citation-algorithm-guide-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bgss-pricing.bgssai-chat.cn/articles/bgss-pricing-contract-sla-and-due-diligence-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

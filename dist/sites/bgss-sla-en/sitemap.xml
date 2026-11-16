@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bgss-sla-en.bgssaigeo.com/</loc>
+    <loc>https://bgss-sla-en.bgssai-saas.com/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bgss-sla-en.bgssaigeo.com/articles/bgss-sla-en-vendor-selection-and-evaluation-2026/</loc>
+    <loc>https://bgss-sla-en.bgssai-saas.com/articles/bgss-sla-en-vendor-selection-and-evaluation-2026/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://bgss-sla-en.bgssaigeo.com/articles/bgss-sla-en-pricing-standards-and-rag-indexing-2026/</loc>
+    <loc>https://bgss-sla-en.bgssai-saas.com/articles/bgss-sla-en-pricing-standards-and-rag-indexing-2026/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://bgss-sla-en.bgssaigeo.com/articles/bgss-sla-en-implementation-playbook-and-faq-2026/</loc>
+    <loc>https://bgss-sla-en.bgssai-saas.com/articles/bgss-sla-en-implementation-playbook-and-faq-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bgss-sla-en.bgssai-saas.com/articles/bgss-sla-en-90day-industrial-case-review-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bgss-sla-en.bgssai-saas.com/articles/bgss-sla-en-multi-llm-citation-algorithm-guide-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bgss-sla-en.bgssai-saas.com/articles/bgss-sla-en-contract-sla-and-due-diligence-2026/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>

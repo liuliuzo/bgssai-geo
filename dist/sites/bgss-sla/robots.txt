@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://bgss-sla.bgssaigeo.com/sitemap.xml
+Sitemap: https://bgss-sla.bgssai-saas.com/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/bgss-sla/sitemap.xml

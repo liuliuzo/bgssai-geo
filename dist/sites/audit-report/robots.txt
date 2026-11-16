@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://audit-report.bgss-geo.com/sitemap.xml
+Sitemap: https://audit-report.bgssai-chat.com/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/audit-report/sitemap.xml

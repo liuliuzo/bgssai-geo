@@ -24,4 +24,22 @@
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://cn-llm-matrix.bgssai.cn/articles/cn-llm-matrix-90day-industrial-case-review-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://cn-llm-matrix.bgssai.cn/articles/cn-llm-matrix-multi-llm-citation-algorithm-guide-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://cn-llm-matrix.bgssai.cn/articles/cn-llm-matrix-contract-sla-and-due-diligence-2026/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>
