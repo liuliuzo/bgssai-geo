@@ -4,7 +4,7 @@
    ```bash
    npm run build
    ```
-   产出位于 `dist/`（含 800 个独立子域名站点目录 `dist/sites/<subdomain_key>/`、全站中英文文章静态 HTML、`sitemap-index.xml`、`sitemap.xml`、`rss.xml`、`robots.txt`、`llms.txt`、`llms-full.txt`），同时生成零通配符显式 `server_name` 配置 `deploy/nginx/bgssai-geo.conf`。
+   产出位于 `dist/`（含 2,500 个独立子域名站点目录 `dist/sites/<subdomain_key>/`、全站 2,500 篇中英文文章静态 HTML + `.md`、`sitemap-index.xml`、5 分片 `sitemap-1.xml`–`sitemap-5.xml`、`sitemap.xml`、`rss.xml`、`robots.txt`、`llms.txt`、`llms-full.txt` 与 IndexNow 校验文件），同时生成零通配符显式 `server_name` 配置 `deploy/nginx/bgssai-geo.conf`。
 2. **启动 8080 静态分发服务**：
    ```bash
    npm start
