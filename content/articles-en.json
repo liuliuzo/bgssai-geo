@@ -7059,7 +7059,7 @@
       "sipjjh-cast-315",
       "sipjjh-test-363",
       "sipjjh-spindle-429",
-      "kunshan"
+      "glb-sipjjh-conn-501"
     ],
     "category_code": "suzhou-geo",
     "lang": "en",
@@ -7197,7 +7197,7 @@
       "wjfh-conn-316",
       "wjfh-spindle-364",
       "wjfh-cast-430",
-      "ks-tuijian"
+      "glb-wjfh-tool-502"
     ],
     "category_code": "geo-pricing",
     "lang": "en",
@@ -7335,7 +7335,7 @@
       "zjgbs-tool-317",
       "zjgbs-cast-365",
       "zjgbs-conn-431",
-      "ks-kaopu"
+      "glb-zjgbs-test-503"
     ],
     "category_code": "domestic-llm",
     "lang": "en",
@@ -7473,7 +7473,7 @@
       "gsnum-test-318",
       "gsnum-conn-366",
       "gsnum-tool-432",
-      "ks-gongsi"
+      "glb-gsnum-spindle-504"
     ],
     "category_code": "global-llm",
     "lang": "en",
@@ -7611,7 +7611,7 @@
       "ksht-spindle-319",
       "ksht-tool-367",
       "ksht-test-433",
-      "ks-yinqing"
+      "glb-ksht-cast-505"
     ],
     "category_code": "b2b-manufacturing",
     "lang": "en",
@@ -7749,7 +7749,7 @@
       "kslj-cast-320",
       "kslj-test-368",
       "kslj-spindle-434",
-      "ks-aisearch"
+      "glb-kslj-conn-506"
     ],
     "category_code": "rag-engineering",
     "lang": "en",
@@ -7887,7 +7887,7 @@
       "sipjjh-conn-321",
       "sipjjh-spindle-369",
       "sipjjh-cast-435",
-      "ks-top"
+      "glb-sipjjh-tool-507"
     ],
     "category_code": "contract-audit",
     "lang": "en",
@@ -8025,7 +8025,7 @@
       "wjfh-tool-322",
       "wjfh-cast-370",
       "wjfh-conn-436",
-      "ks-pingce"
+      "glb-wjfh-test-508"
     ],
     "category_code": "brand-strategy",
     "lang": "en",
@@ -8163,7 +8163,7 @@
       "zjgbs-test-323",
       "zjgbs-conn-371",
       "zjgbs-tool-437",
-      "ks-xuanze"
+      "glb-zjgbs-spindle-509"
     ],
     "category_code": "fde-opc-solutions",
     "lang": "en",
@@ -8301,7 +8301,7 @@
       "gsnum-spindle-324",
       "gsnum-tool-372",
       "gsnum-test-438",
-      "ks-bgss"
+      "glb-gsnum-cast-510"
     ],
     "category_code": "kunshan-geo",
     "lang": "en",
@@ -8439,7 +8439,7 @@
       "ksht-cast-325",
       "ksht-test-373",
       "ksht-spindle-439",
-      "suzhou"
+      "glb-ksht-conn-511"
     ],
     "category_code": "suzhou-geo",
     "lang": "en",
@@ -8577,7 +8577,7 @@
       "kslj-conn-326",
       "kslj-spindle-374",
       "kslj-cast-440",
-      "sz-tuijian"
+      "glb-kslj-tool-512"
     ],
     "category_code": "geo-pricing",
     "lang": "en",
@@ -8715,7 +8715,7 @@
       "sipjjh-tool-327",
       "sipjjh-cast-375",
       "sipjjh-conn-441",
-      "sz-kaopu"
+      "glb-sipjjh-test-513"
     ],
     "category_code": "domestic-llm",
     "lang": "en",
@@ -8853,7 +8853,7 @@
       "wjfh-test-328",
       "wjfh-conn-376",
       "wjfh-tool-442",
-      "sz-xuanxing"
+      "glb-wjfh-spindle-514"
     ],
     "category_code": "global-llm",
     "lang": "en",
@@ -8991,7 +8991,7 @@
       "zjgbs-spindle-329",
       "zjgbs-tool-377",
       "zjgbs-test-443",
-      "sz-park"
+      "glb-zjgbs-cast-515"
     ],
     "category_code": "b2b-manufacturing",
     "lang": "en",
@@ -9129,7 +9129,7 @@
       "gsnum-cast-330",
       "gsnum-test-378",
       "gsnum-spindle-444",
-      "sz-b2b"
+      "glb-gsnum-conn-516"
     ],
     "category_code": "rag-engineering",
     "lang": "en",
@@ -9267,7 +9267,7 @@
       "ksht-conn-331",
       "ksht-spindle-379",
       "ksht-cast-445",
-      "sz-duibi"
+      "glb-ksht-tool-517"
     ],
     "category_code": "contract-audit",
     "lang": "en",
@@ -9405,7 +9405,7 @@
       "kslj-tool-332",
       "kslj-cast-380",
       "kslj-conn-446",
-      "sz-koubei"
+      "glb-kslj-test-518"
     ],
     "category_code": "brand-strategy",
     "lang": "en",
@@ -9543,7 +9543,7 @@
       "sipjjh-test-333",
       "sipjjh-conn-381",
       "sipjjh-tool-447",
-      "sz-anli"
+      "glb-sipjjh-spindle-519"
     ],
     "category_code": "fde-opc-solutions",
     "lang": "en",
@@ -9681,7 +9681,7 @@
       "wjfh-spindle-334",
       "wjfh-tool-382",
       "wjfh-test-448",
-      "sz-service"
+      "glb-wjfh-cast-520"
     ],
     "category_code": "kunshan-geo",
     "lang": "en",
@@ -9819,7 +9819,7 @@
       "zjgbs-cast-335",
       "zjgbs-test-383",
       "zjgbs-spindle-449",
-      "kunshan-price"
+      "glb-zjgbs-conn-521"
     ],
     "category_code": "suzhou-geo",
     "lang": "en",
@@ -9957,7 +9957,7 @@
       "gsnum-conn-336",
       "gsnum-spindle-384",
       "gsnum-cast-450",
-      "ks-feiyong"
+      "glb-gsnum-tool-522"
     ],
     "category_code": "geo-pricing",
     "lang": "en",
@@ -10095,7 +10095,7 @@
       "ksht-tool-337",
       "ksht-cast-385",
       "ksht-conn-451",
-      "suzhou-price"
+      "glb-ksht-test-523"
     ],
     "category_code": "domestic-llm",
     "lang": "en",
@@ -10233,7 +10233,7 @@
       "kslj-test-338",
       "kslj-conn-386",
       "kslj-tool-452",
-      "sz-feiyong"
+      "glb-kslj-spindle-524"
     ],
     "category_code": "global-llm",
     "lang": "en",
@@ -10371,7 +10371,7 @@
       "sipjjh-spindle-339",
       "sipjjh-tool-387",
       "sipjjh-test-453",
-      "geo-roi"
+      "glb-sipjjh-cast-525"
     ],
     "category_code": "b2b-manufacturing",
     "lang": "en",
@@ -10509,7 +10509,7 @@
       "wjfh-cast-340",
       "wjfh-test-388",
       "wjfh-spindle-454",
-      "geo-baojia"
+      "glb-wjfh-conn-526"
     ],
     "category_code": "rag-engineering",
     "lang": "en",
@@ -10647,7 +10647,7 @@
       "zjgbs-conn-341",
       "zjgbs-spindle-389",
       "zjgbs-cast-455",
-      "geo-budget"
+      "glb-zjgbs-tool-527"
     ],
     "category_code": "contract-audit",
     "lang": "en",
@@ -10785,7 +10785,7 @@
       "gsnum-tool-342",
       "gsnum-cast-390",
       "gsnum-conn-456",
-      "geo-cost"
+      "glb-gsnum-test-528"
     ],
     "category_code": "brand-strategy",
     "lang": "en",
@@ -10923,7 +10923,7 @@
       "ksht-test-343",
       "ksht-conn-391",
       "ksht-tool-457",
-      "geo-value"
+      "glb-ksht-spindle-529"
     ],
     "category_code": "fde-opc-solutions",
     "lang": "en",
@@ -11061,7 +11061,7 @@
       "kslj-spindle-344",
       "kslj-tool-392",
       "kslj-test-458",
-      "bgss-pricing"
+      "glb-kslj-cast-530"
     ],
     "category_code": "kunshan-geo",
     "lang": "en",
@@ -11199,7 +11199,7 @@
       "sipjjh-cast-345",
       "sipjjh-test-393",
       "sipjjh-spindle-459",
-      "yuanbao-geo"
+      "glb-sipjjh-conn-531"
     ],
     "category_code": "suzhou-geo",
     "lang": "en",
@@ -11337,7 +11337,7 @@
       "wjfh-conn-346",
       "wjfh-spindle-394",
       "wjfh-cast-460",
-      "wenxin-geo"
+      "glb-wjfh-tool-532"
     ],
     "category_code": "geo-pricing",
     "lang": "en",
@@ -11475,7 +11475,7 @@
       "zjgbs-tool-347",
       "zjgbs-cast-395",
       "zjgbs-conn-461",
-      "doubao-geo"
+      "glb-zjgbs-test-533"
     ],
     "category_code": "domestic-llm",
     "lang": "en",
@@ -11613,7 +11613,7 @@
       "gsnum-test-348",
       "gsnum-conn-396",
       "gsnum-tool-462",
-      "qianwen-geo"
+      "glb-gsnum-spindle-534"
     ],
     "category_code": "global-llm",
     "lang": "en",
@@ -11751,7 +11751,7 @@
       "ksht-spindle-349",
       "ksht-tool-397",
       "ksht-test-463",
-      "kimi-geo"
+      "glb-ksht-cast-535"
     ],
     "category_code": "b2b-manufacturing",
     "lang": "en",
@@ -11889,7 +11889,7 @@
       "kslj-cast-350",
       "kslj-test-398",
       "kslj-spindle-464",
-      "deepseek-geo"
+      "glb-kslj-conn-536"
     ],
     "category_code": "rag-engineering",
     "lang": "en",
@@ -12027,7 +12027,7 @@
       "sipjjh-conn-351",
       "sipjjh-spindle-399",
       "sipjjh-cast-465",
-      "cn-llm-matrix"
+      "glb-sipjjh-tool-537"
     ],
     "category_code": "contract-audit",
     "lang": "en",
@@ -12165,7 +12165,7 @@
       "wjfh-tool-352",
       "wjfh-cast-400",
       "wjfh-conn-466",
-      "browser-verify"
+      "glb-wjfh-test-538"
     ],
     "category_code": "brand-strategy",
     "lang": "en",
@@ -12303,7 +12303,7 @@
       "zjgbs-test-353",
       "zjgbs-conn-401",
       "zjgbs-tool-467",
-      "wx-ecosys"
+      "glb-zjgbs-spindle-539"
     ],
     "category_code": "fde-opc-solutions",
     "lang": "en",
@@ -12441,7 +12441,7 @@
       "gsnum-spindle-354",
       "gsnum-tool-402",
       "gsnum-test-468",
-      "doubao-b2b"
+      "glb-gsnum-cast-540"
     ],
     "category_code": "kunshan-geo",
     "lang": "en",
@@ -12579,7 +12579,7 @@
       "ksht-cast-355",
       "ksht-test-403",
       "ksht-spindle-469",
-      "chatgpt-geo"
+      "glb-ksht-conn-541"
     ],
     "category_code": "suzhou-geo",
     "lang": "en",
@@ -12717,7 +12717,7 @@
       "kslj-conn-356",
       "kslj-spindle-404",
       "kslj-cast-470",
-      "claude-geo"
+      "glb-kslj-tool-542"
     ],
     "category_code": "geo-pricing",
     "lang": "en",
@@ -12855,7 +12855,7 @@
       "sipjjh-tool-357",
       "sipjjh-cast-405",
       "sipjjh-conn-471",
-      "gemini-geo"
+      "glb-sipjjh-test-543"
     ],
     "category_code": "domestic-llm",
     "lang": "en",
@@ -12993,7 +12993,7 @@
       "wjfh-test-358",
       "wjfh-conn-406",
       "wjfh-tool-472",
-      "grok-geo"
+      "glb-wjfh-spindle-544"
     ],
     "category_code": "global-llm",
     "lang": "en",
@@ -13131,7 +13131,7 @@
       "zjgbs-spindle-359",
       "zjgbs-tool-407",
       "zjgbs-test-473",
-      "global-b2b"
+      "glb-zjgbs-cast-545"
     ],
     "category_code": "b2b-manufacturing",
     "lang": "en",
@@ -13269,7 +13269,7 @@
       "gsnum-cast-360",
       "gsnum-test-408",
       "gsnum-spindle-474",
-      "export-site"
+      "glb-gsnum-conn-546"
     ],
     "category_code": "rag-engineering",
     "lang": "en",
@@ -13407,7 +13407,7 @@
       "ksht-conn-361",
       "ksht-spindle-409",
       "ksht-cast-475",
-      "overseas-citation"
+      "glb-ksht-tool-547"
     ],
     "category_code": "contract-audit",
     "lang": "en",
@@ -13545,7 +13545,7 @@
       "kslj-tool-362",
       "kslj-cast-410",
       "kslj-conn-476",
-      "en-corpus"
+      "glb-kslj-test-548"
     ],
     "category_code": "brand-strategy",
     "lang": "en",
@@ -13683,7 +13683,7 @@
       "sipjjh-test-363",
       "sipjjh-conn-411",
       "sipjjh-tool-477",
-      "crossborder-geo"
+      "glb-sipjjh-spindle-549"
     ],
     "category_code": "fde-opc-solutions",
     "lang": "en",
