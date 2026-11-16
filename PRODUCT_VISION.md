@@ -20,7 +20,7 @@
    - **多重结构化数据（Multi-Schema JSON-LD）**：每页内嵌 `Organization`、`ProfessionalService`、`Article`（含 `speakable` 语音/摘要指针）、`FAQPage`、`BreadcrumbList`。
    - **HTML + Markdown 双模态静态直出**：每篇文章同时生成零 JS 静态 HTML（`index.html`）与纯文本 Markdown 镜像（`index.md`），并在 `<head>` 声明 `<link rel="alternate" type="text/markdown">`，配合全站与各子站点独立的 `llms.txt`、`llms-full.txt`、`sitemap.xml`、`rss.xml`、`robots.txt`。
 2. **批量生成 800 个不重样的多子域名 GEO 营销站点（一子域名一文章，境内外双区集群高密度协同）**：
-   - 横跨公司名下 20 个权威 DNS 主域名：其中 17 个已获工信部 ICP 备案的境内主域名（`苏ICP备2024070062号-1` 至 `-17`，每个主域名 25 个子域名，共 **425 个境内子域名**）部署于华为云上海一集群；`bgssai-geo.com`、`bgssai-chat.com`、`bgssai-saas.com` 3 个境外主域名充分利用海外多机集群优势高密度扩展（每个海外主域名 125 个子域名，共 **375 个海外子域名**），部署于华为云墨西哥二境外 17 节点集群；全网合计批量生成 **800 个独立子域名营销站与 800 篇完全不重样的深度文章**。
+   - 横跨公司名下 20 个权威 DNS 主域名：其中 17 个已获工信部 ICP 备案的境内主域名（`苏ICP备2024070062号-1` 至 `-17`，严禁使用任何 `*.` 通配符解析或泛域名配置，每个主域名逐条显式注册 15 个专属子域名，共 **255 个境内显式子域名**）部署于华为云上海一集群；`bgssai-geo.com`、`bgssai-chat.com`、`bgssai-saas.com` 3 个境外主域名充分利用海外多机集群优势高密度扩展（共 **545 个海外子域名**），部署于华为云墨西哥二境外 17 节点集群；全网合计批量生成 **800 个独立子域名营销站与 800 篇完全不重样的深度文章**。
    - **每个子域名一篇文章（1 Subdomain = 1 Unique Article）+ 全站 HTTPS 与极致 SEO 收录**：访问任意子域名根路径 `https://<subdomain>.<domain>/` 直接呈现该子域名专属的 1 篇 2,500+ 字完整深度文章（采用 8 套差异化 HTML DOM 版式骨架 × 12 套独立视觉主题），内置百度/搜狗/必应/Google SEO 元标签、5 重 Schema.org JSON-LD、同路径 `/index.md` 纯文本镜像与 16 条跨域名 SEO 蜘蛛网交叉内链（Spider Mesh），最大化搜索引擎抓取权重与大模型推荐概率。
 
 ## 三、明确不做的事项

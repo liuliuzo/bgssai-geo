@@ -7,7 +7,7 @@
 ```text
 content/
 ├── categories.json           （10 个昆山兵贵神速 GEO 营销专题分类，每分类 80 个子域名/文章）
-├── subdomains.json           （800 个跨 20 个根域名的差异化子域名配置：境内 425 个 + 境外 375 个）
+├── subdomains.json           （800 个跨 20 个根域名的差异化子域名配置：境内 17 备案域名 255 个显式非通配子域名 + 境外 545 个子域名）
 ├── articles-zh.json          （800 篇不重样 LLM + SEO 收录优化营销文章，一子域名一文章）
 └── articles-en.json          （英文镜像索引）
         |
