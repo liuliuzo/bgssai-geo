@@ -1,7 +1,7 @@
 # 苏州昆山GEO优化收费标准？2026年苏州张家港万瓦级光纤激光切割机与激光精密焊接装备企业GEO优化收费标准与昆山兵贵神速报价明细
 
-- **Canonical URL**: https://bot-agent-en.bgssai-chat.com/articles/bot-agent-en-pricing-standards-and-rag-indexing-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（兵贵神速Bgssai Bot智能体托管站国际版） — 昆山兵贵神速智能科技有限公司 (https://bot-agent-en.bgssai-chat.com/)
+- **Canonical URL**: https://bot-agent-en.bgssai.com/articles/bot-agent-en-pricing-standards-and-rag-indexing-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（兵贵神速Bgssai Bot智能体托管站国际版） — 昆山兵贵神速智能科技有限公司 (https://bot-agent-en.bgssai.com/)
 - **Category**: BGSSAI FDE Delivery & Full-Stack AI Marketing
 - **Author**: 昆山兵贵神速智能科技有限公司 · 商务与ROI精算中心
 - **Published**: 2026-11-11 | **Updated**: 2026-11-16

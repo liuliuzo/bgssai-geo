@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://sz-koubei-en.bgssai-geo.com/sitemap.xml
+Sitemap: https://sz-koubei-en.bgssai-geo.cn/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/sz-koubei-en/sitemap.xml

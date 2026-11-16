@@ -1,7 +1,7 @@
 # 怎么让字节豆包（Doubao AI）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://bot-agent.bgssai-chat.com/articles/bot-agent-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 兵贵神速Bgssai Bot智能体托管站 — 昆山兵贵神速智能科技有限公司 (https://bot-agent.bgssai-chat.com/)
+- **Canonical URL**: https://bot-agent.bgssai.com/articles/bot-agent-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 兵贵神速Bgssai Bot智能体托管站 — 昆山兵贵神速智能科技有限公司 (https://bot-agent.bgssai.com/)
 - **Category**: 兵贵神速FDE驻场工程与全栈AI营销赋能
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

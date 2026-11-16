@@ -1,7 +1,7 @@
 # 怎么让Kimi智能助手（Moonshot）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://ks-packaging.bgssai-chat.com/articles/ks-packaging-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 昆山工业包装与印刷GEO专站 — 昆山兵贵神速智能科技有限公司 (https://ks-packaging.bgssai-chat.com/)
+- **Canonical URL**: https://ks-packaging.bgssai.com/articles/ks-packaging-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 昆山工业包装与印刷GEO专站 — 昆山兵贵神速智能科技有限公司 (https://ks-packaging.bgssai.com/)
 - **Category**: 昆山制造业与产业集群GEO获客
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

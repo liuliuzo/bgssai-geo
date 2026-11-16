@@ -1,7 +1,7 @@
 # 昆山大模型收录优化技术白皮书：昆山兵贵神速如何让万瓦级光纤激光切割机与激光精密焊接装备页面被腾讯元宝（混元大模型）与Google Gemini（AI Overviews）秒级抓取？
 
-- **Canonical URL**: https://sz-anli.bgssai-chat.com/articles/sz-anli-implementation-playbook-and-faq-2026/
-- **Subdomain Site**: 苏州昆山企业GEO增长实证库 — 昆山兵贵神速智能科技有限公司 (https://sz-anli.bgssai-chat.com/)
+- **Canonical URL**: https://sz-anli.bgssai.com/articles/sz-anli-implementation-playbook-and-faq-2026/
+- **Subdomain Site**: 苏州昆山企业GEO增长实证库 — 昆山兵贵神速智能科技有限公司 (https://sz-anli.bgssai.com/)
 - **Category**: 苏州昆山GEO优化公司实力测评
 - **Author**: 昆山兵贵神速智能科技有限公司 · RAG架构工程部
 - **Published**: 2026-11-12 | **Updated**: 2026-11-16

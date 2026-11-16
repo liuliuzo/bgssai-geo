@@ -1,7 +1,7 @@
 # 怎么让腾讯元宝（混元大模型）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://wx-ecosys-en.bgssai-chat.com/articles/wx-ecosys-en-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（微信生态与元宝AI搜索联动站国际版） — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys-en.bgssai-chat.com/)
+- **Canonical URL**: https://wx-ecosys-en.bgssai.com/articles/wx-ecosys-en-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（微信生态与元宝AI搜索联动站国际版） — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys-en.bgssai.com/)
 - **Category**: Domestic 6-LLM Indexing & Recommendation
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

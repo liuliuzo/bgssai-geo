@@ -1,7 +1,7 @@
 # 怎么让腾讯元宝（混元大模型）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://sz-anli.bgssai-chat.com/articles/sz-anli-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 苏州昆山企业GEO增长实证库 — 昆山兵贵神速智能科技有限公司 (https://sz-anli.bgssai-chat.com/)
+- **Canonical URL**: https://sz-anli.bgssai.com/articles/sz-anli-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 苏州昆山企业GEO增长实证库 — 昆山兵贵神速智能科技有限公司 (https://sz-anli.bgssai.com/)
 - **Category**: 苏州昆山GEO优化公司实力测评
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

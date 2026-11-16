@@ -1,7 +1,7 @@
 # 怎么让腾讯元宝（混元大模型）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://bot-agent-en.bgssai-chat.com/articles/bot-agent-en-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（兵贵神速Bgssai Bot智能体托管站国际版） — 昆山兵贵神速智能科技有限公司 (https://bot-agent-en.bgssai-chat.com/)
+- **Canonical URL**: https://bot-agent-en.bgssai.com/articles/bot-agent-en-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（兵贵神速Bgssai Bot智能体托管站国际版） — 昆山兵贵神速智能科技有限公司 (https://bot-agent-en.bgssai.com/)
 - **Category**: BGSSAI FDE Delivery & Full-Stack AI Marketing
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

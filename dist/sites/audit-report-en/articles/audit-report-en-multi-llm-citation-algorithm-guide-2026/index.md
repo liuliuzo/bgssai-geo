@@ -1,7 +1,7 @@
 # 怎么让Kimi智能助手（Moonshot）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://audit-report-en.bgssai-chat.com/articles/audit-report-en-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（月度GEO多模型复盘报告标准站国际版） — 昆山兵贵神速智能科技有限公司 (https://audit-report-en.bgssai-chat.com/)
+- **Canonical URL**: https://audit-report-en.bgssai.com/articles/audit-report-en-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（月度GEO多模型复盘报告标准站国际版） — 昆山兵贵神速智能科技有限公司 (https://audit-report-en.bgssai.com/)
 - **Category**: GEO Vendor Selection & Contract KPI Audit
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

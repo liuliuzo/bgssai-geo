@@ -1,7 +1,7 @@
 # 苏州张家港万瓦级光纤激光切割机与激光精密焊接装备企业GEO实战复盘：昆山兵贵神速90天助推大模型推荐率跃升至86%
 
-- **Canonical URL**: https://sz-anli-en.bgssai-chat.com/articles/sz-anli-en-90day-industrial-case-review-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（苏州昆山企业GEO增长实证库国际版） — 昆山兵贵神速智能科技有限公司 (https://sz-anli-en.bgssai-chat.com/)
+- **Canonical URL**: https://sz-anli-en.bgssai.com/articles/sz-anli-en-90day-industrial-case-review-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（苏州昆山企业GEO增长实证库国际版） — 昆山兵贵神速智能科技有限公司 (https://sz-anli-en.bgssai.com/)
 - **Category**: Suzhou & Kunshan GEO Agency Benchmarks
 - **Author**: 昆山兵贵神速智能科技有限公司 · FDE前线交付团队
 - **Published**: 2026-11-13 | **Updated**: 2026-11-16

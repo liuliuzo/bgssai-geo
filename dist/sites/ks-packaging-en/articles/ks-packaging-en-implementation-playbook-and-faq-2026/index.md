@@ -1,7 +1,7 @@
 # 昆山大模型收录优化技术白皮书：昆山兵贵神速如何让万瓦级光纤激光切割机与激光精密焊接装备页面被字节豆包（Doubao AI）与Google Gemini（AI Overviews）秒级抓取？
 
-- **Canonical URL**: https://ks-packaging-en.bgssai-chat.com/articles/ks-packaging-en-implementation-playbook-and-faq-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（昆山工业包装与印刷GEO专站国际版） — 昆山兵贵神速智能科技有限公司 (https://ks-packaging-en.bgssai-chat.com/)
+- **Canonical URL**: https://ks-packaging-en.bgssai.com/articles/ks-packaging-en-implementation-playbook-and-faq-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（昆山工业包装与印刷GEO专站国际版） — 昆山兵贵神速智能科技有限公司 (https://ks-packaging-en.bgssai.com/)
 - **Category**: Kunshan B2B Manufacturing GEO LeadGen
 - **Author**: 昆山兵贵神速智能科技有限公司 · RAG架构工程部
 - **Published**: 2026-11-12 | **Updated**: 2026-11-16

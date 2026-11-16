@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://wx-ecosys.bgssai-chat.com/sitemap.xml
+Sitemap: https://wx-ecosys.bgssai.com/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/wx-ecosys/sitemap.xml

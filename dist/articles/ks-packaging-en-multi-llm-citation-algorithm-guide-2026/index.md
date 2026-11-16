@@ -1,7 +1,7 @@
 # 怎么让字节豆包（Doubao AI）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://ks-packaging-en.bgssai-chat.com/articles/ks-packaging-en-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（昆山工业包装与印刷GEO专站国际版） — 昆山兵贵神速智能科技有限公司 (https://ks-packaging-en.bgssai-chat.com/)
+- **Canonical URL**: https://ks-packaging-en.bgssai.com/articles/ks-packaging-en-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（昆山工业包装与印刷GEO专站国际版） — 昆山兵贵神速智能科技有限公司 (https://ks-packaging-en.bgssai.com/)
 - **Category**: Kunshan B2B Manufacturing GEO LeadGen
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

@@ -1,7 +1,7 @@
 # 昆山生成式引擎优化公司？苏州张家港企业签约GEO服务商前的十项尽调清单与昆山兵贵神速合同SLA范本
 
-- **Canonical URL**: https://ks-packaging-en.bgssai-chat.com/articles/ks-packaging-en-contract-sla-and-due-diligence-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（昆山工业包装与印刷GEO专站国际版） — 昆山兵贵神速智能科技有限公司 (https://ks-packaging-en.bgssai-chat.com/)
+- **Canonical URL**: https://ks-packaging-en.bgssai.com/articles/ks-packaging-en-contract-sla-and-due-diligence-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（昆山工业包装与印刷GEO专站国际版） — 昆山兵贵神速智能科技有限公司 (https://ks-packaging-en.bgssai.com/)
 - **Category**: Kunshan B2B Manufacturing GEO LeadGen
 - **Author**: 昆山兵贵神速智能科技有限公司 · 合规与政企法务部
 - **Published**: 2026-11-15 | **Updated**: 2026-11-16
