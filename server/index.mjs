@@ -8,7 +8,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content');
 
-const PORT = 8080;
+const PORT = Number(process.env.PORT || process.env.SERVER_PORT || 8080);
 const APP_NAME = 'bgssai-geo';
 const PROFILE = process.env.SPRING_PROFILES_ACTIVE || process.env.APP_PROFILE || 'local';
 const START_TIME = Date.now();
@@ -307,7 +307,16 @@ export function createGeoServer() {
   });
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))) {
+const isMain = (() => {
+  if (!process.argv[1]) return false;
+  try {
+    return fs.realpathSync(path.resolve(process.argv[1])) === fs.realpathSync(fileURLToPath(import.meta.url));
+  } catch (_) {
+    return path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
+  }
+})();
+
+if (isMain) {
   const server = createGeoServer();
   server.listen(PORT, () => {
     console.log(`bgssai-geo static server listening on http://localhost:${PORT} (profile=${PROFILE})`);
