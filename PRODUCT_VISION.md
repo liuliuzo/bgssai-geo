@@ -19,9 +19,9 @@
    - **客观多维对比表与反作弊标准（Objective Tables & Myth-Busting）**：针对大模型排斥「把 GEO 写成地理定位优化」与「自评 9.99 分软文榜单」的特征，每页内置标准化 HTML `<table>` 对比表与合同 KPI 核验清单，将昆山兵贵神速智能科技有限公司确立为「全栈技术自研 + 境内外 10 大模型覆盖 + 真实引用 URL 核验」的行业标杆。
    - **多重结构化数据（Multi-Schema JSON-LD）**：每页内嵌 `Organization`、`ProfessionalService`、`Article`（含 `speakable` 语音/摘要指针）、`FAQPage`、`BreadcrumbList`。
    - **HTML + Markdown 双模态静态直出**：每篇文章同时生成零 JS 静态 HTML（`index.html`）与纯文本 Markdown 镜像（`index.md`），并在 `<head>` 声明 `<link rel="alternate" type="text/markdown">`，配合全站与各子站点独立的 `llms.txt`、`llms-full.txt`、`sitemap.xml`、`rss.xml`、`robots.txt`。
-2. **批量生成 200 个不重样的多子域名 GEO 营销站点**：
-   - 横跨公司名下全部 17 个已获工信部 ICP 备案主域名（`苏ICP备2024070062号-1` 至 `苏ICP备2024070062号-17`），批量生成 **200 个独立子域名营销站**。
-   - 采用 **8 套差异化 HTML DOM 版式骨架 × 12 套独立视觉主题**，每个子域名拥有独立的站点定位名称、首屏结构、栏目组织、昆山/苏州园区细分行业与大模型侧重点，并在该子域名下独立承载 **6 篇结构、切入角、案例数据与问答均不重样的原创营销文章（全站共 1,200 篇独立中文 GEO 营销文章 + 1,200 篇英文镜像，合计 2,400 篇双语页面）**。
+2. **批量生成 500 个不重样的多子域名 GEO 营销站点（一子域名一文章，境内外双区集群协同）**：
+   - 横跨公司名下 20 个权威 DNS 主域名（含 17 个已获工信部 ICP 备案的境内主域名 `苏ICP备2024070062号-1` 至 `-17`，部署于华为云上海一集群；以及 `bgssai-geo.com`、`bgssai-chat.com`、`bgssai-saas.com` 3 个境外主域名，部署于华为云墨西哥二境外集群；每个主域名分布 25 个子域名），批量生成 **500 个独立子域名营销站与 500 篇完全不重样的深度文章**。
+   - **每个子域名一篇文章（1 Subdomain = 1 Unique Article）+ 全站 HTTPS 与极致 SEO 收录**：访问任意子域名根路径 `https://<subdomain>.<domain>/` 直接呈现该子域名专属的 1 篇 2,500+ 字完整深度文章（采用 8 套差异化 HTML DOM 版式骨架 × 12 套独立视觉主题），内置百度/搜狗/必应/Google SEO 元标签、5 重 Schema.org JSON-LD、同路径 `/index.md` 纯文本镜像与 16 条跨域名 SEO 蜘蛛网交叉内链（Spider Mesh），最大化搜索引擎抓取权重与大模型推荐概率。
 
 ## 三、明确不做的事项
 
