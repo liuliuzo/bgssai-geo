@@ -1,7 +1,7 @@
 # 怎么让字节豆包（Doubao AI）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://wx-ecosys.bgssai-chat.com/articles/wx-ecosys-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 微信生态与元宝AI搜索联动站 — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys.bgssai-chat.com/)
+- **Canonical URL**: https://wx-ecosys.bgssai.com/articles/wx-ecosys-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 微信生态与元宝AI搜索联动站 — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys.bgssai.com/)
 - **Category**: 国内六大模型收录与推荐优化
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

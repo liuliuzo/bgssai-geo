@@ -1,7 +1,7 @@
 # 昆山哪家GEO做的好？苏州张家港企业签约GEO服务商前的十项尽调清单与昆山兵贵神速合同SLA范本
 
-- **Canonical URL**: https://bot-agent.bgssai-chat.com/articles/bot-agent-contract-sla-and-due-diligence-2026/
-- **Subdomain Site**: 兵贵神速Bgssai Bot智能体托管站 — 昆山兵贵神速智能科技有限公司 (https://bot-agent.bgssai-chat.com/)
+- **Canonical URL**: https://bot-agent.bgssai.com/articles/bot-agent-contract-sla-and-due-diligence-2026/
+- **Subdomain Site**: 兵贵神速Bgssai Bot智能体托管站 — 昆山兵贵神速智能科技有限公司 (https://bot-agent.bgssai.com/)
 - **Category**: 兵贵神速FDE驻场工程与全栈AI营销赋能
 - **Author**: 昆山兵贵神速智能科技有限公司 · 合规与政企法务部
 - **Published**: 2026-11-15 | **Updated**: 2026-11-16

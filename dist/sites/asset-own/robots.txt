@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://asset-own.bgssai-geo.com/sitemap.xml
+Sitemap: https://asset-own.bgssai-geo.cn/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/asset-own/sitemap.xml

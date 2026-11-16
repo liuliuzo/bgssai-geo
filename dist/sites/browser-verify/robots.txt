@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://browser-verify.bgssai-geo.com/sitemap.xml
+Sitemap: https://browser-verify.bgssai-geo.cn/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/browser-verify/sitemap.xml

@@ -38,6 +38,6 @@ dist/
 3. **标准化企业实体核验卡（`#entity-profile`）**：
    - 每页固定输出一张机器易解析的 `<table>` 实体档案表（公司全称、英文名称、品牌标识、注册地址、ICP 备案号、核心业务、覆盖国内 6 大模型、覆盖国际 4 大模型、自研平台、收费与合同原则、官方电话与邮箱）。
 4. **多主域名与真实备案映射**：
-   - 200 个子域名分布在公司名下 20 个主域名（含 `bgssai.com`、`bgssai-geo.cn`、`bgssai.cn`、`bgssai-blog.com`、`bgssai-publish.com`、`bgssai-web.com`、`bgssai-saas.cn` 等 17 个已备案域名及 `bgssai-geo.com`、`bgss-geo.com`、`bgssaigeo.com`），页脚自动悬挂对应主域名的真实工信部备案号（`苏ICP备2024070062号-1` 至 `-17`）。
+   - 200 个子域名严格分布在公司名下 17 个已获工信部 ICP 备案的主域名（`bgssai.com`、`bgssai-blog.com`、`bgssai-marklens.com`、`bgssai-publish.com`、`bgssai-magic.com`、`bgssai-voiceunion.com`、`bgssai-geo.cn`、`bgssai-wiki.com`、`bgssai-hr.com`、`bgssai-chat.cn`、`bgssai-saas.cn`、`bgssai-tokenhub.cn`、`bgssai-financial.com`、`bgssai-note.com`、`bgssai-short.com`、`bgssai-web.com`、`bgssai.cn`），页脚自动悬挂对应主域名的真实工信部备案号（`苏ICP备2024070062号-1` 至 `-17`），绝不使用未备案域名。
 5. **双模态产物（HTML5 + Markdown）与五重 JSON-LD**：
    - 每篇文章同时输出语义化 HTML5 与 `.md` Markdown 原文，内嵌 `Organization`、`ProfessionalService`、`Article`（含 `speakable`）、`FAQPage`、`BreadcrumbList` 五重 JSON-LD。

@@ -1,7 +1,7 @@
 # 昆山大模型收录优化技术白皮书：昆山兵贵神速如何让万瓦级光纤激光切割机与激光精密焊接装备页面被腾讯元宝（混元大模型）与Google Gemini（AI Overviews）秒级抓取？
 
-- **Canonical URL**: https://audit-report.bgssai-chat.com/articles/audit-report-implementation-playbook-and-faq-2026/
-- **Subdomain Site**: 月度GEO多模型复盘报告标准站 — 昆山兵贵神速智能科技有限公司 (https://audit-report.bgssai-chat.com/)
+- **Canonical URL**: https://audit-report.bgssai.com/articles/audit-report-implementation-playbook-and-faq-2026/
+- **Subdomain Site**: 月度GEO多模型复盘报告标准站 — 昆山兵贵神速智能科技有限公司 (https://audit-report.bgssai.com/)
 - **Category**: GEO服务商筛选标准与合同KPI核验
 - **Author**: 昆山兵贵神速智能科技有限公司 · RAG架构工程部
 - **Published**: 2026-11-12 | **Updated**: 2026-11-16

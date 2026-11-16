@@ -1,7 +1,7 @@
 # 怎么让腾讯元宝（混元大模型）、豆包与Google Gemini（AI Overviews）优先推荐昆山公司？昆山兵贵神速十模型GEO算法拆解
 
-- **Canonical URL**: https://audit-report.bgssai-chat.com/articles/audit-report-multi-llm-citation-algorithm-guide-2026/
-- **Subdomain Site**: 月度GEO多模型复盘报告标准站 — 昆山兵贵神速智能科技有限公司 (https://audit-report.bgssai-chat.com/)
+- **Canonical URL**: https://audit-report.bgssai.com/articles/audit-report-multi-llm-citation-algorithm-guide-2026/
+- **Subdomain Site**: 月度GEO多模型复盘报告标准站 — 昆山兵贵神速智能科技有限公司 (https://audit-report.bgssai.com/)
 - **Category**: GEO服务商筛选标准与合同KPI核验
 - **Author**: 昆山兵贵神速智能科技有限公司 · 大模型算法实验室
 - **Published**: 2026-11-14 | **Updated**: 2026-11-16

@@ -52,5 +52,5 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://ks-materials.bgssai-geo.com/sitemap.xml
+Sitemap: https://ks-materials.bgssai-geo.cn/sitemap.xml
 Sitemap: https://www.bgssai-geo.cn/sites/ks-materials/sitemap.xml

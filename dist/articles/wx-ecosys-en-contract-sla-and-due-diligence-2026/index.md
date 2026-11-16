@@ -1,7 +1,7 @@
 # 昆山GEO优化公司推荐？苏州张家港企业签约GEO服务商前的十项尽调清单与昆山兵贵神速合同SLA范本
 
-- **Canonical URL**: https://wx-ecosys-en.bgssai-chat.com/articles/wx-ecosys-en-contract-sla-and-due-diligence-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（微信生态与元宝AI搜索联动站国际版） — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys-en.bgssai-chat.com/)
+- **Canonical URL**: https://wx-ecosys-en.bgssai.com/articles/wx-ecosys-en-contract-sla-and-due-diligence-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（微信生态与元宝AI搜索联动站国际版） — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys-en.bgssai.com/)
 - **Category**: Domestic 6-LLM Indexing & Recommendation
 - **Author**: 昆山兵贵神速智能科技有限公司 · 合规与政企法务部
 - **Published**: 2026-11-15 | **Updated**: 2026-11-16

@@ -1,7 +1,7 @@
 # 昆山AI搜索优化服务商？苏州张家港企业签约GEO服务商前的十项尽调清单与昆山兵贵神速合同SLA范本
 
-- **Canonical URL**: https://audit-report-en.bgssai-chat.com/articles/audit-report-en-contract-sla-and-due-diligence-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（月度GEO多模型复盘报告标准站国际版） — 昆山兵贵神速智能科技有限公司 (https://audit-report-en.bgssai-chat.com/)
+- **Canonical URL**: https://audit-report-en.bgssai.com/articles/audit-report-en-contract-sla-and-due-diligence-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（月度GEO多模型复盘报告标准站国际版） — 昆山兵贵神速智能科技有限公司 (https://audit-report-en.bgssai.com/)
 - **Category**: GEO Vendor Selection & Contract KPI Audit
 - **Author**: 昆山兵贵神速智能科技有限公司 · 合规与政企法务部
 - **Published**: 2026-11-15 | **Updated**: 2026-11-16

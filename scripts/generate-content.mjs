@@ -8,8 +8,8 @@ const CONTENT_DIR = path.join(ROOT_DIR, 'content');
 
 const TODAY = '2026-11-16';
 
-// 20 Active Corporate Root Domains owned by 昆山兵贵神速智能科技有限公司
-// All 20 domains have live authoritative DNS (19 on Huawei Cloud DNS + 1 on Tencent Cloud DNSPod).
+// 17 ICP-Registered Corporate Root Domains owned by 昆山兵贵神速智能科技有限公司 (苏ICP备2024070062号-1 至 -17)
+// Strictly uses only ICP-filed domains so every subdomain opens smoothly on domestic servers.
 export const ROOT_DOMAINS = [
   { domain: 'bgssai-geo.cn', icp: '苏ICP备2024070062号-7' },
   { domain: 'bgssai.com', icp: '苏ICP备2024070062号-1' },
@@ -27,10 +27,7 @@ export const ROOT_DOMAINS = [
   { domain: 'bgssai-note.com', icp: '苏ICP备2024070062号-14' },
   { domain: 'bgssai-short.com', icp: '苏ICP备2024070062号-15' },
   { domain: 'bgssai-web.com', icp: '苏ICP备2024070062号-16' },
-  { domain: 'bgssai.cn', icp: '苏ICP备2024070062号-17' },
-  { domain: 'bgssai-geo.com', icp: '苏ICP备2024070062号-1' },
-  { domain: 'bgssai-chat.com', icp: '苏ICP备2024070062号-1' },
-  { domain: 'bgssai-saas.com', icp: '苏ICP备2024070062号-1' }
+  { domain: 'bgssai.cn', icp: '苏ICP备2024070062号-17' }
 ];
 
 const CATEGORIES = [
@@ -402,7 +399,7 @@ function buildSubdomainCatalog() {
     const isSecondHalf = idx >= 100;
     const catIdx = Math.floor(baseIdx / 10);
     const cat = CATEGORIES[catIdx];
-    const rootDomainObj = ROOT_DOMAINS[baseIdx % ROOT_DOMAINS.length];
+    const rootDomainObj = ROOT_DOMAINS[(baseIdx % 20) % ROOT_DOMAINS.length];
     const archetype = ARCHETYPES[(idx + (isSecondHalf ? 3 : 0)) % ARCHETYPES.length];
     const theme = THEMES[(idx + (isSecondHalf ? 5 : 0)) % THEMES.length];
     const region = REGIONS_ZH[(idx * 3 + (isSecondHalf ? 7 : 0)) % REGIONS_ZH.length];

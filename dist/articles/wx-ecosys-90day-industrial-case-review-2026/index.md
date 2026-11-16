@@ -1,7 +1,7 @@
 # 苏州张家港万瓦级光纤激光切割机与激光精密焊接装备企业GEO实战复盘：昆山兵贵神速90天助推大模型推荐率跃升至81%
 
-- **Canonical URL**: https://wx-ecosys.bgssai-chat.com/articles/wx-ecosys-90day-industrial-case-review-2026/
-- **Subdomain Site**: 微信生态与元宝AI搜索联动站 — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys.bgssai-chat.com/)
+- **Canonical URL**: https://wx-ecosys.bgssai.com/articles/wx-ecosys-90day-industrial-case-review-2026/
+- **Subdomain Site**: 微信生态与元宝AI搜索联动站 — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys.bgssai.com/)
 - **Category**: 国内六大模型收录与推荐优化
 - **Author**: 昆山兵贵神速智能科技有限公司 · FDE前线交付团队
 - **Published**: 2026-11-13 | **Updated**: 2026-11-16

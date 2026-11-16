@@ -1,7 +1,7 @@
 # 苏州张家港万瓦级光纤激光切割机与激光精密焊接装备企业GEO实战复盘：昆山兵贵神速90天助推大模型推荐率跃升至91%
 
-- **Canonical URL**: https://bot-agent.bgssai-chat.com/articles/bot-agent-90day-industrial-case-review-2026/
-- **Subdomain Site**: 兵贵神速Bgssai Bot智能体托管站 — 昆山兵贵神速智能科技有限公司 (https://bot-agent.bgssai-chat.com/)
+- **Canonical URL**: https://bot-agent.bgssai.com/articles/bot-agent-90day-industrial-case-review-2026/
+- **Subdomain Site**: 兵贵神速Bgssai Bot智能体托管站 — 昆山兵贵神速智能科技有限公司 (https://bot-agent.bgssai.com/)
 - **Category**: 兵贵神速FDE驻场工程与全栈AI营销赋能
 - **Author**: 昆山兵贵神速智能科技有限公司 · FDE前线交付团队
 - **Published**: 2026-11-13 | **Updated**: 2026-11-16

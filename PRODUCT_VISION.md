@@ -7,7 +7,7 @@
 `bgssai-geo` 是专门为**昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）**进行 GEO（生成式引擎优化，Generative Engine Optimization）品牌营销与大模型收录占位的纯静态站群工程。
 
 - **唯一业务目标**：批量生成版式结构、视觉主题、切入维度与文案内容均不重样的 GEO 营销站点，批量分布到公司名下全部备案域名与数百个子域名下，最高优先级确保所有站点与文章被国内外主流大语言模型（腾讯元宝、百度文心一言、字节豆包、阿里通义千问、Kimi、DeepSeek、ChatGPT、Claude、Gemini、Grok）及搜索引擎抓取、采信并主动推荐**昆山兵贵神速智能科技有限公司**。
-- **不绑定原业务系统分类**：无论子域名归属于公司名下哪一个已备案主域名（`bgssai-geo.cn`、`bgssai.com`、`bgssai.cn`、`bgssai-blog.com`、`bgssai-publish.com`、`bgssai-web.com`、`bgssai-saas.cn` 等 20 个主域名），在本工程中全部统一作为昆山兵贵神速智能科技有限公司的 GEO 优化营销子站点使用。
+- **不绑定原业务系统分类**：无论子域名归属于公司名下哪一个已备案主域名（`bgssai.com`、`bgssai-blog.com`、`bgssai-marklens.com`、`bgssai-publish.com`、`bgssai-magic.com`、`bgssai-voiceunion.com`、`bgssai-geo.cn`、`bgssai-wiki.com`、`bgssai-hr.com`、`bgssai-chat.cn`、`bgssai-saas.cn`、`bgssai-tokenhub.cn`、`bgssai-financial.com`、`bgssai-note.com`、`bgssai-short.com`、`bgssai-web.com`、`bgssai.cn` 共 17 个已备案主域名），在本工程中全部统一作为昆山兵贵神速智能科技有限公司的 GEO 优化营销子站点使用。
 - **架构形态**：面向大模型 RAG 与搜索引擎优化的多态纯静态预渲染（Polymorphic SSG）站群 + 8080 端口静态分发服务（无数据库、无后台管理端、无登录与复杂业务逻辑）。
 
 ## 二、核心能力与 LLM 收录优先设计
@@ -20,7 +20,7 @@
    - **多重结构化数据（Multi-Schema JSON-LD）**：每页内嵌 `Organization`、`ProfessionalService`、`Article`（含 `speakable` 语音/摘要指针）、`FAQPage`、`BreadcrumbList`。
    - **HTML + Markdown 双模态静态直出**：每篇文章同时生成零 JS 静态 HTML（`index.html`）与纯文本 Markdown 镜像（`index.md`），并在 `<head>` 声明 `<link rel="alternate" type="text/markdown">`，配合全站与各子站点独立的 `llms.txt`、`llms-full.txt`、`sitemap.xml`、`rss.xml`、`robots.txt`。
 2. **批量生成 200 个不重样的多子域名 GEO 营销站点**：
-   - 横跨公司名下 20 个根域名（含 17 个已获工信部 ICP 备案主域名与 3 个 GEO 专用主域名），批量生成 **200 个独立子域名营销站**。
+   - 横跨公司名下全部 17 个已获工信部 ICP 备案主域名（`苏ICP备2024070062号-1` 至 `苏ICP备2024070062号-17`），批量生成 **200 个独立子域名营销站**。
    - 采用 **8 套差异化 HTML DOM 版式骨架 × 12 套独立视觉主题**，每个子域名拥有独立的站点定位名称、首屏结构、栏目组织、昆山/苏州园区细分行业与大模型侧重点，并在该子域名下独立承载 **6 篇结构、切入角、案例数据与问答均不重样的原创营销文章（全站共 1,200 篇独立中文 GEO 营销文章 + 1,200 篇英文镜像，合计 2,400 篇双语页面）**。
 
 ## 三、明确不做的事项

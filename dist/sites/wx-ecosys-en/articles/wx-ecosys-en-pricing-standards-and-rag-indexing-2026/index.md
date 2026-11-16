@@ -1,7 +1,7 @@
 # 昆山GEO服务商怎么选？2026年苏州张家港万瓦级光纤激光切割机与激光精密焊接装备企业GEO优化收费标准与昆山兵贵神速报价明细
 
-- **Canonical URL**: https://wx-ecosys-en.bgssai-chat.com/articles/wx-ecosys-en-pricing-standards-and-rag-indexing-2026/
-- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（微信生态与元宝AI搜索联动站国际版） — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys-en.bgssai-chat.com/)
+- **Canonical URL**: https://wx-ecosys-en.bgssai.com/articles/wx-ecosys-en-pricing-standards-and-rag-indexing-2026/
+- **Subdomain Site**: 昆山千灯超硬PCD/GEO专题站（微信生态与元宝AI搜索联动站国际版） — 昆山兵贵神速智能科技有限公司 (https://wx-ecosys-en.bgssai.com/)
 - **Category**: Domestic 6-LLM Indexing & Recommendation
 - **Author**: 昆山兵贵神速智能科技有限公司 · 商务与ROI精算中心
 - **Published**: 2026-11-11 | **Updated**: 2026-11-16
