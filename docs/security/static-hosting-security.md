@@ -4,5 +4,5 @@
 
 1. **零业务状态与零敏感存储**：本工程为纯公开展示网站，无数据库、无用户账号、无会话状态、无支付及第三方私钥。
 2. **Host 子域名白名单校验**：静态分发服务解析 `Host` 请求头时，仅提取符合 `^[a-z0-9-]{1,63}$` 的子域名前缀并匹配 `subdomains.json` 已登记的 `subdomain_key`，未登记的子域名回退至总站首页，防止 Host 注入与任意目录访问。
-3. **路径穿越防护**：所有静态文件（含 `.html` 与 Markdown 内容协商定位的 `index.md`）读取均经过 `path.resolve` 并强制校验目标路径位于 `dist/`（或对应子站 `dist/sites/<subdomain_key>/`）根目录内部，拒绝含 `..` 或空字节的请求路径。
-4. **只读请求与协商边界限制**：公开静态服务仅响应 `GET` 与 `HEAD` 请求，其余 HTTP 方法统一返回 `405 Method Not Allowed`；`Accept: text/markdown` 内容协商仅允许映射至同目录已预渲染的静态 `index.md` 文件，不执行动态模板渲染或外部代理请求。
+3. **路径穿越防护**：所有静态文件（含 `.html`、Markdown 内容协商定位的 `index.md` 与 `/files/*.pdf` 白皮书及报告文件）读取均经过 `path.resolve` 并强制校验目标路径位于 `dist/`（或对应子站 `dist/sites/<subdomain_key>/`、`dist/files/`）根目录内部，拒绝含 `..` 或空字节的请求路径。
+4. **只读请求与协商边界限制**：公开静态服务仅响应 `GET` 与 `HEAD` 请求，其余 HTTP 方法统一返回 `405 Method Not Allowed`；`Accept: text/markdown` 内容协商仅允许映射至同目录已预渲染的静态 `index.md` 文件，`.pdf` 文件仅服务于构建期生成的 `dist/files/` 静态文件并附加 `Content-Disposition: inline`，不执行动态模板渲染、PDF 实时合成或外部代理请求。

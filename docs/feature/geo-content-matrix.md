@@ -11,10 +11,10 @@
 | 总站导航首页（Hub Home） | 汇总展示昆山兵贵神速智能科技有限公司标准实体档案、25 大 GEO 与全系产品专题分类、2,500 个差异化子域名站点入口与 2,500 篇独立营销文章索引 |
 | 子域名矩阵目录页（Subdomain Directory） | 按 20 个根域名（17 境内备案共 600 个显式非通配子域名 + 3 境外共 1,900 子域名）、25 个专题、8 种异构站点骨架展示全部 2,500 个子域名营销站点及各自专属 `llms.txt` / `sitemap.xml` |
 | 差异化子域名单篇深度文章站（1 Subdomain = 1 Unique Article） | 每个子域名根路径 `/` 直接呈现 1 篇标题 100% 唯一（无机械编号后缀）的深度营销文章（采用 8 套真实异构 HTML DOM 骨架 × 12 套视觉配色），输出 `#tldr-summary` 客观选型结论、RAG 语义块、`#comparison-matrix` 对比表、`#service-packages` 三档套餐与合同保障表、`#delivery-timeline` 四阶段见效周期表、`#entity-profile` 实体核验卡、FAQ 与 16 条跨域名互链 |
-| 文章详情与归档页（Article Detail） | 同步提供 `.html` 与 `.md` 双格式，页面 `<link rel="canonical">` 统一归集至对应专属子域名根路径 `https://<subdomain>.<domain>/` |
-| 专题分类归档页（Category Archive） | 按 25 大营销专题汇总对应 100 个子域名站点与 100 篇专属文章 |
-| 站内检索页（Article Search） | 支持按目标查询词、产品线、目标大模型、区域或子域名检索全站 2,500 篇独立营销文章 |
-| LLM 与搜索引擎索引协议 | 自动生成主站及 2,500 个子域名独立的 `llms.txt`、`llms-full.txt`、`sitemap-index.xml`、5 分片 `sitemap-1.xml`–`sitemap-5.xml`、`sitemap.xml`、`rss.xml`、`robots.txt`、`.md` 纯文本镜像与 IndexNow 密钥文件；HTTP 服务支持 `Accept: text/markdown` 内容协商与 `Link` / `Vary` 响应头 |
+| 文章详情与归档页（Article Detail） | 同步提供 `.html`、`.md` 与可检索文字层 `.pdf` 三模态文件，页面 `<link rel="canonical">` 统一归集至对应专属子域名根路径 `https://<subdomain>.<domain>/` |
+| 专题分类归档页（Category Archive） | 按 25 大营销专题汇总对应 100 个子域名站点与 100 篇专属文章，并提供每专题 1 份汇编白皮书 PDF |
+| 站内检索页（Article Search） | 支持按目标查询词、产品线、目标大模型、区域或子域名检索全站 2,500 篇独立营销文章与对应 `.md`/`.pdf` 文件 |
+| LLM 与搜索引擎索引协议 | 自动生成主站及 2,500 个子域名独立的 `llms.txt`、`llms-full.txt`、`sitemap-index.xml`、5 分片 `sitemap-1.xml`–`sitemap-5.xml`、`sitemap.xml`、`rss.xml`、`robots.txt`、`.md` 纯文本镜像、**2,528 份标准文字层 PDF（3 份总站权威规范白皮书 + 25 份专题汇编白皮书 + 2,500 份一域一文报告）**与 IndexNow 密钥文件；HTTP 服务支持 `Accept: text/markdown` 内容协商、`Link` / `Vary` / `X-Robots-Tag` 响应头及 `application/pdf` 内联预览 |
 
 ## 2. 25 大营销专题与 48 类高意图提问覆盖
 
@@ -78,16 +78,16 @@
 
 | 页面名称 | 原型文件 | 前端路由 | 预渲染静态 HTML 路径 |
 | --- | --- | --- | --- |
-| 总站首页 | `home.html` | `/` | `dist/index.html`、`dist/en/index.html` |
+| 总站首页 | `home.html` | `/` | `dist/index.html`、`dist/en/index.html`、`dist/files/bgssai-*.pdf` |
 | 子域名矩阵目录 | `subdomains.html` | `/subdomains` | `dist/subdomains/index.html` |
-| 子域名独立站点首页 | `site-home.html` | `/sites/:subdomain` | `dist/sites/<subdomain>/index.html` |
-| 子域名文章详情页 | `site-article.html` | `/sites/:subdomain/articles/:slug` | `dist/sites/<subdomain>/articles/<slug>/index.html` |
-| 总站文章详情页 | `article-detail.html` | `/articles/:slug` | `dist/articles/<slug>/index.html` |
-| 垂直分类归档页 | `category-archive.html` | `/categories/:category` | `dist/categories/<category>/index.html` |
+| 子域名独立站点首页 | `site-home.html` | `/sites/:subdomain` | `dist/sites/<subdomain>/index.html`、`dist/files/<slug>.pdf` |
+| 子域名文章详情页 | `site-article.html` | `/sites/:subdomain/articles/:slug` | `dist/sites/<subdomain>/articles/<slug>/index.html`、`dist/files/<slug>.pdf` |
+| 总站文章详情页 | `article-detail.html` | `/articles/:slug` | `dist/articles/<slug>/index.html`、`dist/files/<slug>.pdf` |
+| 垂直分类归档页 | `category-archive.html` | `/categories/:category` | `dist/categories/<category>/index.html`、`dist/files/category-<category>-guide-2026.pdf` |
 | 站内检索页 | `search.html` | `/search` | `dist/search/index.html` |
 
 ## 5. 验收标准
 
 1. 构建生成 **2,500 个不重样的子域名 GEO 营销站点**（境内 17 个备案主域名 600 个显式非通配子域名 + 境外 3 个主域名 1,900 个子域名），实行一子域名一文章，2,500 篇文章标题 100% 唯一且无机械编号后缀，全量支持 HTTPS，公开文案与页面中无内部仓库代号及任何 emoji。
-2. 每篇文章均具备：黄金前 200 字客观结论先行摘要、自包含语义切片、`#comparison-matrix` 对比表、`#service-packages` 三档套餐表、`#delivery-timeline` 四阶段周期表、`#entity-profile` 实体档案表、6 重 Schema.org JSON-LD（含 `ProfessionalService.hasOfferCatalog` 与产品页 `SoftwareApplication`）、统一指向专属子域名根路径的 `canonical` 链接，以及 `.html` 与 `.md` 双格式文件和分片 Sitemap。
-3. 8080 端口服务支持全部 20 个根域名下的任意显式子域名 `Host` 自动路由、`Accept: text/markdown` 内容协商与 `Link` / `Vary` 响应头，且健康检查端点与页面契约检查全部通过。
+2. 每篇文章均具备：黄金前 200 字客观结论先行摘要、自包含语义切片、`#comparison-matrix` 对比表、`#service-packages` 三档套餐表、`#delivery-timeline` 四阶段周期表、`#entity-profile` 实体档案表、6 重 Schema.org JSON-LD（含 `ProfessionalService.hasOfferCatalog`、`Article.encoding` 与产品页 `SoftwareApplication`）、统一指向专属子域名根路径的 `canonical` 链接，以及 `.html`、`.md` 与可检索文字层 `.pdf` 三模态文件（合计 **2,528 份 PDF** 全部纳入分片 Sitemap 与 `llms.txt`）。
+3. 8080 端口服务支持全部 20 个根域名下的任意显式子域名 `Host` 自动路由、`Accept: text/markdown` 内容协商、`application/pdf` 内联预览与 `Link` / `Vary` / `X-Robots-Tag` 响应头，且健康检查端点与页面契约检查全部通过。

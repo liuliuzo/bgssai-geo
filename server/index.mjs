@@ -22,18 +22,22 @@ const MIME_TYPES = {
   '.json': 'application/json; charset=utf-8',
   '.xml': 'application/xml; charset=utf-8',
   '.txt': 'text/plain; charset=utf-8',
+  '.pdf': 'application/pdf',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
   '.ico': 'image/x-icon'
 };
 
 let knownSubdomains = new Set();
+let subdomainFullDomainMap = new Map();
 try {
   const raw = fs.readFileSync(path.join(CONTENT_DIR, 'subdomains.json'), 'utf8');
   const parsed = JSON.parse(raw);
   knownSubdomains = new Set(parsed.map((item) => item.subdomain_key));
+  subdomainFullDomainMap = new Map(parsed.map((item) => [item.subdomain_key, item.full_domain]));
 } catch (_) {
   knownSubdomains = new Set();
+  subdomainFullDomainMap = new Map();
 }
 
 let readinessCache = { expiresAt: 0, payload: null, statusCode: 200 };
@@ -173,6 +177,7 @@ function resolveStaticFile(subdomainKey, urlPath, preferMarkdown = false) {
 
   if (
     cleanPath.startsWith('/assets/') ||
+    cleanPath.startsWith('/files/') ||
     cleanPath.startsWith('/sites/') ||
     cleanPath.startsWith('/categories/') ||
     cleanPath.startsWith('/subdomains') ||
@@ -198,8 +203,57 @@ function resolveStaticFile(subdomainKey, urlPath, preferMarkdown = false) {
   return resolveIndexTarget(rootCandidate, preferMarkdown);
 }
 
-function buildLinkHeader(filePath, cleanPath) {
+function resolvePdfCanonicalUrl(filename, subdomainKey) {
+  const baseName = filename.replace(/\.pdf$/i, '');
+  let derivedSubKey = null;
+  if (baseName.endsWith('-geo-report-2026')) {
+    derivedSubKey = baseName.slice(0, -'-geo-report-2026'.length);
+  } else if (baseName.endsWith('-product-guide-2026')) {
+    derivedSubKey = baseName.slice(0, -'-product-guide-2026'.length);
+  }
+  const targetSubKey = derivedSubKey || subdomainKey;
+  if (targetSubKey && subdomainFullDomainMap.has(targetSubKey)) {
+    return `https://${subdomainFullDomainMap.get(targetSubKey)}/files/${filename}`;
+  }
+  return `https://www.bgssai-geo.cn/files/${filename}`;
+}
+
+function resolveMatchingPdfHref(cleanPath, subdomainKey) {
+  if (cleanPath.startsWith('/articles/')) {
+    const parts = cleanPath.split('/').filter(Boolean);
+    if (parts[1]) {
+      const cand = `${parts[1]}.pdf`;
+      if (fs.existsSync(path.join(DIST_DIR, 'files', cand))) return `/files/${cand}`;
+    }
+  }
+  if (cleanPath.startsWith('/categories/')) {
+    const parts = cleanPath.split('/').filter(Boolean);
+    if (parts[1]) {
+      const cand = `category-${parts[1]}-guide-2026.pdf`;
+      if (fs.existsSync(path.join(DIST_DIR, 'files', cand))) return `/files/${cand}`;
+    }
+  }
+  const siteParts = cleanPath.startsWith('/sites/') ? cleanPath.split('/').filter(Boolean) : [];
+  if (siteParts[1] && siteParts[2] === 'articles' && siteParts[3]) {
+    const cand = `${siteParts[3]}.pdf`;
+    if (fs.existsSync(path.join(DIST_DIR, 'files', cand))) return `/files/${cand}`;
+  }
+  const activeSubKey = siteParts[1] || subdomainKey;
+  if (activeSubKey) {
+    for (const suffix of ['-geo-report-2026.pdf', '-product-guide-2026.pdf']) {
+      const cand = `${activeSubKey}${suffix}`;
+      if (fs.existsSync(path.join(DIST_DIR, 'files', cand))) return `/files/${cand}`;
+    }
+  }
+  return null;
+}
+
+function buildLinkHeader(filePath, cleanPath, subdomainKey) {
   const links = ['</llms.txt>; rel="alternate"; type="text/plain"'];
+  const pdfHref = resolveMatchingPdfHref(cleanPath, subdomainKey);
+  if (pdfHref) {
+    links.unshift(`<${pdfHref}>; rel="alternate"; type="application/pdf"`);
+  }
   const siblingMd = path.join(path.dirname(filePath), 'index.md');
   if (fs.existsSync(siblingMd) && fs.statSync(siblingMd).isFile()) {
     const baseDir = cleanPath.endsWith('/')
@@ -326,7 +380,12 @@ export function createGeoServer() {
       'Last-Modified': stat.mtime.toUTCString()
     };
     if (ext === '.html') {
-      headers['Link'] = buildLinkHeader(filePath, pathname);
+      headers['Link'] = buildLinkHeader(filePath, pathname, subdomainKey);
+    } else if (ext === '.pdf') {
+      const safeName = path.basename(filePath).replace(/[^A-Za-z0-9._-]/g, '_');
+      headers['Content-Disposition'] = `inline; filename="${safeName}"`;
+      headers['X-Robots-Tag'] = 'index, follow, max-snippet:-1';
+      headers['Link'] = `<${resolvePdfCanonicalUrl(path.basename(filePath), subdomainKey)}>; rel="canonical"`;
     }
     res.writeHead(200, headers);
     if (method === 'HEAD') {

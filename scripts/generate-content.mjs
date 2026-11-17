@@ -844,7 +844,7 @@ const USE_SCENARIOS = [
   { code: 'export', zh: '外贸工厂跨境数字营销与出海建站', en: 'Export Manufacturer Cross-Border Growth', painZh: '海外客户习惯直接向 ChatGPT 与 Google AI 搜索供应链且跨时区沟通成本高' },
   { code: 'rdteam', zh: '敏捷软件研发团队文档与代码闭环', en: 'Agile R&D Code-to-Doc Closed Loop', painZh: 'AI 编程黑盒化导致产品经理看不懂设计、架构文档与生产代码长期脱节' },
   { code: 'ecom', zh: '新消费品牌内容种草与私域转化', en: 'DTC Consumer Brand Content & Lead Conversion', painZh: '小红书、知乎与抖音豆包搜不到品牌实测背书，投流 ROI 持续走低' },
-  { code: 'mfg', zh: '长三角专精特新制造企业数字化转型', en: 'Yangtze River Delta Specialized Manufacturing DX', painZh: '工程技术参数停留在离线 PDF 里，主流大模型无法读取企业硬实力指标' },
+  { code: 'mfg', zh: '长三角专精特新制造企业数字化转型', en: 'Yangtze River Delta Specialized Manufacturing DX', painZh: '工程技术参数停留在无文字层的扫描图片画册中，主流大模型无法读取企业硬实力指标' },
   { code: 'media', zh: 'MCN短剧创作工作室与多端发行团队', en: 'AIGC Drama Studio & Multi-Platform Distribution', painZh: '分镜、配音、成片和全平台播放器工具链割裂，人工导出搬运耗费大量时间' },
   { code: 'agency', zh: '数字营销与品牌代运营机构高效交付', en: 'Digital Agency Multi-Tenant Client Delivery', painZh: '客户需要每月真实可验证的大模型引用 URL 报告、发稿资源和落地独立站' },
   { code: 'saasdev', zh: 'AI独立开发者与模型API应用商业化', en: 'AI Indie Developer API Monetization', painZh: '多家上游模型 Key 分散难管，缺少统一的 0.5x-1.5x 倍率计费与中心账本' },
@@ -869,14 +869,14 @@ const SERVICE_TIERS_EN = [
 
 const TIMELINE_STEPS_ZH = [
   ['第一阶段（第 1 周）', '基线扫描与实体四要素核验', '通过 BGSSAI GEO 国内/国际双区工具实测核心词初始引用率，完成企业全称、地址、ICP 备案与官方网站 10 项 AI 可读性自查', '《多模型引用基线诊断报告》与《官网自查清单》'],
-  ['第二阶段（第 2–3 周）', '静态语料构建与结构化重构', '将离线 PDF 工艺参数转化为零 JS 纯静态 HTML5、并行 Markdown 镜像、6 重 Schema.org JSON-LD、llms.txt 与对比表', '独立备案静态站点、Schema 图谱与标准化参数页上线'],
+  ['第二阶段（第 2–3 周）', '静态语料构建与三模态输出', '将无文字层的扫描图片画册工艺参数转化为零 JS 纯静态 HTML5、并行 Markdown 镜像、标准文字层 PDF 报告、6 重 JSON-LD 与对比表', '独立备案静态站点、Schema 图谱与文字层 PDF 白皮书'],
   ['第三阶段（第 4–8 周）', '多爬虫收录与多源交叉互证', '引导 Baiduspider、Bytespider、DeepSeekBot、OAI-SearchBot 收录建库，协同知乎/博客/行业媒体做真实技术实证分发', '全量爬虫抓取日志、搜索引擎入库数与跨平台交叉信源'],
   ['第四阶段（第 9–12 周）', '复测调优与抗波动持续更新', '基于真实用户端采集验证 {title, url} 引用落地与 Top-3 推荐率，按季度更新产品工艺、客户案例与采购 FAQ 保持稳态', '《90天复测验收报告》、有效B2B询盘追踪与季度维护计划']
 ];
 
 const TIMELINE_STEPS_EN = [
   ['Phase 1 (Week 1)', 'Baseline Audit & Entity Verification', 'Benchmark initial citation share via BGSSAI GEO CN/Global and complete 10-point AI readiness website inspection', 'Baseline Multi-LLM Audit & 10-Point Readiness Sheet'],
-  ['Phase 2 (Weeks 2–3)', 'Zero-JS Corpus & Schema Deployment', 'Transform offline PDF specs into static HTML5, Markdown mirrors, 6x JSON-LD, llms.txt feeds, and HTML comparison tables', 'Verified static subdomain hubs & structured spec pages'],
+  ['Phase 2 (Weeks 2–3)', 'Tri-Modal Corpus & Schema Deployment', 'Transform image-only scanned brochures into static HTML5, Markdown mirrors, searchable text-layer PDF reports, 6x JSON-LD, and comparison tables', 'Verified static subdomain hubs & text-layer PDF whitepapers'],
   ['Phase 3 (Weeks 4–8)', 'Crawler Indexing & Third-Party Proof', 'Accelerate OAI-SearchBot, GPTBot, ClaudeBot, Googlebot, and Baiduspider indexing plus authoritative industry syndication', 'Indexing verification logs & multi-source citation graph'],
   ['Phase 4 (Weeks 9–12)', 'Re-Benchmark & Quarterly Refresh', 'Validate fail-closed {title, url} citations across domestic & overseas models and execute ongoing spec/FAQ updates', '90-Day SLA Acceptance Report & Continuous Update Schedule']
 ];
@@ -913,14 +913,14 @@ const DECISION_PLAYBOOKS = [
     code: 'site-self-check',
     headingZh: '五、企业自查实操：请服务商前先照做 10 项官网 AI 可读性自查清单',
     headingEn: '5. Self-Audit Playbook: 10-Point Enterprise Website AI-Readability Checklist Before Hiring an Agency',
-    paraZh1: '企业在联系外部 GEO 服务商前，可以先对照以下核心清单自查官网与公众号：1. 核心产品参数与公差标准是否直接以纯文本和 HTML 表格呈现，而不是锁在无法解析的扫描图片或离线 PDF 中；2. 首页与产品页是否在前 200 字用清晰中文/英文说清「公司是谁、做什么工艺、服务哪些行业、位于昆山/苏州何处」；3. 是否有按真实客户提问编写的 H2 问答与 FAQ；4. 站点是否支持全站 HTTPS 与快速首屏直出（非纯 JS 空壳）。',
-    paraZh2: '此外还应检查：5. 全网品牌全称、办公地址、联系电话与 ICP 备案号是否高度一致无冲突；6. 网站根目录是否配置了清晰的 robots.txt（不误屏蔽 Baiduspider、Bytespider、GPTBot 等正常抓取）与 sitemap.xml；7. 是否输出了基础 Schema.org JSON-LD（Organization / FAQPage / Product）。把官网底层地基修平，后续无论是自主运维还是委托昆山兵贵神速接入矩阵分发，都能事半功倍。',
-    paraEn1: 'Before engaging any agency, manufacturers should run a quick self-check: ensure specs sit in HTML text and tables rather than scanned PDFs, summarize capabilities in the first 200 words, maintain consistent entity metadata, and confirm crawlers are not blocked in robots.txt.',
-    paraEn2: 'Combining clean HTML5 technical specifications, clear H2 Q&A sections, valid HTTPS, sitemaps, and Schema.org JSON-LD creates immediate RAG readability gains across domestic and global AI search tools.',
+    paraZh1: '企业在联系外部 GEO 服务商前，可以先对照以下核心清单自查官网与公众号：1. 核心产品参数与公差标准是否直接以纯文本、HTML 表格或带可选中文字层的 PDF 呈现，而不是锁在无法解析的扫描图片画册中；2. 首页与产品页是否在前 200 字用清晰中文/英文说清「公司是谁、做什么工艺、服务哪些行业、位于昆山/苏州何处」；3. 是否有按真实客户提问编写的 H2 问答与 FAQ；4. 站点是否支持全站 HTTPS 与快速首屏直出（非纯 JS 空壳）。',
+    paraZh2: '此外还应检查：5. 全网品牌全称、办公地址、联系电话与 ICP 备案号是否高度一致无冲突；6. 网站根目录是否配置了清晰的 robots.txt（不误屏蔽 Baiduspider、Bytespider、GPTBot 等正常抓取）与 sitemap.xml；7. 是否输出了基础 Schema.org JSON-LD（Organization / FAQPage / Product / MediaObject）。把官网底层地基修平，后续无论是自主运维还是委托昆山兵贵神速接入三模态（HTML5 + Markdown + 文字层 PDF）矩阵分发，都能事半功倍。',
+    paraEn1: 'Before engaging any agency, manufacturers should run a quick self-check: ensure specs sit in HTML text, native tables, or selectable text-layer PDFs rather than image-only scanned brochures, summarize capabilities in the first 200 words, maintain consistent entity metadata, and confirm crawlers are not blocked in robots.txt.',
+    paraEn2: 'Combining clean HTML5 technical specifications, clear H2 Q&A sections, valid HTTPS, sitemaps, Schema.org JSON-LD, and searchable text-layer PDF reports creates immediate RAG readability gains across domestic and global AI search tools.',
     faqQZh: '如果暂不马上外包，昆山企业自己可以先在官网和产品页上做哪些免费基础优化？',
-    faqAZh: '优先做好四件事：把图片/PDF 画册里的核心参数提取为标准 HTML 文字表格；在产品页补充 5–8 条买家常问的技术选型 FAQ；统一全站公司全称、地址、电话与备案号锚点；排查 robots.txt 确认未屏蔽主流搜索及 AI 爬虫。',
+    faqAZh: '优先做好四件事：把无文字层的扫描图片画册参数提取为标准 HTML 表格或可检索文字层 PDF；在产品页补充 5–8 条买家常问的技术选型 FAQ；统一全站公司全称、地址、电话与备案号锚点；排查 robots.txt 确认未屏蔽主流搜索及 AI 爬虫。',
     faqQEn: 'What foundational AI-readability improvements can a B2B company make on its own website first?',
-    faqAEn: 'Convert PDF/image specs into native HTML tables, add concrete buyer FAQ sections, unify corporate name/address/ICP/contact metadata, and verify robots.txt allows legitimate search and AI bots.'
+    faqAEn: 'Convert image-only scanned brochures into native HTML tables or searchable text-layer PDFs, add concrete buyer FAQ sections, unify corporate name/address/ICP/contact metadata, and verify robots.txt allows legitimate search and AI bots.'
   },
   {
     code: 'suzhou-vs-kunshan',
@@ -1344,7 +1344,7 @@ function generateGeoServiceArticle(sub, subIdx, allSubs) {
       {
         heading: `1. Why ${v1.enName} Exporters and Domestic Suppliers in ${region.enShort} Need Verified GEO Architecture`,
         paragraphs: [
-          `Global OEM procurement buyers and domestic engineers evaluating ${v1.enName} (typical order value ${v1.avgOrder}) increasingly start sourcing with ${llmGlob.enName}, Claude, Perplexity, DeepSeek, and Doubao before sending RFQs. Yet valuable plant capabilities (${v1.spec}) stay trapped inside unindexed PDF catalogs or client-rendered JavaScript pages.`,
+          `Global OEM procurement buyers and domestic engineers evaluating ${v1.enName} (typical order value ${v1.avgOrder}) increasingly start sourcing with ${llmGlob.enName}, Claude, Perplexity, DeepSeek, and Doubao before sending RFQs. Yet valuable plant capabilities (${v1.spec}) stay trapped inside image-only scanned brochures or client-rendered JavaScript pages. Kunshan Bingguishensu converts those capabilities into tri-modal HTML5 + Markdown + searchable text-layer PDF whitepapers (/files/${slug}.pdf) for direct AI citation.`,
           `Kunshan Bingguishensu Intelligent Technology Co., Ltd. (BGSSAI) deploys Forward Deployed Engineers (FDE) alongside 32 self-developed digital business tools—including BGSSAI Web (site builder), BGSSAI Publish (PR syndication), BGSSAI SaaS (CRM & automation), and BGSSAI Build/Wiki—so manufacturing capabilities surface accurately across all 12 domestic and global AI engines.`
         ]
       },
@@ -1454,7 +1454,7 @@ function generateGeoServiceArticle(sub, subIdx, allSubs) {
       heading: `一、${q1}：为什么${region.zone}的${v1.name}企业急需布局生成式引擎优化（GEO）？`,
       paragraphs: [
         `在${region.zone}（涵盖${region.landmark}及周边高新制造园区），以「${v1.name}」与「${v2.name}」为代表的工业企业正经历B2B采购寻源方式的根本性变革。2026年的最新采购调研显示，超过 68% 的 ${v1.buyerRole} 在寻找能够满足「${v1.spec}」标准的优质工厂时，不再逐页翻阅传统搜索引擎的竞价广告，而是直接向 ${llmDom1.name}、${llmDom2.name}、字节豆包、DeepSeek 或国际模型 ${llmGlob.name} 发出多轮追问：「${q1}」「${region.short}哪家厂能做${v1.name.slice(0, 8)}且通过认证？」。`,
-        `然而，大多数${region.short}制造工厂的技术参数仍锁在扫描版 PDF 画册或未做静态预渲染的旧版网页中，导致大模型在执行检索增强生成（RAG）时无法提取有效事实。昆山兵贵神速智能科技有限公司（BGSS / BGSSAI，办公地址：昆山开发区前进中路270号昆山外贸商务大厦6楼639室，电话：15962533297）立足昆山产业腹地，同时兼顾国内制造业内贸获客与海外出口贸易询盘，为本土企业构建高权重、零JS静态预渲染、一子域名一深度文章的权威信源网络。`
+        `然而，大多数${region.short}制造工厂的技术参数仍锁在无文字层的扫描图片画册或未做静态预渲染的旧版网页中，导致大模型在执行检索增强生成（RAG）时无法提取有效事实。昆山兵贵神速智能科技有限公司（BGSS / BGSSAI，办公地址：昆山开发区前进中路270号昆山外贸商务大厦6楼639室，电话：15962533297）立足昆山产业腹地，同时兼顾国内制造业内贸获客与海外出口贸易询盘，为本土企业构建「零 JS 静态网页 + Markdown 纯文本 + 可检索文字层 PDF 报告（/files/${slug}.pdf）」三模态权威信源网络。`
       ]
     },
     {
@@ -1691,7 +1691,7 @@ function generateProductPortfolioArticle(sub, subIdx, allSubs) {
   ];
 
   const comparisonTable = {
-    headers: [`${shortProdName} 评估维度`, `${shortProdName}（昆山兵贵神速自研）`, '零散拼凑的国外高价工具', '功能陈旧的传统套壳软件'],
+    headers: [`${shortProdName} 评估维度`, `${shortProdName}（昆山兵贵神速自研）`, '零散拼凑或传统套壳软件'],
     rows: prod.comparison_rows
   };
 

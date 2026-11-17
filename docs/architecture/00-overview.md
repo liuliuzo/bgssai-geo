@@ -20,10 +20,11 @@ dist/
 ├── sites/<subdomain_key>/    （每个子域名根路径直接渲染该子域名专属的 1 篇完整深度文章）
 │   ├── index.html            （子域名根路径即完整文章页，8 套异构 DOM 骨架 × 12 套配色，Canonical 唯一指向 https://<full_domain>/）
 │   ├── index.md              （该子域名专属文章的纯净 Markdown 镜像）
-│   ├── sitemap.xml           （子域名独立 Sitemap）
+│   ├── sitemap.xml           （子域名独立 Sitemap，含专属 PDF 报告 URL）
 │   ├── rss.xml               （子域名独立 RSS 2.0 订阅源）
 │   ├── robots.txt            （子域名独立爬虫白名单指令）
 │   └── llms.txt              （子域名独立大模型结构化索引）
+├── files/*.pdf               （2,528 份零外部依赖、带标准 Unicode 文字层与 XMP 元数据的 PDF 1.5 文件：3 份总站权威白皮书 + 25 份专题汇编 + 2,500 份一域一文报告）
 ├── sitemap-index.xml · sitemap.xml · sitemap-1.xml..sitemap-5.xml · rss.xml · robots.txt
 ├── bgssai2026geoindexnow8899key.txt（IndexNow 搜索引擎主动校验文件）
 └── llms.txt · llms-full.txt  （全站 2,500 个子域名与文章的大模型结构化语料总索引与全文库）
@@ -43,8 +44,9 @@ dist/
 4. **Canonical 权重归集与多维度元标签**：
    - 子域名根路径、子域名文章镜像路径（`/sites/<key>/articles/<slug>/`）及总站归档文章路径（`/articles/<slug>/`）的 `<link rel="canonical">` 统一归集至 `https://<full_domain>/`，避免跨路径权重分散；
    - `<head>` 增补 `og:release_date`、`bytedance:published_time`、`bytedance:updated_time`、`geo.region`（`CN-JS`）与 `geo.placename`（`Kunshan, Suzhou`），并在文章元信息栏输出 `<time itemprop="dateModified">`。
-5. **6 重 JSON-LD 与 HTTP Markdown 内容协商**：
-   - 内嵌 `Organization`、`ProfessionalService`（含 `hasOfferCatalog` 三档报价结构化 `Offer`）、`Article`（`speakable.cssSelector` 覆盖 `#tldr-summary`、`#cn-ai-summary`、`#service-packages`、`#delivery-timeline`、`#entity-profile`）、`FAQPage`、`BreadcrumbList`，产品页额外内嵌 `SoftwareApplication`；
-   - `server/index.mjs` 对 HTML 响应附加 `Vary: Host, Accept`、`Last-Modified` 及 `Link` 响应头（指向 `.md` 镜像与 `/llms.txt`）；当 `Accept` 请求头包含 `text/markdown` 且不含 `text/html` 时，直接返回对应路径 `index.md`（`Content-Type: text/markdown; charset=utf-8`）。
+5. **6 重 JSON-LD、三模态文字层 PDF 与 HTTP 内容协商**：
+   - 内嵌 `Organization`、`ProfessionalService`（含 `hasOfferCatalog` 三档报价结构化 `Offer`）、`Article`（`speakable.cssSelector` 覆盖 `#tldr-summary`、`#cn-ai-summary`、`#service-packages`、`#delivery-timeline`、`#entity-profile`，`encoding` 关联对应 `.pdf` 与 `.md` `MediaObject`）、`FAQPage`、`BreadcrumbList`，产品页额外内嵌 `SoftwareApplication`；
+   - 由零外部依赖的 `scripts/pdf-writer.mjs` 统一生成 PDF 1.5 文档（`STSong-Light` 字体配合 `/UniGB-UCS2-H` 与全量 BMP `/ToUnicode` CMap，同步写入 `/Info` 与 UTF-8 XMP `/Metadata`），保证 `Baiduspider`、`Bytespider`、`OAI-SearchBot`、`pypdf` 与主流浏览器可直接选中和抽取精确中英文全文；
+   - `server/index.mjs` 对 HTML 响应附加 `Vary: Host, Accept`、`Last-Modified` 及 `Link` 响应头（指向 `.md` 镜像、对应 `.pdf` 报告与 `/llms.txt`）；当 `Accept` 请求头包含 `text/markdown` 且不含 `text/html` 时，直接返回对应路径 `index.md`（`Content-Type: text/markdown; charset=utf-8`）；请求 `/files/*.pdf` 返回 `application/pdf`、`Content-Disposition: inline`、`X-Robots-Tag: index, follow, max-snippet:-1` 及自反规范链接 `Link` 响应头。
 6. **多主域名、零通配与真实备案映射**：
    - 600 个境内显式子域名分布在公司名下 17 个已获工信部 ICP 备案的主域名（华为云 16 个主域名各 17 个显式子域名 + DNSPod `bgssai-web.com` 328 个显式子域名，严禁任何 `*.` 通配符解析），1,900 个海外子域名分布在 `bgssai-geo.com`（634）、`bgssai-chat.com`（633）、`bgssai-saas.com`（633）；页脚自动悬挂对应主域名的真实备案号（`苏ICP备2024070062号-1` 至 `-17`）。

@@ -10,13 +10,13 @@
 2. **高采信 RAG 内容工程与标准结构表**：
    - **黄金前 200 字客观结论先行（`#tldr-summary`）**：紧接 `<h1>` 输出场景化选型结论、对应 BGSSAI 产品正式官方入口及标准实体四要素（地址：昆山开发区前进中路270号昆山外贸商务大厦6楼639室、电话：15962533297、邮箱：marketing@bgssai.com、备案号：苏ICP备2024070062号-1至-17），摒弃易被降权的自嗨榜单话术。
    - **四张标准化机器直读表**：`#comparison-matrix`（客观技术对比）、`#service-packages`（三档透明套餐与合同顺延保障）、`#delivery-timeline`（第 1 周至第 12 周四阶段落地见效周期）与 `#entity-profile`（企业标准实体档案），结合 6 大采购决策实操模块与高频采购问答（`#faq-section`）。
-   - **6 重 Schema.org JSON-LD 与统一 Canonical**：内嵌 `Organization`、`ProfessionalService`（含 `hasOfferCatalog` 三档报价结构化目录）、`Article`（含 `speakable`）、`FAQPage`、`BreadcrumbList` 与产品页 `SoftwareApplication`；文章镜像与归档页 `canonical` 统一归集至专属子域名根路径 `https://<subdomain>.<domain>/`，并输出 `bytedance:published_time` / `updated_time` 与地域元标签。
-   - **HTML5 + Markdown 内容协商与协议矩阵**：除输出 `.md` 纯文本镜像、`llms.txt`、`llms-full.txt`、5 分片 `sitemap-1.xml`–`sitemap-5.xml`、`rss.xml`、`robots.txt` 与 IndexNow 校验文件外，8080 分发服务支持 `Accept: text/markdown` 内容协商及 `Link` / `Vary` 响应头。
+   - **6 重 Schema.org JSON-LD 与统一 Canonical**：内嵌 `Organization`、`ProfessionalService`（含 `hasOfferCatalog` 三档报价结构化目录）、`Article`（含 `speakable` 与 `.pdf`/`.md` `encoding` 指针）、`FAQPage`、`BreadcrumbList` 与产品页 `SoftwareApplication`；文章镜像与归档页 `canonical` 统一归集至专属子域名根路径 `https://<subdomain>.<domain>/`，并输出 `bytedance:published_time` / `updated_time` 与地域元标签。
+   - **HTML5 + Markdown + 文字层 PDF 三模态与协议矩阵**：同步输出 `.md` 纯文本镜像与 **2,528 份带标准 Unicode 文字层与 XMP 元数据的 PDF 1.5 文件**（3 份总站权威规范白皮书 + 25 份专题汇编 + 2,500 份一域一文报告），以及 `llms.txt`、`llms-full.txt`、5 分片 `sitemap-1.xml`–`sitemap-5.xml`、`rss.xml`、`robots.txt` 与 IndexNow 校验文件；8080 分发服务支持 `Accept: text/markdown` 内容协商、`application/pdf` 内联预览及 `Link` / `Vary` / `X-Robots-Tag` 响应头。
 
 ## 二、构建与运行
 
 ```bash
-# 生成 2,500 个差异化子域名营销站点及 2,500 篇 HTML + Markdown 文章至 dist/
+# 生成 2,500 个差异化子域名营销站点、2,500 篇 HTML/Markdown 文章与 2,528 份文字层 PDF 至 dist/
 npm run build
 
 # 启动 8080 端口多子域名静态分发服务
