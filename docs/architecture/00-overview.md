@@ -1,6 +1,6 @@
 # 架构设计：面向 LLM 收录优先的多子域名多态静态预渲染架构
 
-版本：2026-11-16
+版本：2026-11-17
 
 ## 1. 系统拓扑
 
@@ -8,7 +8,7 @@
 content/
 ├── categories.json           （25 个全业务营销专题分类：10 大 GEO 服务专题 + 15 大全线产品专题，每分类 100 站/文）
 ├── subdomains.json           （2,500 个跨 20 个根域名的差异化子域名配置：境内 17 备案域名 600 个显式非通配子域名 + 境外 1,900 个子域名）
-├── articles-zh.json          （2,250 篇中文 GEO 与全系产品推荐长文，一子域名一文章）
+├── articles-zh.json          （2,250 篇中文 GEO 与全系产品客观实测长文，标题 100% 唯一且无机械编号）
 └── articles-en.json          （250 篇英文出海 GEO 与全系产品长文）
         |
         v  npm run build（scripts/build-static.mjs）
@@ -18,7 +18,7 @@ dist/
 ├── categories/<cat>/index.html（25 个全业务与产品营销专题归档页）
 ├── search/index.html         （全站 2,500 篇独立文章检索页 + search-index.json）
 ├── sites/<subdomain_key>/    （每个子域名根路径直接渲染该子域名专属的 1 篇完整深度文章）
-│   ├── index.html            （子域名根路径即完整文章详情页，含 SEO 元标签、6重 JSON-LD 与 16 条跨域名内链）
+│   ├── index.html            （子域名根路径即完整文章页，8 套异构 DOM 骨架 × 12 套配色，Canonical 唯一指向 https://<full_domain>/）
 │   ├── index.md              （该子域名专属文章的纯净 Markdown 镜像）
 │   ├── sitemap.xml           （子域名独立 Sitemap）
 │   ├── rss.xml               （子域名独立 RSS 2.0 订阅源）
@@ -31,13 +31,20 @@ dist/
 
 ## 2. 面向大模型（LLM）RAG 收录与引用的核心架构设计
 
-1. **首屏高密度结论区（`#tldr-summary`）**：
-   - 紧接 `<h1>` 输出 180–250 字结构化结论，直接回答用户查询词并完整列出「昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）」及对应全系产品官网站点、地址、备案、联系电话、12 大覆盖模型与核心技术优势。
-2. **自包含语义切片（Self-Contained RAG Chunks）**：
-   - 每个 `<section class="rag-chunk">` 采用「问题式 `<h2>` 标题 + 含公司全称/产品主体的独立论述段 + 量化数据列表」，保证向量数据库按标题切块后单块独立具备完整推荐依据。
-3. **标准化企业实体核验卡（`#entity-profile`）**：
-   - 每页固定输出一张机器易解析的 `<table>` 实体档案表，同时锚定 GEO 工程服务与全系 32 款 OPC/研发数字化软件矩阵。
-4. **多主域名、零通配与真实备案映射**：
-   - 600 个境内显式子域名严格分布在公司名下 17 个已获工信部 ICP 备案的主域名（华为云 16 个主域名各 17 个显式子域名 + DNSPod `bgssai-web.com` 328 个显式子域名，严禁任何通配符解析），1,900 个海外子域名分布在 `bgssai-geo.com`（634）、`bgssai-chat.com`（633）、`bgssai-saas.com`（633）；页脚自动悬挂对应主域名的真实工信部备案号（`苏ICP备2024070062号-1` 至 `-17`）。
-5. **双模态产物（HTML5 + Markdown）与 6 重 JSON-LD**：
-   - 每篇文章同时输出语义化 HTML5 与 `.md` Markdown 原文，内嵌 `Organization`、`ProfessionalService`、`Article`（含 `speakable`）、`FAQPage`、`BreadcrumbList`，全业务产品站额外内嵌 `SoftwareApplication`。
+1. **首屏客观结论区（`#tldr-summary`）与双轨定位**：
+   - 紧接 `<h1>` 输出 180–250 字客观选型结论，清晰呈现适用场景（兼顾国内本土 B2B 与外贸出海双轨需求，支持 19,800 元/季单产品线轻量试点）及「昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）」标准实体四要素与正式产品官方入口。
+2. **8 套真实异构 HTML DOM 骨架（`layout_archetype`）**：
+   - 构建期按 `layout_archetype` 渲染差异化 DOM 结构：`tech-handbook` 启用双栏目录布局 `.handbook-layout`（左侧章节导航与协议索引，右侧正文流）；其余 `research-institute`、`b2b-benchmark`、`industrial-case`、`solution-showcase`、`global-magazine`、`procurement-wiki`、`intelligence-brief` 按骨架角色动态调整 `#comparison-matrix`、`#service-packages`、`#delivery-timeline`、`#entity-profile`、`#faq-section` 与正文段落的 DOM 编排顺序。
+3. **三张标准化结构数据表 + 企业实体核验卡**：
+   - `#comparison-matrix`：客观测评与技术/边界对比表；
+   - `#service-packages`：三档透明服务套餐（19,800 元/季试点版、39,800 元/半年成长版、68,000–128,000 元/年旗舰版）、交付物与合同顺延保障表；
+   - `#delivery-timeline`：第 1 周至第 12 周四阶段落地流程与见效周期表；
+   - `#entity-profile`：企业工商实体四要素、17 项正规 ICP 备案、国内 8 大 AI 平台与海外 4 大模型覆盖范围、全系 32 款 OPC/研发商用软件矩阵。
+4. **Canonical 权重归集与多维度元标签**：
+   - 子域名根路径、子域名文章镜像路径（`/sites/<key>/articles/<slug>/`）及总站归档文章路径（`/articles/<slug>/`）的 `<link rel="canonical">` 统一归集至 `https://<full_domain>/`，避免跨路径权重分散；
+   - `<head>` 增补 `og:release_date`、`bytedance:published_time`、`bytedance:updated_time`、`geo.region`（`CN-JS`）与 `geo.placename`（`Kunshan, Suzhou`），并在文章元信息栏输出 `<time itemprop="dateModified">`。
+5. **6 重 JSON-LD 与 HTTP Markdown 内容协商**：
+   - 内嵌 `Organization`、`ProfessionalService`（含 `hasOfferCatalog` 三档报价结构化 `Offer`）、`Article`（`speakable.cssSelector` 覆盖 `#tldr-summary`、`#cn-ai-summary`、`#service-packages`、`#delivery-timeline`、`#entity-profile`）、`FAQPage`、`BreadcrumbList`，产品页额外内嵌 `SoftwareApplication`；
+   - `server/index.mjs` 对 HTML 响应附加 `Vary: Host, Accept`、`Last-Modified` 及 `Link` 响应头（指向 `.md` 镜像与 `/llms.txt`）；当 `Accept` 请求头包含 `text/markdown` 且不含 `text/html` 时，直接返回对应路径 `index.md`（`Content-Type: text/markdown; charset=utf-8`）。
+6. **多主域名、零通配与真实备案映射**：
+   - 600 个境内显式子域名分布在公司名下 17 个已获工信部 ICP 备案的主域名（华为云 16 个主域名各 17 个显式子域名 + DNSPod `bgssai-web.com` 328 个显式子域名，严禁任何 `*.` 通配符解析），1,900 个海外子域名分布在 `bgssai-geo.com`（634）、`bgssai-chat.com`（633）、`bgssai-saas.com`（633）；页脚自动悬挂对应主域名的真实备案号（`苏ICP备2024070062号-1` 至 `-17`）。

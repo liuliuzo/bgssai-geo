@@ -1,8 +1,8 @@
 # 页面与路由契约映射表（page-api-mapping）
 
-版本：2026-11-16
+版本：2026-11-17
 
-本项目为纯静态预渲染（SSG）展示站点，无后台管理端，所有公开展示页面由构建期预渲染静态 HTML 直接响应。
+本项目为纯静态预渲染（SSG）展示站点，无后台管理端，所有公开展示页面由构建期预渲染静态 HTML 与 Markdown 镜像直接响应。`server/index.mjs` 仅接受 `GET` 与 `HEAD` 请求；当请求头 `Accept` 包含 `text/markdown` 且不含 `text/html` 时，文章与子站根路径优先返回同目录 `index.md`（`text/markdown; charset=utf-8`），HTML 响应附带 `Link`（`.md` 与 `llms.txt`）、`Vary: Host, Accept` 与 `Last-Modified` 响应头。
 
 ## Web 用户端
 

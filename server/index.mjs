@@ -140,7 +140,32 @@ function sendJson(res, statusCode, data) {
   res.end(body);
 }
 
-function resolveStaticFile(subdomainKey, urlPath) {
+function wantsMarkdown(acceptHeader) {
+  if (!acceptHeader) return false;
+  const lower = String(acceptHeader).toLowerCase();
+  return lower.includes('text/markdown') && !lower.includes('text/html');
+}
+
+function resolveIndexTarget(candidate, preferMarkdown) {
+  if (fs.existsSync(candidate) && fs.statSync(candidate).isDirectory()) {
+    if (preferMarkdown) {
+      const mdFile = path.join(candidate, 'index.md');
+      if (fs.existsSync(mdFile) && fs.statSync(mdFile).isFile()) return mdFile;
+    }
+    const indexFile = path.join(candidate, 'index.html');
+    return fs.existsSync(indexFile) && fs.statSync(indexFile).isFile() ? indexFile : null;
+  }
+  if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
+    if (preferMarkdown && path.basename(candidate) === 'index.html') {
+      const siblingMd = path.join(path.dirname(candidate), 'index.md');
+      if (fs.existsSync(siblingMd) && fs.statSync(siblingMd).isFile()) return siblingMd;
+    }
+    return candidate;
+  }
+  return null;
+}
+
+function resolveStaticFile(subdomainKey, urlPath, preferMarkdown = false) {
   const cleanPath = decodeURIComponent(urlPath.split('?')[0]);
   if (cleanPath.includes('..') || cleanPath.includes('\0')) {
     return null;
@@ -155,39 +180,36 @@ function resolveStaticFile(subdomainKey, urlPath) {
   ) {
     const candidate = path.resolve(DIST_DIR, '.' + cleanPath);
     if (!candidate.startsWith(DIST_DIR)) return null;
-    if (fs.existsSync(candidate) && fs.statSync(candidate).isDirectory()) {
-      const indexFile = path.join(candidate, 'index.html');
-      return fs.existsSync(indexFile) ? indexFile : null;
-    }
-    if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
-      return candidate;
-    }
+    const resolved = resolveIndexTarget(candidate, preferMarkdown);
+    if (resolved) return resolved;
   }
 
   if (subdomainKey) {
     const subRoot = path.join(DIST_DIR, 'sites', subdomainKey);
     const subCandidate = path.resolve(subRoot, '.' + cleanPath);
     if (subCandidate.startsWith(subRoot)) {
-      if (fs.existsSync(subCandidate) && fs.statSync(subCandidate).isDirectory()) {
-        const idx = path.join(subCandidate, 'index.html');
-        if (fs.existsSync(idx)) return idx;
-      }
-      if (fs.existsSync(subCandidate) && fs.statSync(subCandidate).isFile()) {
-        return subCandidate;
-      }
+      const resolved = resolveIndexTarget(subCandidate, preferMarkdown);
+      if (resolved) return resolved;
     }
   }
 
   const rootCandidate = path.resolve(DIST_DIR, '.' + cleanPath);
   if (!rootCandidate.startsWith(DIST_DIR)) return null;
-  if (fs.existsSync(rootCandidate) && fs.statSync(rootCandidate).isDirectory()) {
-    const idx = path.join(rootCandidate, 'index.html');
-    return fs.existsSync(idx) ? idx : null;
+  return resolveIndexTarget(rootCandidate, preferMarkdown);
+}
+
+function buildLinkHeader(filePath, cleanPath) {
+  const links = ['</llms.txt>; rel="alternate"; type="text/plain"'];
+  const siblingMd = path.join(path.dirname(filePath), 'index.md');
+  if (fs.existsSync(siblingMd) && fs.statSync(siblingMd).isFile()) {
+    const baseDir = cleanPath.endsWith('/')
+      ? cleanPath
+      : cleanPath.endsWith('/index.html')
+        ? cleanPath.slice(0, -'index.html'.length)
+        : cleanPath + '/';
+    links.unshift(`<${baseDir}index.md>; rel="alternate"; type="text/markdown"`);
   }
-  if (fs.existsSync(rootCandidate) && fs.statSync(rootCandidate).isFile()) {
-    return rootCandidate;
-  }
-  return null;
+  return links.join(', ');
 }
 
 export function createGeoServer() {
@@ -285,7 +307,8 @@ export function createGeoServer() {
     }
 
     const subdomainKey = extractSubdomainFromHost(req.headers['x-forwarded-host'] || req.headers.host);
-    const filePath = resolveStaticFile(subdomainKey, pathname);
+    const preferMarkdown = wantsMarkdown(req.headers.accept);
+    const filePath = resolveStaticFile(subdomainKey, pathname, preferMarkdown);
 
     if (!filePath) {
       res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
@@ -295,10 +318,17 @@ export function createGeoServer() {
 
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-    res.writeHead(200, {
+    const stat = fs.statSync(filePath);
+    const headers = {
       'Content-Type': contentType,
-      'Cache-Control': 'public, max-age=300'
-    });
+      'Cache-Control': 'public, max-age=300',
+      'Vary': 'Host, Accept',
+      'Last-Modified': stat.mtime.toUTCString()
+    };
+    if (ext === '.html') {
+      headers['Link'] = buildLinkHeader(filePath, pathname);
+    }
+    res.writeHead(200, headers);
     if (method === 'HEAD') {
       res.end();
       return;

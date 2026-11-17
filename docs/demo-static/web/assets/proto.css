@@ -281,6 +281,39 @@ a:hover {
   margin: 16px 0;
 }
 
+.tldr-banner {
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  border-left: 8px solid var(--primary);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+}
+
+.tldr-banner h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.data-table-wrap {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.handbook-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .handbook-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 .faq-list dt {
   font-weight: 600;
   margin-top: 14px;
