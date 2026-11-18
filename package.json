@@ -1,9 +1,10 @@
 {
-  "name": "bgssai-geo",
+  "name": "bgssai-geo-task",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --test scripts/buyer-questions.test.mjs scripts/summarize-query-report.test.mjs",
     "generate:content": "node scripts/generate-content.mjs",
     "build": "node scripts/generate-content.mjs && node scripts/build-static.mjs",
     "build:deploy": "node scripts/generate-content.mjs && node scripts/build-static.mjs",

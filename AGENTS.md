@@ -6,7 +6,7 @@
 
 - 产品线总愿景唯一权威：[骨架仓 `docs/PRODUCT-LINE-VISION.md`](https://github.com/liuliuzo/bgssai-skeleton/blob/develop/docs/PRODUCT-LINE-VISION.md)。
 - 全局开发规范唯一权威：[骨架仓 `docs/BGSSAI-Standards.md`](https://github.com/liuliuzo/bgssai-skeleton/blob/develop/docs/BGSSAI-Standards.md)。
-- **本仓定位**：`bgssai-geo` 是公司内部发布文章、面向搜索引擎（SEO）与生成式引擎优化（GEO）收录的多子域名纯展示网站工程。
+- **本仓定位**：`bgssai-geo-task` 是公司内部发布文章、面向搜索引擎（SEO）与生成式引擎优化（GEO）收录的多子域名纯展示网站工程。
 - **架构边界**：纯静态预渲染（SSG）展示站点 + 8080 端口静态分发服务。无数据库、无后台管理端、无用户登录、无复杂业务逻辑。
 
 ## 强制规范
