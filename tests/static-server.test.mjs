@@ -12,6 +12,11 @@ async function startFixture(t, built) {
   await mkdir(path.join(root, 'server'));
   const modulePath = path.join(root, 'server/index.mjs');
   await copyFile(new URL('../server/index.mjs', import.meta.url), modulePath);
+  for (const config of ['application.properties', ...['local', 'dev', 'prod', 'test'].map(
+    (profile) => 'application-' + profile + '.properties',
+  )]) {
+    await copyFile(new URL('../' + config, import.meta.url), path.join(root, config));
+  }
   if (built) {
     const dist = path.join(root, 'dist');
     await mkdir(path.join(dist, 'sites'), { recursive: true });

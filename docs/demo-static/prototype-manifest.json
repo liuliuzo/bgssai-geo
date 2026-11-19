@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "repo": "bgssai-geo-task",
+  "entrypoints": {
+    "index": "docs/demo-static/index.html",
+    "page_flow": "docs/demo-static/PAGE-FLOW.html"
+  },
+  "prototype_bundle_digest": "6b60da76dafbc9c64777bf68fb81df4c32b0d149b3b47fb588f3b828b0ed1b3f",
+  "code_contract_digest": "30b89df6160fc407eea4287ff5ecc0ce34fa5fef9531a0c057625c9b70f409b1",
+  "api_endpoints": [],
+  "tracked_code_files": [
+    {
+      "path": "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx",
+      "sha256": "4276bc075fd1fd45b10a5c317ccd3c07bb7d476eaeb42966bc20ecbf15710d0b"
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/demo-static/PAGE-FLOW.html",
+      "sha256": "7906f756122edabbc3bf1ebcb17a6273db470e6a06f2fee0440573faab78f063",
+      "surface": "flow",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/index.html",
+      "sha256": "bd56e5973ddaa6385355c9a0ec3bdf6eff5b3ff05e0e139d6b8b547c15e641c7",
+      "surface": "index",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/index.html",
+      "sha256": "56bbf70542599241da162bda2d9c0e315369f35ddd2cd07adb656bcc3cbc612c",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/PAGE-FLOW.html",
+      "sha256": "442ab17d898d15c522dd421fde1bcca5df97cbf375b6812967963235ff232dd1",
+      "surface": "flow",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/article-detail.html",
+      "sha256": "33244be25e7cc2bb186effda24132762082de0073078e92bfeae4c7a56145867",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/category-archive.html",
+      "sha256": "4bd753a323ed8b2573c8c3c5b7443de190cabea12831126b9601b65e0a2e67e3",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/home.html",
+      "sha256": "7cf2c89063649cfefce8d1891b7306f90684d7ea01fb9eeacc0babbc7e655a7a",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/index.html",
+      "sha256": "b3e3f56c1f2a24979139a47274605de2ba45fd54e95343d92cb599185ef649cc",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/search.html",
+      "sha256": "17644f2e852b64e949c86716d47ca97798fee6100492ae0b2b497594e7d3d862",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/site-article.html",
+      "sha256": "65b91fd5a812179a467a4b38cc28f1a90efba5e6b9b80aa15b7c4540991f442f",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/site-home.html",
+      "sha256": "20061d1b432603323ff4fd42387321883186103ed9ed872d7666094a05cb5291",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    },
+    {
+      "path": "docs/demo-static/web/user/subdomains.html",
+      "sha256": "4ffe1db8927fb111e8815d31d2b4929c1d8115c90af4f29f6d0b87660226baf0",
+      "surface": "user",
+      "bound_code_files": [
+        "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx"
+      ],
+      "bound_endpoints": []
+    }
+  ]
+}

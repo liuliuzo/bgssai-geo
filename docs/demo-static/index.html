@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bgssai-geo-task — 原型总览与代码契约导航 (Prototype Hub)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 24px; background: #0f172a; color: #f8fafc; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { line-height: 1.9; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; background: #334155; color: #cbd5e1; margin-left: 8px; }
+    code { background: #0f172a; padding: 2px 6px; border-radius: 4px; color: #a7f3d0; }
+  </style>
+</head>
+<body>
+  <div class="card" data-contract-endpoint="/api/health">
+    <h1>bgssai-geo-task 原型总览与代码契约导航</h1>
+    <p>本页面由 <code>check-prototype-drift.py</code> 统一维护并与 <code>prototype-manifest.json</code> 双向锁定，用于在本地及 <code>bgssai-wiki</code> 中直接浏览全部 Web/桌面/移动原型页面。</p>
+    <p>核心绑定源码入口：<code>bgssai-geo-user/bgssai-geo-user-react/src/App.jsx</code> · 核心接口契约：<code>/api/health</code> · <a href="./PAGE-FLOW.html">查看 PAGE-FLOW 页面流转图</a></p>
+  </div>
+  <div class="card">
+    <h2>原型页面目录 (10 页)</h2>
+    <ul>
+      <li><a href="./web/index.html">web/index.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/PAGE-FLOW.html">web/user/PAGE-FLOW.html</a> <span class="badge">flow</span></li>
+      <li><a href="./web/user/article-detail.html">web/user/article-detail.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/category-archive.html">web/user/category-archive.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/home.html">web/user/home.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/index.html">web/user/index.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/search.html">web/user/search.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/site-article.html">web/user/site-article.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/site-home.html">web/user/site-home.html</a> <span class="badge">user</span></li>
+      <li><a href="./web/user/subdomains.html">web/user/subdomains.html</a> <span class="badge">user</span></li>
+    </ul>
+  </div>
+  <script type="application/json" id="contract-fixture">
+  {
+    "repo_name": "bgssai-geo-task",
+    "primary_endpoint": "/api/health",
+    "primary_code_target": "bgssai-geo-user/bgssai-geo-user-react/src/App.jsx",
+    "prototype_page_count": 10
+  }
+  </script>
+</body>
+</html>
