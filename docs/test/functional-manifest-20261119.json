@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "date": "2026-11-19",
+  "repo": "liuliuzo/bgssai-geo-task",
+  "local_repo": "bgssai-geo-task",
+  "baseline": "237e829946f22ad41b5eb3a3fabceb00797c61d7",
+  "source_sha": "237e829946f22ad41b5eb3a3fabceb00797c61d7",
+  "requirement_file": "docs/feature/functional-test-supplement-20261119.md",
+  "requirements": [
+    {
+      "id": "REQ-GEO-TASK-20261119-01",
+      "title": "站点首页的 HTML 与 Markdown 表示",
+      "cases": [
+        "TC-GEO-TASK-20261119-01-P",
+        "TC-GEO-TASK-20261119-01-N"
+      ],
+      "file": "docs/test/TC-develop-20261119.md"
+    },
+    {
+      "id": "REQ-GEO-TASK-20261119-02",
+      "title": "产物缺失与探针",
+      "cases": [
+        "TC-GEO-TASK-20261119-02-P",
+        "TC-GEO-TASK-20261119-02-N"
+      ],
+      "file": "docs/test/TC-develop-20261119.md"
+    },
+    {
+      "id": "REQ-GEO-TASK-20261119-03",
+      "title": "采购问答专题与中英文配对",
+      "cases": [
+        "TC-GEO-TASK-20261119-03-P",
+        "TC-GEO-TASK-20261119-03-N"
+      ],
+      "file": "docs/test/TC-develop-20261119.md"
+    },
+    {
+      "id": "REQ-GEO-TASK-20261119-04",
+      "title": "查询报告重复观测与引用校验",
+      "cases": [
+        "TC-GEO-TASK-20261119-04-P",
+        "TC-GEO-TASK-20261119-04-N"
+      ],
+      "file": "docs/test/TC-develop-20261119.md"
+    }
+  ],
+  "cases": [
+    {
+      "id": "TC-GEO-TASK-20261119-01-P",
+      "requirement": "REQ-GEO-TASK-20261119-01",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "P"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-01-N",
+      "requirement": "REQ-GEO-TASK-20261119-01",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "N"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-02-P",
+      "requirement": "REQ-GEO-TASK-20261119-02",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "P"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-02-N",
+      "requirement": "REQ-GEO-TASK-20261119-02",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "N"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-03-P",
+      "requirement": "REQ-GEO-TASK-20261119-03",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "P"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-03-N",
+      "requirement": "REQ-GEO-TASK-20261119-03",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "N"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-04-P",
+      "requirement": "REQ-GEO-TASK-20261119-04",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "P"
+    },
+    {
+      "id": "TC-GEO-TASK-20261119-04-N",
+      "requirement": "REQ-GEO-TASK-20261119-04",
+      "file": "TC-develop-20261119.md",
+      "status": "待测",
+      "kind": "N"
+    }
+  ],
+  "coverage": [
+    {
+      "source": "docs/feature/geo-content-matrix.md",
+      "title": "站点首页的 HTML 与 Markdown 表示",
+      "classification": "当前版本功能验收",
+      "requirements": [
+        "REQ-GEO-TASK-20261119-01"
+      ],
+      "cases": [
+        "TC-GEO-TASK-20261119-01-P",
+        "TC-GEO-TASK-20261119-01-N"
+      ],
+      "legacy": []
+    },
+    {
+      "source": "docs/feature/health-check.md",
+      "title": "产物缺失与探针",
+      "classification": "当前版本功能验收",
+      "requirements": [
+        "REQ-GEO-TASK-20261119-02"
+      ],
+      "cases": [
+        "TC-GEO-TASK-20261119-02-P",
+        "TC-GEO-TASK-20261119-02-N"
+      ],
+      "legacy": []
+    },
+    {
+      "source": "scripts/buyer-questions.test.mjs",
+      "title": "采购问答专题与中英文配对",
+      "classification": "当前版本功能验收",
+      "requirements": [
+        "REQ-GEO-TASK-20261119-03"
+      ],
+      "cases": [
+        "TC-GEO-TASK-20261119-03-P",
+        "TC-GEO-TASK-20261119-03-N"
+      ],
+      "legacy": []
+    },
+    {
+      "source": "scripts/summarize-query-report.test.mjs",
+      "title": "查询报告重复观测与引用校验",
+      "classification": "当前版本功能验收",
+      "requirements": [
+        "REQ-GEO-TASK-20261119-04"
+      ],
+      "cases": [
+        "TC-GEO-TASK-20261119-04-P",
+        "TC-GEO-TASK-20261119-04-N"
+      ],
+      "legacy": []
+    }
+  ],
+  "historical_suites": [],
+  "design_only": true,
+  "progress": {
+    "待测": 8,
+    "通过": 0,
+    "失败": 0,
+    "阻塞": 0,
+    "不适用": 0
+  },
+  "suite_counts": {
+    "TC-develop-20261119.md": {
+      "待测": 8,
+      "通过": 0,
+      "失败": 0,
+      "阻塞": 0,
+      "不适用": 0
+    }
+  }
+}
