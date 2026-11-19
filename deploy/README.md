@@ -1,4 +1,4 @@
-# 部署说明（bgssai-geo）
+# 部署说明（bgssai-geo-task）
 
 1. **构建静态产物**：
    ```bash
@@ -9,4 +9,4 @@
    ```bash
    npm start
    ```
-3. **部署通道**：统一走 Jenkins（`Jenkinsfile`，调用共享库 `bgssaiDeployNodeService`，端口 `8080`，健康检查路径 `/bgssai/health/readiness`）。`dev` 与 `prod` 均拉取 `develop` 分支。
+3. **部署通道**：统一走 Jenkins（`Jenkinsfile`，调用共享库 `bgssaiDeployNodeService`，端口 `8080`，健康检查路径 `/bgssai/health/readiness`）。`dev` 与 `prod` 均从 `bgssai-geo-task` 拉取 `develop` 分支，分别使用 `application-dev.properties` 和 `application-prod.properties`。Jenkins 产品键 `geo` 对应现有主机清单与 systemd 服务。

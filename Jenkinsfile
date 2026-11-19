@@ -24,6 +24,8 @@ pipeline {
       steps {
         bgssaiDeployNodeService(
           product: 'geo',
+          githubRepo: 'bgssai-geo-task',
+          sourceRef: 'develop',
           environment: env.BGSSAI_ENV,
           nodeEntry: 'server/index.mjs',
           packageManager: 'npm',
@@ -39,10 +41,10 @@ pipeline {
 
   post {
     success {
-      echo "部署成功: bgssai-geo environment=${env.BGSSAI_ENV}"
+      echo "部署成功: bgssai-geo-task environment=${env.BGSSAI_ENV}"
     }
     failure {
-      echo "部署失败: bgssai-geo environment=${env.BGSSAI_ENV}"
+      echo "部署失败: bgssai-geo-task environment=${env.BGSSAI_ENV}"
     }
   }
 }

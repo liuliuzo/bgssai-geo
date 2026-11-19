@@ -11,4 +11,5 @@
 | `docs/architecture/` | 静态预渲染架构、多子域名分发路由、SEO/GEO 收录设计 |
 | `docs/demo-static/` | Web 公开展示端 HTML 原型与 `PAGE-FLOW.html` |
 | `docs/feature/` | 功能需求与健康检查需求文档 |
+| `docs/research/` | 查询样本的聚合统计与投稿候选域名 |
 | `docs/security/` | 静态站点安全与 Host 边界校验规范 |
