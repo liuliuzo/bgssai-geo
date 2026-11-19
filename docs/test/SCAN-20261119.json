@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "date": "2026-11-19",
+  "repo": "liuliuzo/bgssai-geo-task",
+  "source_sha": "86c2c9260499699151733deb3243ccdf25008bf8",
+  "source_ref": "origin/develop",
+  "features": [
+    {
+      "source": "docs/feature/geo-content-matrix.md",
+      "cases": [
+        "TC-GEO-TASK-20261119-01-P",
+        "TC-GEO-TASK-20261119-01-N"
+      ]
+    },
+    {
+      "source": "docs/feature/health-check.md",
+      "cases": [
+        "TC-GEO-TASK-20261119-02-P",
+        "TC-GEO-TASK-20261119-02-N"
+      ]
+    }
+  ]
+}
