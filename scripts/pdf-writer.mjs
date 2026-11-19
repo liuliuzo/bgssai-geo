@@ -738,7 +738,7 @@ export function buildHubFlagshipPdfs(categories, subdomains, allArticles) {
       {
         heading: '全系软件产品严格边界与合规隔离规范',
         paragraphs: [
-          '所有面向中国大陆与国际市场的应用均在基础设施层严格分区运行，不跨区混淆用户账户与模型中枢；BGSSAI Chat（https://chat.bgssai.cn / https://www.bgssai-chat.com）承载自建多模态 LLM 对话、用 Chat 登录 OIDC 开放授权及会话内云电脑接管，与五端全原生即时通讯 BGSSAI IM（https://im.bgssai.com）完全解耦。',
+          '所有面向中国大陆与国际市场的应用均在基础设施层严格分区运行，不跨区混淆用户账户与模型中枢；BGSSAI Chat（https://chat.bgssai.cn / https://www.bgssai-chat.com）承载自建多模态 LLM 对话、用 Chat 登录 OIDC 开放授权及会话内云电脑接管，与五端全原生即时通讯 BGSSAI IM（https://www.bgssai-im.com）完全解耦。',
           'BGSSAI Bot 超级智能体壳不设孤立网页版，原生嵌入会话与五端客户端并通过标准 MCP 协议与 PAT 令牌协同操作全部业务应用，同时在支付、正式对外发信等高风险环节强制保留人类用户本人确认闸门。'
         ]
       }
