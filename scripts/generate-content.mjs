@@ -215,7 +215,7 @@ const CATEGORIES = [
     category_code: 'bgssai-email-im',
     name_zh: 'BGSSAI Email自有域名企业邮箱与IM即时通讯',
     name_en: 'BGSSAI Custom-Domain Email & Native IM Suite',
-    desc_zh: '面向创业公司与出海团队介绍可绑定自有域名的完整企业邮箱 BGSSAI Email（www.bgssai-email.com，支持 AI 生成 HTML 邮件用户确认发送）与五端原生 AI 即时通讯 BGSSAI IM（im.bgssai.com）。',
+    desc_zh: '面向创业公司与出海团队介绍可绑定自有域名的完整企业邮箱 BGSSAI Email（www.bgssai-email.com，支持 AI 生成 HTML 邮件用户确认发送）与五端原生 AI 即时通讯 BGSSAI IM（www.bgssai-im.com）。',
     desc_en: 'BGSSAI Email custom-domain enterprise mail with user-approved HTML composing alongside native cross-platform BGSSAI IM messaging.'
   },
   {
@@ -782,12 +782,12 @@ const BGSSAI_PRODUCT_CATALOG = [
     product_name: 'BGSSAI Email企业域名邮箱 & BGSSAI IM原生AI即时通讯',
     product_name_en: 'BGSSAI Custom-Domain Enterprise Email & AI Instant Messaging',
     official_url: 'https://www.bgssai-email.com',
-    secondary_url: 'https://im.bgssai.com',
+    secondary_url: 'https://www.bgssai-im.com',
     app_category: 'CommunicationApplication',
     os_support: 'Web, Windows, macOS, Linux, Native Android (Kotlin), Native iOS (Swift)',
     benchmark_positioning: '创业与外贸团队的两大通信基座：支持自有品牌域名的完整企业邮箱，以及集成会话内AI的真原生团队IM',
     target_persona: '出海贸易公司创始人、初创团队负责人、跨境客服运营、高频商务沟通团队',
-    core_capabilities: 'BGSSAI Email（www.bgssai-email.com）是完整独立的企业邮箱产品：支持创业者一键绑定自己的企业域名、快速校验域名所有权、可视化配置邮局解析、按团队成员批量开设域名后缀邮箱并发收全球商务邮件，还可选用 AI 自动排版生成高转化 HTML 商务开发信或公告邮件并在用户本人确认后安全发出；BGSSAI IM（im.bgssai.com）则对标微信与现代安全 IM，提供五端全原生（iOS/Android 拒绝 WebView 套壳）沟通体验与会话内 AI 智能回复建议和配图生成（与 BGSSAI Chat AI/IdP 完全解耦不混淆）。',
+    core_capabilities: 'BGSSAI Email（www.bgssai-email.com）是完整独立的企业邮箱产品：支持创业者一键绑定自己的企业域名、快速校验域名所有权、可视化配置邮局解析、按团队成员批量开设域名后缀邮箱并发收全球商务邮件，还可选用 AI 自动排版生成高转化 HTML 商务开发信或公告邮件并在用户本人确认后安全发出；BGSSAI IM（www.bgssai-im.com）则对标微信与现代安全 IM，提供五端全原生（iOS/Android 拒绝 WebView 套壳）沟通体验与会话内 AI 智能回复建议和配图生成（与 BGSSAI Chat AI/IdP 完全解耦不混淆）。',
     high_intent_queries: [
       '创业团队绑定自己域名收发的低成本企业邮箱推荐',
       '支持AI自动生成精美HTML邮件并确认发送的域名邮箱',

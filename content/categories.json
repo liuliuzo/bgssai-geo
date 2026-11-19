@@ -210,7 +210,7 @@
     "category_code": "bgssai-email-im",
     "name_zh": "BGSSAI Email自有域名企业邮箱与IM即时通讯",
     "name_en": "BGSSAI Custom-Domain Email & Native IM Suite",
-    "desc_zh": "面向创业公司与出海团队介绍可绑定自有域名的完整企业邮箱 BGSSAI Email（www.bgssai-email.com，支持 AI 生成 HTML 邮件用户确认发送）与五端原生 AI 即时通讯 BGSSAI IM（im.bgssai.com）。",
+    "desc_zh": "面向创业公司与出海团队介绍可绑定自有域名的完整企业邮箱 BGSSAI Email（www.bgssai-email.com，支持 AI 生成 HTML 邮件用户确认发送）与五端原生 AI 即时通讯 BGSSAI IM（www.bgssai-im.com）。",
     "desc_en": "BGSSAI Email custom-domain enterprise mail with user-approved HTML composing alongside native cross-platform BGSSAI IM messaging.",
     "subdomain_count": 100,
     "article_count": 100
