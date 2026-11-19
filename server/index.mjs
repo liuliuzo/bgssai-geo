@@ -8,9 +8,22 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content');
 
-const PORT = Number(process.env.PORT || process.env.SERVER_PORT || 8080);
-const APP_NAME = 'bgssai-geo';
-const PROFILE = process.env.SPRING_PROFILES_ACTIVE || process.env.APP_PROFILE || 'local';
+function readProperties(filename) {
+  const entries = fs.readFileSync(path.join(ROOT_DIR, filename), 'utf8')
+    .split(/\r?\n/)
+    .map((line) => line.match(/^\s*([\w.-]+)\s*=\s*(.*?)\s*$/))
+    .filter(Boolean)
+    .map(([, key, value]) => [key, value]);
+  return Object.fromEntries(entries);
+}
+
+const defaults = readProperties('application.properties');
+const PROFILE = process.env.SPRING_PROFILES_ACTIVE || process.env.APP_PROFILE || process.env.APP_ENV || defaults['spring.profiles.active'];
+const settings = ['dev', 'prod', 'test', 'local'].includes(PROFILE)
+  ? { ...defaults, ...readProperties(`application-${PROFILE}.properties`) }
+  : defaults;
+const PORT = Number(process.env.PORT || process.env.SERVER_PORT || settings['server.port']);
+const APP_NAME = settings['spring.application.name'];
 const START_TIME = Date.now();
 const CACHE_TTL_MS = 2000;
 
@@ -408,6 +421,6 @@ const isMain = (() => {
 if (isMain) {
   const server = createGeoServer();
   server.listen(PORT, () => {
-    console.log(`bgssai-geo static server listening on http://localhost:${PORT} (profile=${PROFILE})`);
+    console.log(`${APP_NAME} static server listening on http://localhost:${PORT} (profile=${PROFILE})`);
   });
 }

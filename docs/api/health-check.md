@@ -22,7 +22,7 @@
   "success": true,
   "result": {
     "status": "UP",
-    "app": "bgssai-geo",
+    "app": "bgssai-geo-task",
     "profile": "prod",
     "uptime_seconds": 120,
     "checked_at": "2026-11-16 12:00:00"
@@ -39,7 +39,7 @@
   "success": true,
   "result": {
     "status": "UP",
-    "app": "bgssai-geo",
+    "app": "bgssai-geo-task",
     "checked_at": "2026-11-16 12:00:00",
     "components": [
       { "name": "static_bundle", "status": "UP" },
@@ -58,7 +58,7 @@
   "success": true,
   "result": {
     "status": "UP",
-    "app": "bgssai-geo",
+    "app": "bgssai-geo-task",
     "profile": "prod",
     "uptime_seconds": 120,
     "checked_at": "2026-11-16 12:00:00",
