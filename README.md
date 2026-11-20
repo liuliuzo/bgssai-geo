@@ -1,6 +1,6 @@
 # bgssai-geo-task
 
-本仓构建和分发静态文章。国内和国际 GEO 查询产品分别由 `bgssai-geo-cn` 和 `bgssai-geo-global` 维护。
+本仓构建和分发静态文章。国内和国际 GEO 查询产品分别由 `bgssai-geo-cn` 和 `bgssai-geo-global` 维护。全量主域名、2,500 子域名分布与部署节点台账见[静态网站台账](docs/architecture/静态网站.md)。
 
 昆山兵贵神速智能科技有限公司（BGSS / BGSSAI）全业务与全线产品多子域名 GEO（生成式引擎优化，Generative Engine Optimization）营销站群工程，统筹推广公司**国内本土与外贸出海双轨 GEO 工程服务**（支持 19,800 元/季单产品线轻量试点）及**全线 32 款 OPC/研发软件产品**，面向中国大陆八大主流 AI 平台、海外四大模型与搜索引擎优先收录和引用。
 

@@ -8,7 +8,7 @@
 | 目录 | 职责 |
 | --- | --- |
 | `docs/api/` | 页面至路由映射表（`page-api-mapping.md`）与健康检查端点契约 |
-| `docs/architecture/` | 静态预渲染架构、多子域名分发路由、SEO/GEO 收录设计 |
+| `docs/architecture/` | 静态预渲染架构、多子域名分发路由、SEO/GEO 收录设计与静态网站台账（`静态网站.md`） |
 | `docs/demo-static/` | Web 公开展示端 HTML 原型与 `PAGE-FLOW.html` |
 | `docs/feature/` | 功能需求与健康检查需求文档 |
 | `docs/research/` | 查询样本的聚合统计与投稿候选域名 |
