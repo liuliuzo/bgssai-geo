@@ -8,6 +8,15 @@ function newCounts() {
 
 const brandName = /(?:^|[^\p{L}\p{N}_])(?:(?:昆山)?兵贵神速(?:智能科技(?:有限公司)?)?|BGSS(?:AI)?)(?=$|[^\p{L}\p{N}_])/iu;
 
+const MODEL_ALIASES = new Map([
+  ['文心一言', '文心一言/百度文心助手'],
+  ['百度文心助手', '文心一言/百度文心助手'],
+]);
+
+function normalizeModelName(name) {
+  return MODEL_ALIASES.get(name) || name;
+}
+
 function urlHost(text) {
   if (!text) return null;
   try {
@@ -37,9 +46,10 @@ export function summarizeQueryReport(markdown) {
     const fail = (reason) => { throw new Error(`第 ${index + 1} 条明细${reason}。`); };
     const heading = block.slice(0, block.indexOf('\n')).match(/^([^｜]+)｜(.+)$/);
     if (!heading) fail('缺少模型或查询标题');
-    const model = heading[1].trim();
+    const rawModel = heading[1].trim();
     const question = heading[2].trim();
-    if (!model || !question) fail('含有空白的模型或查询标题');
+    if (!rawModel || !question) fail('含有空白的模型或查询标题');
+    const model = normalizeModelName(rawModel);
     questions.add(question);
 
     const headers = [...block.matchAll(/^\*\*引用（(\d+)）：\*\*\s*$/gm)];

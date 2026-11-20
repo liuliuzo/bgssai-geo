@@ -1,6 +1,6 @@
 # PRODUCT_VISION.md — bgssai-geo-task 产品定位与范围
 
-当前校准版本：2026-11-18。完整产品线规划见 [骨架仓产品线愿景](https://github.com/liuliuzo/bgssai-skeleton/blob/develop/docs/PRODUCT-LINE-VISION.md)。
+当前校准版本：2026-11-20。完整产品线规划见 [骨架仓产品线愿景](https://github.com/liuliuzo/bgssai-skeleton/blob/develop/docs/PRODUCT-LINE-VISION.md)。
 
 ## 一、仓库定位
 

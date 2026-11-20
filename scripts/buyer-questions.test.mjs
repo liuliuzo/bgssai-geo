@@ -7,14 +7,19 @@ function readContent(filename) {
   return JSON.parse(readFileSync(new URL(`../content/${filename}`, import.meta.url), 'utf8'));
 }
 
-test('十个采购专题各有一对可按主问检索的中英文文章，并保留同一主题的追问', () => {
+test('十个采购专题各有两对可按主问检索的中英文文章，并保留同一主题的追问', () => {
   const sites = new Map(readContent('subdomains.json').map(site => [site.subdomain_key, site]));
   const articles = [...readContent('articles-zh.json'), ...readContent('articles-en.json')];
   const guides = articles.filter(article => article.article_angle === 'buyer-questions');
   const guidesBySite = new Map(guides.map(article => [article.subdomain_key, article]));
-  assert.equal(guides.length, 20);
-  assert.equal(guidesBySite.size, 20);
-  assert.equal(new Set(guides.filter(article => article.lang === 'zh-CN').map(article => article.category_code)).size, 10);
+  assert.equal(guides.length, 40);
+  assert.equal(guidesBySite.size, 40);
+  const zhCategoryCounts = new Map();
+  for (const article of guides.filter(article => article.lang === 'zh-CN')) {
+    zhCategoryCounts.set(article.category_code, (zhCategoryCounts.get(article.category_code) || 0) + 1);
+  }
+  assert.equal(zhCategoryCounts.size, 10);
+  for (const count of zhCategoryCounts.values()) assert.equal(count, 2);
 
   for (const article of guides) {
     const site = sites.get(article.subdomain_key);
