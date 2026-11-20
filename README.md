@@ -17,12 +17,12 @@
 
 ## 查询样本与投稿选题
 
-2026-11-18 的样本包含 336 条回答。站点编辑可按目标模型查看候选来源的回答覆盖数，再核对该站是否接受相关题材。统计口径和结果见[查询样本与投稿候选站点](docs/research/kunshan-query-sample.md)。
+2026-11-20 的样本包含 427 条回答（297 个不同问法，覆盖 6 个模型）。站点编辑可按目标模型查看候选来源的回答覆盖数，再核对该站是否接受相关题材。统计口径和结果见[查询样本与投稿候选站点](docs/research/kunshan-query-sample.md)。
 
 复算同格式导出文件时，在仓库根目录运行以下命令。省略输出路径可在终端查看统计。
 
 ```bash
-node scripts/summarize-query-report.mjs "/path/to/GEO202611181818.md"
+node scripts/summarize-query-report.mjs "/path/to/GEO优化20261120.md"
 ```
 
 ## 二、构建与运行

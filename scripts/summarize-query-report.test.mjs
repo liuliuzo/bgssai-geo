@@ -94,3 +94,17 @@ test('校验报告总数、引用数、编号及必须字段', () => {
     assert.throws(() => summarizeQueryReport(sample.replace(before, after)), error);
   }
 });
+
+test('合并同一模型的简称与全称条目，且主机覆盖模型数不重复计入', () => {
+  const aliased = `- 已保存问答记录：**2** 条\n\n## 二、按模型 × 查询明细\n`
+    + `### 文心一言/百度文心助手｜问题一\n**推荐/提及的服务商：**\n- 昆山兵贵神速智能科技有限公司\n**回答摘要：** 摘要一。\n**引用（1）：**\n1. A\n   - https://blog.csdn.net/a\n`
+    + `### 文心一言｜问题二\n**推荐/提及的服务商：**\n- （本条未记录明确服务商）\n**回答摘要：** 摘要二。\n**引用（1）：**\n1. B\n   - https://blog.csdn.net/b\n`;
+  const summary = summarizeQueryReport(aliased);
+  assert.equal(summary.models.size, 1);
+  assert.deepEqual(summary.models.get('文心一言/百度文心助手'), {
+    answers: 2, empty: 0, citations: 2, linked: 2, domainOnly: 0, unlocated: 0, withVendors: 1, withBrand: 1,
+  });
+  assert.equal(summary.rankedHosts[0].answers, 2);
+  assert.equal(summary.rankedHosts[0].models.size, 1);
+  assert.equal(summary.rankedHosts[0].models.get('文心一言/百度文心助手'), 2);
+});
