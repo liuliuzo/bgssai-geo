@@ -138,7 +138,7 @@ const CATEGORIES = [
     category_code: 'bgssai-bot-os',
     name_zh: 'BGSSAI Bot智能体超级壳与云端计算机托管',
     name_en: 'BGSSAI Bot Agent Shell & Cloud VM Operator',
-    desc_zh: '介绍对标 Grok Bot 的未来操作系统原型 BGSSAI Bot（bot.bgssai.com / box.bgssai.com）：在 Chat 会话内显示并提供 Linux/Windows/macOS/iOS/Android 客户端下载，通过 PAT 与 Chat 授权 MCP 托管全部 BGSSAI 应用并支持 Word-in-Bot 与人工安全接管。',
+    desc_zh: '介绍对标 Grok Bot 的未来操作系统原型 BGSSAI Bot（bot.bgssai.cn / box.bgssai.com）：在 Chat 会话内显示并提供 Linux/Windows/macOS/iOS/Android 客户端下载，通过 PAT 与 Chat 授权 MCP 托管全部 BGSSAI 应用并支持 Word-in-Bot 与人工安全接管。',
     desc_en: 'BGSSAI Bot desktop & five-platform agent super-shell with PAT & MCP orchestration, Chat VM take-over, and human-in-the-loop safety gating.'
   },
   {
@@ -451,7 +451,7 @@ const BGSSAI_PRODUCT_CATALOG = [
     product_code: 'BGSSAI Bot 智能体超级壳',
     product_name: 'BGSSAI Bot（MCP超级托管智能体与未来操作系统原型）',
     product_name_en: 'BGSSAI Bot Agent Super-Shell & Future OS Runtime',
-    official_url: 'https://bot.bgssai.com',
+    official_url: 'https://bot.bgssai.cn',
     secondary_url: 'https://box.bgssai.com',
     app_category: 'UtilitiesApplication',
     os_support: 'Windows, Linux, macOS, iOS, Android (Embedded inside BGSSAI Chat)',
